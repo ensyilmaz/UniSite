@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sayfa - Unitürk Bilişim Teknolojileri</title>
+    <meta name="description" content="Kurumsal ölçekte güvenli, ölçeklenebilir ve yönetilebilir BT altyapıları." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://dev.munitek.com/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://dev.munitek.com/css/site.css?v=BZMF6I8mnm2caYx5YETUbaym5d8vuAVBtjcrC8UTOH4" />
+<style id="utx-additions">
+/* Only newly requested components. Existing site classes remain authoritative. */
+.utx-nav-trigger > .utx-nav-chevron { position: absolute; left: calc(100% + 4px); top: 50%; display: inline-block; width: 12px; height: 12px; transform: translateY(-50%); transition: transform .18s ease; }
+.utx-nav-trigger[aria-expanded="true"] > .utx-nav-chevron { transform: translateY(-50%) rotate(180deg); }
+.utx-panel { position: fixed; z-index: 110; width: 240px; min-width: 0; max-width: calc(100vw - 32px); max-height: calc(100dvh - var(--header-h,84px) - 20px); overflow-y: auto; overscroll-behavior: contain; padding: 10px; border: 1px solid #e0e9f3; border-radius: 12px; color: #112d50; background: #fff; box-shadow: 0 16px 42px rgb(13 45 84 / 15%); text-align: left; }
+.utx-panel[hidden], .utx-page[hidden], .utx-about[hidden] { display: none; }
+.utx-panel a { display: block; padding: 9px 11px; border-radius: 6px; color: #27435f; font-size: 13px; line-height: 1.5; text-decoration: none; }
+.utx-panel a:hover { color: var(--blue,#1160f0); background: #f0f6ff; }
+.utx-icon { display: inline-block; width: 24px; height: 24px; flex-shrink: 0; vertical-align: middle; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.utx-page { padding: 0; color: var(--navy,#0b1f45); }
+.utx-page [tabindex="-1"]:focus { outline: none; }
+.utx-page-content { padding-top: 36px; padding-bottom: 72px; }
+.utx-hero-actions { position: relative; height: 0; }
+.utx-hero-contact { position: absolute; left: 0; bottom: 4px; margin: 0; }
+.utx-page-heading { margin-bottom: 28px; }
+.utx-page-heading h1, .utx-page-title { margin: 0 0 11px; color: var(--navy,#0b1f45); font-size: clamp(28px,3vw,40px); font-weight: 800; line-height: 1.22; letter-spacing: -.035em; }
+.utx-page-heading p, .utx-page-description { margin: 0 0 12px; color: var(--muted,#5b6b85); font-size: 15px; line-height: 1.65; }
+.utx-page-note { margin: 0; color: #6e7c8e; font-size: 13px; line-height: 1.6; font-style: italic; }
+.utx-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 0 0 22px; padding: 0; color: #748298; font-size: 12px; line-height: 1.5; list-style: none; }
+.utx-breadcrumb a { color: var(--blue,#1160f0); text-decoration: none; }
+.utx-breadcrumb a:hover { text-decoration: underline; }
+.utx-service-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 22px; }
+.utx-service-card { position: relative; min-width: 0; padding: 23px 22px; border: 1px solid #e1e8f1; border-radius: 20px; color: #153150; background: #fff; box-shadow: 0 3px 5px rgb(29 64 110 / 4%),0 10px 22px rgb(29 64 110 / 5%); transition: border-color .18s ease,box-shadow .18s ease; }
+.utx-service-card:hover { border-color: #91bdeb; box-shadow: 0 7px 23px rgb(0 101 212 / 10%); }
+.utx-service-head { display: flex; align-items: center; gap: 15px; margin-bottom: 16px; }
+.utx-service-title { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; margin: 0; color: var(--navy,#0b1f45); font-size: 17px; font-weight: 800; line-height: 1.35; letter-spacing: -.025em; }
+.utx-service-title h3 { margin: 0; font-size: inherit; font-weight: inherit; line-height: inherit; }
+.utx-service-title a { color: inherit; text-decoration: none; }
+.utx-service-title a:hover { color: var(--blue,#1160f0); }
+.utx-service-title .utx-icon { width: 15px; height: 15px; color: var(--blue,#1160f0); }
+.utx-service-icon { display: inline-grid; flex-shrink: 0; place-items: center; width: 52px; height: 52px; border-radius: 14px; color: #143d70; background: var(--blue-soft,#eaf2ff); }
+.utx-service-icon .utx-icon { width: 32px; height: 32px; }
+.utx-service-card > p { margin: 0 0 15px; color: #5d6d82; font-size: 13px; line-height: 1.7; }
+.utx-service-topics { display: grid; gap: 6px; margin: 13px 0 0; padding: 13px 0 0; border-top: 1px solid #edf2f8; list-style: none; }
+.utx-service-topics a { display: inline-flex; align-items: baseline; gap: 7px; color: #41617e; font-size: 12px; line-height: 1.6; text-decoration: none; }
+.utx-service-topics a::before { content: "›"; color: var(--blue,#1160f0); font-size: 15px; line-height: 1; }
+.utx-service-topics a:hover { color: var(--blue,#1160f0); text-decoration: underline; }
+.utx-service-detail { max-width: 880px; margin: 0 auto; }
+.utx-service-detail h2 { margin: 28px 0 12px; color: var(--navy,#0b1f45); font-size: 23px; line-height: 1.35; }
+.utx-service-detail p { color: #5d6d82; line-height: 1.8; }
+.utx-service-detail ul { color: #5d6d82; line-height: 1.9; }
+.utx-blog-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px 20px; }
+.utx-blog-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #e0e8f2; border-radius: 17px; color: var(--navy,#0b1f45); background: #fff; box-shadow: 0 5px 17px rgb(30 76 135 / 8%); }
+.utx-blog-art { display: block; width: 100%; overflow: hidden; aspect-ratio: 3.5/1; border-radius: 16px 16px 11px 11px; background: #b9dbfa; }
+.utx-blog-art > svg { display: block; width: 100%; height: 100%; }
+.utx-blog-body { display: flex; flex-direction: column; flex-grow: 1; padding: 15px 23px 20px; }
+.utx-blog-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 13px; margin-bottom: 10px; color: #68788f; font-size: 11px; line-height: 1.5; }
+.utx-blog-category { display: inline-flex; align-items: center; gap: 7px; color: var(--blue,#1160f0); font-weight: 700; }
+.utx-blog-category .utx-icon { width: 17px; height: 17px; }
+.utx-blog-meta time { padding-left: 13px; border-left: 1px solid #9aa7b7; white-space: nowrap; }
+.utx-blog-card h2 { margin: 0 0 9px; color: var(--navy,#0b1f45); font-size: 18px; font-weight: 800; line-height: 1.35; letter-spacing: -.035em; }
+.utx-blog-card p { margin: 0 0 15px; color: var(--muted,#5b6b85); font-size: 13px; line-height: 1.55; }
+.utx-read-more { display: inline-flex; align-items: center; align-self: flex-start; gap: 8px; margin-top: auto; padding: 0; border: 0; color: var(--blue,#1160f0); background: transparent; font: inherit; font-size: 13px; font-weight: 800; line-height: 1.5; cursor: pointer; }
+.utx-read-more:hover { text-decoration: underline; }
+.utx-read-more svg { width: 17px; height: 17px; }
+.utx-about { padding: 55px 0; color: #122f51; background: #f8fbff; }
+.utx-about-inner { display: grid; grid-template-columns: 1fr 1.25fr; align-items: center; gap: 55px; }
+.utx-about-heading { margin: 0 0 17px; color: var(--navy,#0b1f45); font-size: clamp(27px,3vw,36px); font-weight: 800; line-height: 1.25; letter-spacing: -.035em; }
+.utx-about-description { max-width: 500px; margin: 0; color: var(--muted,#5b6b85); font-size: 14px; line-height: 1.85; }
+.utx-about-points { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 0; padding: 0; list-style: none; }
+.utx-about-points li { display: flex; gap: 12px; align-items: flex-start; }
+.utx-about-points .utx-icon { width: 25px; height: 25px; color: var(--blue,#1160f0); }
+.utx-about-points h3 { margin: 0 0 7px; color: #17365a; font-size: 15px; font-weight: 800; line-height: 1.4; }
+.utx-about-points p { margin: 0; color: #6a7b90; font-size: 12px; line-height: 1.75; }
+.utx-footer-legal { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgb(140 170 207 / 20%); }
+.utx-footer-legal a { color: inherit; font-size: 11px; line-height: 1.5; text-decoration: none; }
+.utx-footer-legal a:hover { text-decoration: underline; }
+.utx-empty { padding: 26px 0; color: var(--muted,#5b6b85); font-size: 14px; line-height: 1.8; }
+@media (max-width: 1100px) {
+    .utx-service-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .utx-blog-body { padding: 14px 17px 19px; }
+    .utx-blog-card h2 { font-size: 16px; }
+    .utx-about-inner { gap: 35px; }
+}
+@media (max-width: 991.98px) {
+    .utx-nav-trigger > .utx-nav-chevron { right: 0; left: auto; }
+    .utx-hero-actions { height: auto; margin-top: 22px; }
+    .utx-hero-contact { position: static; }
+}
+@media (max-width: 900px) {
+    .utx-blog-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .utx-about-inner { grid-template-columns: 1fr; gap: 28px; }
+    .utx-about-description { max-width: 680px; }
+}
+@media (max-width: 760px) {
+    .utx-panel { position: fixed; max-width: calc(100vw - 24px); max-height: calc(100dvh - var(--header-h,72px) - 18px); padding: 10px; }
+    .utx-page-content { padding-top: 30px; padding-bottom: 45px; }
+    .utx-page-heading { margin-bottom: 23px; }
+    .utx-page-heading p, .utx-page-description { font-size: 14px; }
+    .utx-service-grid { gap: 16px; }
+    .utx-service-card { padding: 19px 17px; border-radius: 17px; }
+    .utx-service-head { gap: 12px; }
+    .utx-service-icon { width: 45px; height: 45px; border-radius: 12px; }
+    .utx-service-icon .utx-icon { width: 27px; height: 27px; }
+    .utx-service-title { font-size: 15px; }
+    .utx-blog-grid { gap: 20px 16px; }
+    .utx-blog-body { padding: 15px 18px 19px; }
+    .utx-blog-card h2 { font-size: 17px; }
+    .utx-about { padding: 40px 0; }
+    .utx-about-points { gap: 24px 20px; }
+}
+@media (max-width: 560px) {
+    .utx-service-grid { grid-template-columns: 1fr; }
+    .utx-service-card { padding: 22px; }
+    .utx-service-title { font-size: 18px; }
+    .utx-service-card > p { font-size: 14px; }
+    .utx-service-topics a { font-size: 13px; }
+    .utx-blog-grid { grid-template-columns: 1fr; }
+    .utx-blog-art { aspect-ratio: 3.15/1; }
+    .utx-blog-card h2 { font-size: 19px; }
+    .utx-blog-card p { font-size: 14px; }
+    .utx-blog-body { padding: 16px 21px 22px; }
+    .utx-blog-meta { font-size: 11px; }
+    .utx-about-points { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .utx-nav-trigger > .utx-nav-chevron, .utx-service-card { transition: none; }
+}
+
+.utx-services-list a { padding: 11px 13px; font-size: 13px; font-weight: 600; }
+.utx-read-more { text-decoration: none; }
+.utx-nav-trigger:focus-visible, .utx-panel a:focus-visible, .utx-service-card a:focus-visible, .utx-read-more:focus-visible { outline: 3px solid #2584ea; outline-offset: 3px; }
+
+.utx-article-page { padding: 0 0 84px; background: #fff; }
+.utx-article { padding-top: 30px; }
+.utx-article-heading { width: min(900px,calc(100% - 64px)); margin: 0 auto; padding-bottom: 36px; }
+.utx-article-nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 6px 0 38px; }
+.utx-article-nav a { display: inline-flex; gap: 10px; align-items: center; color: #5b6b85; text-decoration: none; font-size: 13px; font-weight: 600; }
+.utx-article-nav a:hover { color: var(--blue,#1160f0); }
+.utx-article-nav > span { font-size: 10px; letter-spacing: 2px; font-weight: 700; color: #8995a5; }
+.utx-article-kicker { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 19px; font-size: 12px; font-weight: 700; color: var(--blue,#1160f0); }
+.utx-article-sample { padding-left: 12px; border-left: 1px solid #d9e0e9; font-weight: 500; color: #8b96a6; }
+.utx-article-heading h1 { max-width: 870px; margin: 0 0 20px; color: var(--navy,#0b1f45); font-size: clamp(36px,4.25vw,56px); font-weight: 800; letter-spacing: -2px; line-height: 1.14; text-wrap: balance; }
+.utx-article-heading h1:focus { outline: none; }
+.utx-article-deck { max-width: 800px; margin: 0 0 27px; color: #69778b; font-size: 21px; line-height: 1.65; letter-spacing: -.35px; }
+.utx-article-byline { display: flex; align-items: center; gap: 12px; }
+.utx-article-avatar { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--navy,#0b1f45); color: #fff; font-size: 22px; font-weight: 800; }
+.utx-article-byline strong { display: block; margin-bottom: 3px; color: #263d5b; font-size: 13px; font-weight: 700; }
+.utx-article-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: #7b8898; font-size: 12px; }
+.utx-article-cover { width: min(1060px,calc(100% - 64px)); margin: 0 auto 48px; overflow: hidden; border-radius: 14px; background: #e7f1fb; aspect-ratio: 2.7; }
+.utx-article-cover > svg { display: block; width: 100%; height: 100%; }
+.utx-article-cover > .utx-blog-art { height: 100%; width: 100%; aspect-ratio: auto; border-radius: 0; }
+.utx-article-cover > .utx-blog-art > svg { display: block; width: 100%; height: 100%; }
+.utx-article-prose { width: min(700px,calc(100% - 64px)); margin: 0 auto; color: #29364a; font-family: Georgia,"Times New Roman",serif; font-size: 20px; line-height: 1.85; letter-spacing: -.12px; overflow-wrap: break-word; }
+.utx-article-prose > p { margin: 0 0 27px; }
+.utx-article-prose > p:first-child { color: #31435e; font-size: 22px; line-height: 1.8; }
+.utx-article-prose h2 { margin: 47px 0 18px; color: var(--navy,#0b1f45); font-family: "Plus Jakarta Sans","Segoe UI",sans-serif; font-size: 27px; font-weight: 800; line-height: 1.35; letter-spacing: -.8px; }
+.utx-article-prose h3 { margin: 32px 0 14px; color: var(--navy,#0b1f45); font-family: "Plus Jakarta Sans","Segoe UI",sans-serif; font-size: 21px; line-height: 1.4; font-weight: 700; }
+.utx-article-prose blockquote { margin: 38px -22px; padding: 4px 0 4px 25px; border-left: 3px solid #2a7feb; color: #264a77; font-size: 25px; line-height: 1.6; font-style: italic; }
+.utx-article-prose blockquote p { margin: 0; }
+.utx-article-prose ul,.utx-article-prose ol { margin: 5px 0 28px; padding-left: 26px; }
+.utx-article-prose li { padding-left: 6px; margin-bottom: 12px; }
+.utx-article-prose strong { color: #172c48; font-weight: 700; }
+.utx-article-prose a { color: var(--blue,#1160f0); text-underline-offset: 4px; }
+.utx-article-end { width: min(700px,calc(100% - 64px)); margin: 46px auto 0; padding: 32px 0 0; border-top: 1px solid #e6ebf1; }
+.utx-article-end-mark { display: block; color: #afbdcd; font-size: 13px; margin-bottom: 18px; }
+.utx-article-end p { color: #7c8a9d; font-size: 13px; line-height: 1.8; margin: 0 0 19px; }
+.utx-article-end a { display: inline-flex; align-items: center; gap: 28px; color: var(--blue,#1160f0); font-size: 14px; font-weight: 700; text-decoration: none; }
+.utx-article-end a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.utx-article-related { width: min(1060px,calc(100% - 64px)); margin: 70px auto 0; padding-top: 35px; border-top: 1px solid #e6ebf1; }
+.utx-article-related-heading > span { color: #8b98a9; font-size: 10px; font-weight: 700; letter-spacing: 1.9px; }
+.utx-article-related-heading h2 { margin: 8px 0 27px; color: var(--navy,#0b1f45); font-size: 26px; font-weight: 800; letter-spacing: -.8px; }
+.utx-article-related-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.utx-article-related-grid .utx-blog-art { aspect-ratio: 3.5; }
+.utx-article-related-grid .utx-blog-card h2 { font-size: 18px; }
+.utx-article-related-grid .utx-blog-card p { font-size: 13px; }
+@media (max-width: 760px) {
+ .utx-article { padding-top: 17px; }
+ .utx-article-heading { width: calc(100% - 40px); padding-bottom: 27px; }
+ .utx-article-nav { padding-bottom: 29px; }
+ .utx-article-nav > span { font-size: 9px; letter-spacing: 1.4px; }
+ .utx-article-kicker { margin-bottom: 16px; font-size: 11px; }
+ .utx-article-heading h1 { font-size: 35px; letter-spacing: -1.25px; line-height: 1.18; }
+ .utx-article-deck { font-size: 18px; line-height: 1.7; }
+ .utx-article-cover { width: calc(100% - 32px); aspect-ratio: 2.1; margin-bottom: 32px; border-radius: 10px; }
+ .utx-article-prose { width: calc(100% - 40px); font-size: 18px; line-height: 1.85; }
+ .utx-article-prose > p:first-child { font-size: 20px; }
+ .utx-article-prose h2 { font-size: 23px; margin-top: 36px; }
+ .utx-article-prose blockquote { margin: 28px 0; padding-left: 19px; font-size: 22px; }
+ .utx-article-end { width: calc(100% - 40px); margin-top: 35px; }
+ .utx-article-related { width: calc(100% - 40px); margin-top: 47px; padding-top: 27px; }
+ .utx-article-related-grid { grid-template-columns: 1fr; gap: 20px; }
+ .utx-article-page { padding-bottom: 50px; }
+}
+@media (max-width: 380px) { .utx-article-heading h1 { font-size: 31px; } .utx-article-nav > span { display: none; } }
+
+</style>
+</head>
+<body class="has-overlay-header">
+    <header class="site-header is-overlay" id="siteHeader">
+        <div class="wrap header-inner">
+            <a class="brand" href="/" aria-label="Unitürk Bilişim Teknolojileri - Ana Sayfa">
+                <img class="brand-logo" src="https://dev.munitek.com/img/logo.png" alt="Unitürk" width="331" height="48" />
+                <span class="brand-sub">Bilişim Teknolojileri</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Ana menü">
+                    <a class="nav-link utx-nav-trigger" href="/kurumsal/hakkimizda" data-utx-dropdown="utx-corporate-menu" aria-controls="utx-corporate-menu" aria-expanded="false">Kurumsal<svg class="utx-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+                    <a class="nav-link utx-nav-trigger" href="/hizmetler" data-utx-dropdown="utx-services-menu" aria-controls="utx-services-menu" aria-expanded="false">Hizmetlerimiz<svg class="utx-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+                    <a class="nav-link" href="/is-ortaklarimiz">&#x130;&#x15F; Ortaklar&#x131;m&#x131;z</a>
+                    <a class="nav-link utx-nav-trigger" href="/referanslar/musteri-referanslari" data-utx-dropdown="utx-references-menu" aria-controls="utx-references-menu" aria-expanded="false">Referanslar<svg class="utx-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="/iletisim">&#x130;leti&#x15F;im</a>
+            </nav>
+
+            <div class="header-actions">
+                <button type="button" class="icon-btn" id="searchToggle" aria-label="Ara" aria-controls="headerSearch" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+                </button>
+                <form class="header-search" id="headerSearch" action="/arama" method="get" role="search" hidden>
+                    <input type="search" name="q" maxlength="100" placeholder="Sitede ara…" aria-label="Sitede ara" required />
+                    <button type="submit" class="btn-ut btn-ut-primary btn-ut-sm">Ara</button>
+                </form>
+                <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-controls="mainNav" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+<div class="utx-panel" id="utx-corporate-menu" aria-label="Kurumsal alt menüsü" hidden><a href="/kurumsal/hakkimizda">Hakkımızda</a><a href="/kurumsal/vizyonumuz">Vizyonumuz</a><a href="/kurumsal/misyonumuz">Misyonumuz</a></div>
+<div class="utx-panel utx-services-list" id="utx-services-menu" aria-label="Hizmetler alt menüsü" hidden><a href="/hizmetler/ag-altyapilari-ve-sd-wan" data-utx-service="ag-altyapilari-ve-sd-wan">Ağ Altyapıları ve SD-WAN</a>
+<a href="/hizmetler/siber-guvenlik" data-utx-service="siber-guvenlik">Siber Güvenlik</a>
+<a href="/hizmetler/veri-merkezi-ve-bulut" data-utx-service="veri-merkezi-ve-bulut">Veri Merkezi ve Bulut</a>
+<a href="/hizmetler/bt-danismanligi" data-utx-service="bt-danismanligi">BT Danışmanlığı</a>
+<a href="/hizmetler/yonetilen-hizmetler" data-utx-service="yonetilen-hizmetler">Yönetilen Hizmetler</a>
+<a href="/hizmetler/sistem-entegrasyonu" data-utx-service="sistem-entegrasyonu">Sistem Entegrasyonu</a>
+<a href="/hizmetler/teknik-destek" data-utx-service="teknik-destek">Teknik Destek</a>
+<a href="/hizmetler/sektorler" data-utx-service="bt-urunleri-ve-diger-cozumler">BT Ürünleri ve Diğer Çözümler</a></div>
+<div class="utx-panel" id="utx-references-menu" aria-label="Referanslar alt menüsü" hidden><a href="/referanslar/musteri-referanslari">Müşteri Referansları</a><a href="/referanslar/projelerimiz">Projelerimiz</a></div>
+
+    <main role="main">
+        
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-decor" aria-hidden="true"></div>
+    <div class="hero-media" id="heroSlider" aria-roledescription="carousel">
+        <div class="hero-slide is-active img-hero-1" role="group" aria-label="1 / 3"></div>
+        <div class="hero-slide img-building-glass" role="group" aria-label="2 / 3"></div>
+        <div class="hero-slide img-campus" role="group" aria-label="3 / 3"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-stage">
+            <div class="hero-caption is-active">
+                <h3>Güçlü<br />Altyapılarla<br />Sürdürülebilir<br />Gelecek</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-caption">
+                <h3>Güvenli<br />Ağlarla<br />Kesintisiz<br />İş Sürekliliği</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-caption">
+                <h3>Kampüsten<br />Buluta<br />Uçtan Uca<br />Çözümler</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-controls">
+                <div class="hero-progress">
+                    <span id="heroCurrent">01</span>
+                    <span class="hero-progress-bar"><span id="heroProgress"></span></span>
+                    <span id="heroTotal">03</span>
+                </div>
+                <div class="hero-arrows">
+                    <button type="button" class="round-btn" id="heroPrev" aria-label="Önceki slayt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+                    </button>
+                    <button type="button" class="round-btn" id="heroNext" aria-label="Sonraki slayt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap hero-inner">
+        <div class="hero-content">
+            <span class="eyebrow">Daha güvenli, daha verimli yarınlar için</span>
+            <h1 class="hero-title">Teknolojiyi<br />İşiniz İçin<br />Anlamlı Kılıyoruz</h1>
+            <p class="hero-lead">
+                Kurumsal ölçekte güvenli, ölçeklenebilir ve yönetilebilir BT altyapıları tasarlıyor,
+                iş süreçlerinizi geleceğe taşıyoruz.
+            </p><!-- UTX HERO CONTACT START --><div class="utx-hero-actions"><a class="btn-ut btn-ut-primary utx-hero-contact" href="/iletisim">İletişime Geçin <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div><!-- UTX HERO CONTACT END -->
+        </div>
+    </div>
+
+    <ul class="hero-features">
+        <li>
+            <span class="hero-feature-icon"><img src="https://dev.munitek.com/img/uctan-uca-cozumler.svg" alt="" width="28" height="28" /></span>
+            <div>
+                <strong>Uçtan Uca Çözümler</strong>
+                <p>Analizden devreye kadar tek noktadan yönetim</p>
+            </div>
+        </li>
+        <li>
+            <span class="hero-feature-icon"><img src="https://dev.munitek.com/img/guvenli-altyapi.svg" alt="" width="28" height="28" /></span>
+            <div>
+                <strong>Güvenli Altyapı</strong>
+                <p>Kurumsal standartlarda yüksek güvenlik</p>
+            </div>
+        </li>
+        <li>
+            <span class="hero-feature-icon"><img src="https://dev.munitek.com/img/surdurulebilir-teknoloji.svg" alt="" width="28" height="28" /></span>
+            <div>
+                <strong>Sürdürülebilir Teknoloji</strong>
+                <p>Uzun vadeli, ölçeklenebilir ve verimli yapılar</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- SÜREÇ -->
+<section class="process" id="sektorler">
+    <div class="wrap process-inner">
+        <div class="process-text">
+            <span class="eyebrow eyebrow-light">Uçtan uca teknoloji çözümleri</span>
+            <h2>İşinizin her<br />aşamasında yanınızdayız.</h2>
+            <p>İhtiyacınıza özel, entegre ve sürdürülebilir BT altyapılarıyla dijital dönüşümünüzü destekliyoruz.</p>
+        </div>
+        <ol class="process-steps">
+            <li>
+                <img src="https://dev.munitek.com/img/step-plan.png" alt="" />
+                <h3>Planla</h3>
+                <p>İhtiyaçlarınızı analiz ediyoruz.</p>
+            </li>
+            <li>
+                <img src="https://dev.munitek.com/img/step-design.png" alt="" />
+                <h3>Tasarla</h3>
+                <p>Size özel çözümler geliştiriyoruz.</p>
+            </li>
+            <li>
+                <img src="https://dev.munitek.com/img/step-implement.png" alt="" />
+                <h3>Uygula</h3>
+                <p>Uzman ekibimizle hayata geçiriyoruz.</p>
+            </li>
+            <li>
+                <img src="https://dev.munitek.com/img/step-sustain.png" alt="" />
+                <h3>Sürdür</h3>
+                <p>Sürekli destekle yanınızdayız.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- TEKNOLOJİ ORTAKLARI -->
+<section class="partners" id="ortaklar">
+    <div class="wrap">
+        <span class="eyebrow">Teknoloji ortaklarımız</span>
+        <ul class="partner-logos">
+            <li class="logo-fortinet" title="Fortinet"><span aria-hidden="true">F<i class="ft-o"></i>RTINET<sup>.</sup></span><span class="visually-hidden">Fortinet</span></li>
+            <li class="logo-cisco" title="Cisco">
+                <svg viewBox="0 0 60 22" aria-hidden="true"><g fill="currentColor"><rect x="1" y="8" width="2.6" height="6" rx="1.3" /><rect x="7.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="14" y="0" width="2.6" height="22" rx="1.3" /><rect x="20.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="27" y="8" width="2.6" height="6" rx="1.3" /><rect x="33.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="40" y="0" width="2.6" height="22" rx="1.3" /><rect x="46.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="53" y="8" width="2.6" height="6" rx="1.3" /></g></svg>
+                <span>CISCO</span>
+            </li>
+            <li class="logo-nutanix" title="Nutanix">NUTANIX</li>
+            <li class="logo-cohesity" title="Cohesity">COHE<span>S</span>ITY<b>.</b></li>
+            <li class="logo-vmware" title="VMware">vm<span>ware</span><sup>®</sup></li>
+            <li class="logo-microsoft" title="Microsoft">
+                <span class="ms-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                Microsoft
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ÇÖZÜMLER -->
+<section class="solutions" id="cozumler">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">Çözümlerimiz</span>
+                <h2 class="section-title">Güvenli altyapılar,<br />daha güçlü kurumlar.</h2>
+            </div>
+            <p class="section-desc">
+                Modern teknolojilerle kurumların ihtiyaç duyduğu altyapı, güvenlik, veri merkezi ve
+                yönetilen hizmet çözümlerini sunuyoruz.
+            </p>
+            <a class="link-arrow" href="/hizmetler">Tüm Çözümlerimiz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        </div>
+
+<div class="utx-service-grid"><article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M12 7.2v4.3m0 0-5.3 4.8m5.3-4.8 5.3 4.8"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/ag-altyapilari-ve-sd-wan" data-utx-service="ag-altyapilari-ve-sd-wan">Ağ Altyapıları ve SD-WAN</a></h3></div><p>Güvenli, esnek ve yüksek performanslı kurumsal ağ altyapıları ve SD-WAN çözümleri.</p><ul class="utx-service-topics" aria-label="Ağ Altyapıları ve SD-WAN alt başlıkları"><li><a href="/hizmetler/ag-altyapilari-ve-sd-wan#kurumsal-ag" data-utx-service="ag-altyapilari-ve-sd-wan" data-utx-topic="kurumsal-ag">Kurumsal Ağ ve Kampüs</a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan#kablosuz-ag" data-utx-service="ag-altyapilari-ve-sd-wan" data-utx-topic="kablosuz-ag">Kablosuz Ağ Çözümleri</a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan#sd-wan" data-utx-service="ag-altyapilari-ve-sd-wan" data-utx-topic="sd-wan">SD-WAN ve Şube Bağlantıları</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-7.5 3v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/siber-guvenlik" data-utx-service="siber-guvenlik">Siber Güvenlik</a></h3></div><p>Kurumsal verilerinizi ve sistemlerinizi korumaya yönelik uçtan uca güvenlik çözümleri.</p><ul class="utx-service-topics" aria-label="Siber Güvenlik alt başlıkları"><li><a href="/hizmetler/siber-guvenlik#ag-guvenligi" data-utx-service="siber-guvenlik" data-utx-topic="ag-guvenligi">Ağ ve Erişim Güvenliği</a></li>
+<li><a href="/hizmetler/siber-guvenlik#soc-edr" data-utx-service="siber-guvenlik" data-utx-topic="soc-edr">SOC ve EDR Çözümleri</a></li>
+<li><a href="/hizmetler/siber-guvenlik#guvenlik-operasyonlari" data-utx-service="siber-guvenlik" data-utx-topic="guvenlik-operasyonlari">Güvenlik Operasyonları</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/veri-merkezi-ve-bulut" data-utx-service="veri-merkezi-ve-bulut">Veri Merkezi ve Bulut</a></h3></div><p>Modern veri merkezi altyapıları ve ölçeklenebilir bulut çözümleri ile sürdürülebilir BT operasyonları.</p><ul class="utx-service-topics" aria-label="Veri Merkezi ve Bulut alt başlıkları"><li><a href="/hizmetler/veri-merkezi-ve-bulut#sanallastirma-hci" data-utx-service="veri-merkezi-ve-bulut" data-utx-topic="sanallastirma-hci">Sanallaştırma ve HCI</a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut#hibrit-bulut" data-utx-service="veri-merkezi-ve-bulut" data-utx-topic="hibrit-bulut">Hibrit Bulut Çözümleri</a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut#yedekleme-felaket-kurtarma" data-utx-service="veri-merkezi-ve-bulut" data-utx-topic="yedekleme-felaket-kurtarma">Yedekleme ve Felaket Kurtarma</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/bt-danismanligi" data-utx-service="bt-danismanligi">BT Danışmanlığı</a></h3></div><p>İhtiyaçlarınıza özel, stratejik ve sürdürülebilir BT danışmanlık hizmetleri.</p><ul class="utx-service-topics" aria-label="BT Danışmanlığı alt başlıkları"><li><a href="/hizmetler/bt-danismanligi#altyapi-analizi" data-utx-service="bt-danismanligi" data-utx-topic="altyapi-analizi">Altyapı ve İhtiyaç Analizi</a></li>
+<li><a href="/hizmetler/bt-danismanligi#teknoloji-yol-haritasi" data-utx-service="bt-danismanligi" data-utx-topic="teknoloji-yol-haritasi">Teknoloji Yol Haritası</a></li>
+<li><a href="/hizmetler/bt-danismanligi#proje-danismanligi" data-utx-service="bt-danismanligi" data-utx-topic="proje-danismanligi">Proje Danışmanlığı</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/yonetilen-hizmetler" data-utx-service="yonetilen-hizmetler">Yönetilen Hizmetler</a></h3></div><p>BT altyapınızın sürekli, güvenli ve verimli yönetilmesine yönelik uçtan uca hizmetler.</p><ul class="utx-service-topics" aria-label="Yönetilen Hizmetler alt başlıkları"><li><a href="/hizmetler/yonetilen-hizmetler#izleme-yonetim" data-utx-service="yonetilen-hizmetler" data-utx-topic="izleme-yonetim">Altyapı İzleme ve Yönetimi</a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler#bakim-operasyon" data-utx-service="yonetilen-hizmetler" data-utx-topic="bakim-operasyon">Bakım ve Operasyon</a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler#sureklilik" data-utx-service="yonetilen-hizmetler" data-utx-topic="sureklilik">İş Sürekliliği</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5Zm-9 10 9 5 9-5"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/sistem-entegrasyonu" data-utx-service="sistem-entegrasyonu">Sistem Entegrasyonu</a></h3></div><p>Farklı teknolojileri bir bütün halinde çalışacak şekilde bir araya getiren esnek çözümler.</p><ul class="utx-service-topics" aria-label="Sistem Entegrasyonu alt başlıkları"><li><a href="/hizmetler/sistem-entegrasyonu#kurulum-devreye-alma" data-utx-service="sistem-entegrasyonu" data-utx-topic="kurulum-devreye-alma">Kurulum ve Devreye Alma</a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu#migrasyon" data-utx-service="sistem-entegrasyonu" data-utx-topic="migrasyon">Migrasyon ve Geçiş</a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu#altyapi-entegrasyonu" data-utx-service="sistem-entegrasyonu" data-utx-topic="altyapi-entegrasyonu">Altyapı Entegrasyonu</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/teknik-destek" data-utx-service="teknik-destek">Teknik Destek</a></h3></div><p>Uzman ekibimizle 7/24 hızlı, etkin ve kesintisiz teknik destek hizmeti.</p><ul class="utx-service-topics" aria-label="Teknik Destek alt başlıkları"><li><a href="/hizmetler/teknik-destek#uzaktan-destek" data-utx-service="teknik-destek" data-utx-topic="uzaktan-destek">Uzaktan Teknik Destek</a></li>
+<li><a href="/hizmetler/teknik-destek#yerinde-destek" data-utx-service="teknik-destek" data-utx-topic="yerinde-destek">Yerinde Destek</a></li>
+<li><a href="/hizmetler/teknik-destek#bakim-destek" data-utx-service="teknik-destek" data-utx-topic="bakim-destek">Bakım ve Destek Planları</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16V4h16v12M2 16h20v4H2Z"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/sektorler" data-utx-service="bt-urunleri-ve-diger-cozumler">BT Ürünleri ve Diğer Çözümler</a></h3></div><p>Laptop, masaüstü bilgisayar, donanım ve yazılım ihtiyaçlarınıza uygun ürün ve çözümler.</p><ul class="utx-service-topics" aria-label="BT Ürünleri ve Diğer Çözümler alt başlıkları"><li><a href="/hizmetler/sektorler#laptop-masaustu" data-utx-service="bt-urunleri-ve-diger-cozumler" data-utx-topic="laptop-masaustu">Laptop ve Masaüstü Bilgisayarlar</a></li>
+<li><a href="/hizmetler/sektorler#sunucu-depolama" data-utx-service="bt-urunleri-ve-diger-cozumler" data-utx-topic="sunucu-depolama">Sunucu ve Depolama Ürünleri</a></li>
+<li><a href="/hizmetler/sektorler#lisans-cevre-birimleri" data-utx-service="bt-urunleri-ve-diger-cozumler" data-utx-topic="lisans-cevre-birimleri">Yazılım, Lisans ve Çevre Birimleri</a></li></ul></article></div>
+    </div>
+</section>
+
+<!-- UTX NEDEN UNITURK START -->
+<section class="utx-about" id="utx-neden-uniturk" aria-labelledby="utx-about-heading"><div class="wrap utx-about-inner"><div><span class="eyebrow">Hakkımızda</span><h2 class="utx-about-heading" id="utx-about-heading">Neden Uniturk?</h2><p class="utx-about-description">Güvenilir iş ortağınız olarak daha verimli, daha sürdürülebilir bir gelecek için çalışıyoruz. İhtiyaçlarınıza uygun, güvenli ve yönetilebilir BT altyapılarıyla teknolojiyi işiniz için anlamlı kılıyoruz.</p></div><ul class="utx-about-points"><li><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg><div><h3>İhtiyacınıza özel yaklaşım</h3><p>İş hedeflerinize uygun teknoloji planlaması.</p></div></li><li><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5Zm-9 10 9 5 9-5"/></svg><div><h3>Uçtan uca çözümler</h3><p>Analizden uygulamaya bir bütün olarak hizmet.</p></div></li><li><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-7.5 3v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg><div><h3>Güvenilir altyapılar</h3><p>Güvenlik ve iş sürekliliğini gözeten tasarım.</p></div></li><li><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg><div><h3>Sürekli destek</h3><p>Yönetim ve teknik destekle yanınızdayız.</p></div></li></ul></div></section>
+<!-- UTX NEDEN UNITURK END -->
+<!-- HAKKIMIZDA + PROJELER -->
+<section class="showcase">
+    <div class="showcase-about img-mountain" id="hakkimizda">
+        <div class="showcase-about-text">
+            <h2>Teknoloji ile<br />sınırları birlikte<br />aşıyoruz.</h2>
+            <p>Güvenilir iş ortağınız olarak daha verimli, daha sürdürülebilir bir gelecek için çalışıyoruz.</p>
+        </div>
+    </div>
+
+    <div class="showcase-projects" id="projeler">
+        <div class="projects-head">
+            <h2>Öne Çıkan Projeler</h2>
+            <a class="link-arrow" href="/referanslar/projelerimiz">Tüm Projeler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        </div>
+
+        <div class="projects-track" id="projectsTrack">
+                <article class="project-card">
+                    <div class="project-media img-building-glass"></div>
+                    <div class="project-body">
+                        <h3>&#xC7;ok Lokasyonlu SD-WAN D&#xF6;n&#xFC;&#x15F;&#xFC;m&#xFC;</h3>
+                        <ul class="tags">
+                                <li>SD-WAN</li>
+                                <li>Fortinet</li>
+                                <li>High Availability</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-datacenter"></div>
+                    <div class="project-body">
+                        <h3>Yeni Nesil Veri Merkezi Altyap&#x131;s&#x131;</h3>
+                        <ul class="tags">
+                                <li>Nutanix</li>
+                                <li>Cohesity</li>
+                                <li>Cisco</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-campus"></div>
+                    <div class="project-body">
+                        <h3>Merkezi Y&#xF6;netilen Network D&#xF6;n&#xFC;&#x15F;&#xFC;m&#xFC;</h3>
+                        <ul class="tags">
+                                <li>Cisco</li>
+                                <li>Wireless</li>
+                                <li>Automation</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-datacenter"></div>
+                    <div class="project-body">
+                        <h3>Hibrit Bulut ve Felaket Kurtarma</h3>
+                        <ul class="tags">
+                                <li>VMware</li>
+                                <li>Microsoft</li>
+                                <li>DR</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-campus"></div>
+                    <div class="project-body">
+                        <h3>Kamp&#xFC;s Kablosuz A&#x11F; Modernizasyonu</h3>
+                        <ul class="tags">
+                                <li>Wireless</li>
+                                <li>NAC</li>
+                                <li>Cisco</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-building-glass"></div>
+                    <div class="project-body">
+                        <h3>U&#xE7;tan Uca Siber G&#xFC;venlik Mimarisi</h3>
+                        <ul class="tags">
+                                <li>Fortinet</li>
+                                <li>SOC</li>
+                                <li>EDR</li>
+                        </ul>
+                    </div>
+                </article>
+        </div>
+
+        <div class="projects-controls">
+            <div class="projects-dots" id="projectsDots"></div>
+            <button type="button" class="next-img-btn" id="projectsNext" aria-label="Sonraki projeler"></button>
+        </div>
+    </div>
+</section>
+
+<!-- CTA / İLETİŞİM -->
+<section class="cta" id="iletisim">
+    <div class="wrap cta-inner">
+        <div class="cta-text">
+            <span class="cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none">
+                    <defs>
+                        <linearGradient id="ctaLayer" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#7fd3ff" />
+                            <stop offset="1" stop-color="#1e6bff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M40 52 8 38l32-14 32 14-32 14Z" fill="#0d3d8a" stroke="#4fb6ff" stroke-width="1.5" />
+                    <path d="M40 42 8 28l32-14 32 14-32 14Z" fill="#124fb0" stroke="#58c0ff" stroke-width="1.5" opacity=".95" />
+                    <path d="M40 32 8 18 40 4l32 14-32 14Z" fill="url(#ctaLayer)" stroke="#9fe0ff" stroke-width="1.5" />
+                    <path d="M40 64 8 50v-4l32 14 32-14v4L40 64Z" fill="#0a2f6b" />
+                </svg>
+            </span>
+            <div>
+                <span class="cta-eyebrow">Fikirden gerçeğe</span>
+                <h2>Bir sonraki teknoloji projenizi<br />birlikte tasarlayalım.</h2>
+            </div>
+        </div>
+        <a class="btn-ut btn-ut-gradient" href="mailto:info@uniturk.com.tr">Proje Fikri Konuşalım <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        <ul class="cta-contact">
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 4.2 2 2 0 0 1 3.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" /></svg>
+                <a href="tel:+902162125383">+90 216 212 53 83</a>
+            </li>
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6.5 8.5 6.5 8.5-6.5" /></svg>
+                <a href="mailto:info@uniturk.com.tr">info@uniturk.com.tr</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div class="utx-page" id="utx-services-view" hidden aria-label="Hizmetlerimiz"><section class="page-banner" style="background-image: url('https://dev.munitek.com/img/sayfa/cozumlerimiz.jpg')">
+    <div class="wrap page-banner-inner">
+        <nav class="breadcrumb-nav" aria-label="Sayfa konumu">
+            <a href="/" data-utx-view="home" aria-label="Ana Sayfa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5Z" /></svg>
+            </a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+            <span aria-current="page">Hizmetlerimiz</span>
+        </nav>
+        <h1>Hizmetlerimiz</h1>
+        <p>Altyap&#x131;dan g&#xFC;venli&#x11F;e, dan&#x131;&#x15F;manl&#x131;ktan 7/24 deste&#x11F;e u&#xE7;tan uca BT &#xE7;&#xF6;z&#xFC;m ve hizmetleri.</p>
+    </div>
+</section><section class="page-body"><div class="wrap"><div class="page-placeholder"><h2>Hizmetlerimiz</h2><p>Altyapıdan güvenliğe, danışmanlıktan 7/24 desteğe uçtan uca BT çözüm ve hizmetleri.</p></div><div class="utx-service-grid"><article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M12 7.2v4.3m0 0-5.3 4.8m5.3-4.8 5.3 4.8"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/ag-altyapilari-ve-sd-wan" data-utx-service="ag-altyapilari-ve-sd-wan">Ağ Altyapıları ve SD-WAN</a></h3></div><p>Güvenli, esnek ve yüksek performanslı kurumsal ağ altyapıları ve SD-WAN çözümleri.</p><ul class="utx-service-topics" aria-label="Ağ Altyapıları ve SD-WAN alt başlıkları"><li><a href="/hizmetler/ag-altyapilari-ve-sd-wan#kurumsal-ag" data-utx-service="ag-altyapilari-ve-sd-wan" data-utx-topic="kurumsal-ag">Kurumsal Ağ ve Kampüs</a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan#kablosuz-ag" data-utx-service="ag-altyapilari-ve-sd-wan" data-utx-topic="kablosuz-ag">Kablosuz Ağ Çözümleri</a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan#sd-wan" data-utx-service="ag-altyapilari-ve-sd-wan" data-utx-topic="sd-wan">SD-WAN ve Şube Bağlantıları</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-7.5 3v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/siber-guvenlik" data-utx-service="siber-guvenlik">Siber Güvenlik</a></h3></div><p>Kurumsal verilerinizi ve sistemlerinizi korumaya yönelik uçtan uca güvenlik çözümleri.</p><ul class="utx-service-topics" aria-label="Siber Güvenlik alt başlıkları"><li><a href="/hizmetler/siber-guvenlik#ag-guvenligi" data-utx-service="siber-guvenlik" data-utx-topic="ag-guvenligi">Ağ ve Erişim Güvenliği</a></li>
+<li><a href="/hizmetler/siber-guvenlik#soc-edr" data-utx-service="siber-guvenlik" data-utx-topic="soc-edr">SOC ve EDR Çözümleri</a></li>
+<li><a href="/hizmetler/siber-guvenlik#guvenlik-operasyonlari" data-utx-service="siber-guvenlik" data-utx-topic="guvenlik-operasyonlari">Güvenlik Operasyonları</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/veri-merkezi-ve-bulut" data-utx-service="veri-merkezi-ve-bulut">Veri Merkezi ve Bulut</a></h3></div><p>Modern veri merkezi altyapıları ve ölçeklenebilir bulut çözümleri ile sürdürülebilir BT operasyonları.</p><ul class="utx-service-topics" aria-label="Veri Merkezi ve Bulut alt başlıkları"><li><a href="/hizmetler/veri-merkezi-ve-bulut#sanallastirma-hci" data-utx-service="veri-merkezi-ve-bulut" data-utx-topic="sanallastirma-hci">Sanallaştırma ve HCI</a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut#hibrit-bulut" data-utx-service="veri-merkezi-ve-bulut" data-utx-topic="hibrit-bulut">Hibrit Bulut Çözümleri</a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut#yedekleme-felaket-kurtarma" data-utx-service="veri-merkezi-ve-bulut" data-utx-topic="yedekleme-felaket-kurtarma">Yedekleme ve Felaket Kurtarma</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/bt-danismanligi" data-utx-service="bt-danismanligi">BT Danışmanlığı</a></h3></div><p>İhtiyaçlarınıza özel, stratejik ve sürdürülebilir BT danışmanlık hizmetleri.</p><ul class="utx-service-topics" aria-label="BT Danışmanlığı alt başlıkları"><li><a href="/hizmetler/bt-danismanligi#altyapi-analizi" data-utx-service="bt-danismanligi" data-utx-topic="altyapi-analizi">Altyapı ve İhtiyaç Analizi</a></li>
+<li><a href="/hizmetler/bt-danismanligi#teknoloji-yol-haritasi" data-utx-service="bt-danismanligi" data-utx-topic="teknoloji-yol-haritasi">Teknoloji Yol Haritası</a></li>
+<li><a href="/hizmetler/bt-danismanligi#proje-danismanligi" data-utx-service="bt-danismanligi" data-utx-topic="proje-danismanligi">Proje Danışmanlığı</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/yonetilen-hizmetler" data-utx-service="yonetilen-hizmetler">Yönetilen Hizmetler</a></h3></div><p>BT altyapınızın sürekli, güvenli ve verimli yönetilmesine yönelik uçtan uca hizmetler.</p><ul class="utx-service-topics" aria-label="Yönetilen Hizmetler alt başlıkları"><li><a href="/hizmetler/yonetilen-hizmetler#izleme-yonetim" data-utx-service="yonetilen-hizmetler" data-utx-topic="izleme-yonetim">Altyapı İzleme ve Yönetimi</a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler#bakim-operasyon" data-utx-service="yonetilen-hizmetler" data-utx-topic="bakim-operasyon">Bakım ve Operasyon</a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler#sureklilik" data-utx-service="yonetilen-hizmetler" data-utx-topic="sureklilik">İş Sürekliliği</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5Zm-9 10 9 5 9-5"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/sistem-entegrasyonu" data-utx-service="sistem-entegrasyonu">Sistem Entegrasyonu</a></h3></div><p>Farklı teknolojileri bir bütün halinde çalışacak şekilde bir araya getiren esnek çözümler.</p><ul class="utx-service-topics" aria-label="Sistem Entegrasyonu alt başlıkları"><li><a href="/hizmetler/sistem-entegrasyonu#kurulum-devreye-alma" data-utx-service="sistem-entegrasyonu" data-utx-topic="kurulum-devreye-alma">Kurulum ve Devreye Alma</a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu#migrasyon" data-utx-service="sistem-entegrasyonu" data-utx-topic="migrasyon">Migrasyon ve Geçiş</a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu#altyapi-entegrasyonu" data-utx-service="sistem-entegrasyonu" data-utx-topic="altyapi-entegrasyonu">Altyapı Entegrasyonu</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/teknik-destek" data-utx-service="teknik-destek">Teknik Destek</a></h3></div><p>Uzman ekibimizle 7/24 hızlı, etkin ve kesintisiz teknik destek hizmeti.</p><ul class="utx-service-topics" aria-label="Teknik Destek alt başlıkları"><li><a href="/hizmetler/teknik-destek#uzaktan-destek" data-utx-service="teknik-destek" data-utx-topic="uzaktan-destek">Uzaktan Teknik Destek</a></li>
+<li><a href="/hizmetler/teknik-destek#yerinde-destek" data-utx-service="teknik-destek" data-utx-topic="yerinde-destek">Yerinde Destek</a></li>
+<li><a href="/hizmetler/teknik-destek#bakim-destek" data-utx-service="teknik-destek" data-utx-topic="bakim-destek">Bakım ve Destek Planları</a></li></ul></article>
+<article class="utx-service-card"><div class="utx-service-head"><span class="utx-service-icon"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16V4h16v12M2 16h20v4H2Z"/></svg></span><h3 class="utx-service-title"><a href="/hizmetler/sektorler" data-utx-service="bt-urunleri-ve-diger-cozumler">BT Ürünleri ve Diğer Çözümler</a></h3></div><p>Laptop, masaüstü bilgisayar, donanım ve yazılım ihtiyaçlarınıza uygun ürün ve çözümler.</p><ul class="utx-service-topics" aria-label="BT Ürünleri ve Diğer Çözümler alt başlıkları"><li><a href="/hizmetler/sektorler#laptop-masaustu" data-utx-service="bt-urunleri-ve-diger-cozumler" data-utx-topic="laptop-masaustu">Laptop ve Masaüstü Bilgisayarlar</a></li>
+<li><a href="/hizmetler/sektorler#sunucu-depolama" data-utx-service="bt-urunleri-ve-diger-cozumler" data-utx-topic="sunucu-depolama">Sunucu ve Depolama Ürünleri</a></li>
+<li><a href="/hizmetler/sektorler#lisans-cevre-birimleri" data-utx-service="bt-urunleri-ve-diger-cozumler" data-utx-topic="lisans-cevre-birimleri">Yazılım, Lisans ve Çevre Birimleri</a></li></ul></article></div></div></section></div>
+<div class="utx-page" id="utx-blog-view" hidden aria-label="Blog"><section class="page-banner" style="background-image: url('https://dev.munitek.com/img/sayfa/cozumlerimiz.jpg')">
+    <div class="wrap page-banner-inner">
+        <nav class="breadcrumb-nav" aria-label="Sayfa konumu">
+            <a href="/" data-utx-view="home" aria-label="Ana Sayfa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5Z" /></svg>
+            </a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+            <span aria-current="page">Blog</span>
+        </nav>
+        <h1>Blog</h1>
+        <p>BT altyap&#x131;s&#x131;, siber g&#xFC;venlik ve dijital d&#xF6;n&#xFC;&#x15F;&#xFC;m &#xFC;zerine g&#xFC;ncel yaz&#x131;lar.</p>
+    </div>
+</section><section class="page-body"><div class="wrap"><div class="page-placeholder"><h2>Blog</h2><p>BT altyapısı, siber güvenlik ve dijital dönüşüm üzerine güncel yazılar.</p><p class="page-placeholder-note">Örnek yazılar · Yayın içerikleri hazırlanıyor.</p></div><div class="utx-blog-grid">
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-network" x2="1" y2="1"><stop stop-color="#d8ebff"/><stop offset="1" stop-color="#94c7f7"/></linearGradient><linearGradient id="ba-cloud" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d5ecff"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-network)"/><path d="M0 121Q95 65 220 119T440 101V150H0Z" fill="#fff" opacity=".17"/><g fill="none" stroke="#f4fbff" stroke-width="2"><path d="M220 68 106 116M220 68l118 48M220 68v66" stroke-dasharray="5 5"/><ellipse cx="220" cy="97" rx="155" ry="43" opacity=".55"/></g><path d="M186 79h69a22 22 0 0 0 1-44 31 31 0 0 0-59-3 24 24 0 0 0-11 47Z" fill="url(#ba-cloud)" stroke="#fff" stroke-width="2"/><text x="220" y="52" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#0863b7">SD-WAN</text><g fill="#237cc2" stroke="#e2f5ff" stroke-width="1.5"><path d="m88 103 18-9 18 9v28H88Z"/><path d="m320 103 18-9 18 9v28h-36Z"/><path d="m203 132 17-9 17 9v18h-34Z"/></g><g fill="#bdeaff"><path d="M96 107h5v6h-5zm13 0h5v6h-5zm-13 11h5v6h-5zm13 0h5v6h-5zm219-11h5v6h-5zm13 0h5v6h-5zm-13 11h5v6h-5zm13 0h5v6h-5z"/></g></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M12 7.2v4.3m0 0-5.3 4.8m5.3-4.8 5.3 4.8"/></svg>Ağ Altyapıları</span><time datetime="2025-03-12">12 Mar 2025</time></div>
+                    <h2>SD-WAN ile Şube Ağlarında Verimlilik</h2>
+                    <p>Dağınık şube yapılarında daha esnek, güvenli ve maliyet etkin ağ yönetimi için SD-WAN’ın sunduğu avantajları inceleyin.</p>
+                    <a class="utx-read-more" data-blog-open="sd-wan-sube-aglari" href="#/blog/sd-wan-sube-aglari">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-security" x2="1" y2="1"><stop stop-color="#2e86cb"/><stop offset="1" stop-color="#114b8c"/></linearGradient><linearGradient id="ba-shield" x2="1" y2="1"><stop stop-color="#9deaff"/><stop offset="1" stop-color="#2e85d3"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-security)"/><g fill="none" stroke="#9bddff"><circle cx="220" cy="74" r="61" opacity=".4"/><circle cx="220" cy="74" r="88" opacity=".2" stroke-dasharray="3 6"/><circle cx="220" cy="74" r="115" opacity=".12"/></g><g fill="#6edbff"><circle cx="110" cy="53" r="2"/><circle cx="320" cy="97" r="3"/><circle cx="339" cy="31" r="2"/><circle cx="87" cy="116" r="2"/></g><path d="m220 20-43 16v34c0 31 19 50 43 61 24-11 43-30 43-61V36Z" fill="url(#ba-shield)" stroke="#e0f7ff" stroke-width="4"/><path d="m220 29-34 13v29c0 24 15 41 34 51 19-10 34-27 34-51V42Z" fill="#0d5fa8" opacity=".7"/><rect x="202" y="62" width="36" height="30" rx="5" fill="#e0f6ff"/><path d="M209 62V52a11 11 0 0 1 22 0v10" fill="none" stroke="#e0f6ff" stroke-width="5"/><circle cx="220" cy="75" r="4" fill="#1766aa"/><path d="M220 78v6" stroke="#1766aa" stroke-width="3"/></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-7.5 3v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg>Siber Güvenlik</span><time datetime="2025-03-10">10 Mar 2025</time></div>
+                    <h2>Siber Güvenlikte Proaktif Yaklaşım</h2>
+                    <p>Tehditleri oluşmadan önce tespit eden, riskleri azaltan proaktif siber güvenlik stratejileriyle kurumunuzu daha dayanıklı hale getirin.</p>
+                    <a class="utx-read-more" data-blog-open="proaktif-siber-guvenlik" href="#/blog/proaktif-siber-guvenlik">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-data" x2="1" y2="1"><stop stop-color="#d5eaff"/><stop offset="1" stop-color="#80b9ed"/></linearGradient><linearGradient id="ba-rack" x2="1" y2="1"><stop stop-color="#257fc2"/><stop offset="1" stop-color="#064c8c"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-data)"/><path d="M0 120 440 94v56H0Z" fill="#b6ddff"/><path d="M152 131 298 107l57 28-144 15Z" fill="#4e98cc" opacity=".3"/><g stroke="#a9ddff" stroke-width="2"><path d="m133 45 29-8v87l-29-8Z" fill="url(#ba-rack)"/><path d="m169 36 34-9v105l-34-8Z" fill="url(#ba-rack)"/><path d="m211 26 39-10v125l-39-8Z" fill="url(#ba-rack)"/><path d="m258 17 44-11v144l-44-8Z" fill="url(#ba-rack)"/></g><g fill="none" stroke="#8ccbf5" stroke-width="4"><path d="m139 58 17-4m-17 18 17-4m-17 18 17-4m-17 18 17-4m19-40 22-5m-22 23 22-5m-22 23 22-5m-22 23 22-5m20-50 27-6m-27 25 27-6m-27 25 27-6m-27 25 27-6m-27 25 27-6m20-76 31-7m-31 27 31-7m-31 27 31-7m-31 27 31-7m-31 27 31-7"/></g><g fill="#74f1df"><circle cx="291" cy="36" r="2"/><circle cx="291" cy="56" r="2"/><circle cx="291" cy="76" r="2"/><circle cx="291" cy="96" r="2"/><circle cx="239" cy="45" r="2"/><circle cx="239" cy="64" r="2"/></g></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>Veri Merkezi</span><time datetime="2025-03-07">7 Mar 2025</time></div>
+                    <h2>Veri Merkezi Modernizasyonu</h2>
+                    <p>Mevcut altyapınızı daha esnek, ölçeklenebilir ve verimli bir yapıya kavuşturmak için modernizasyon adımlarını keşfedin.</p>
+                    <a class="utx-read-more" data-blog-open="veri-merkezi-modernizasyonu" href="#/blog/veri-merkezi-modernizasyonu">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-cloud-bg" x2="1" y2="1"><stop stop-color="#8bc5f3"/><stop offset="1" stop-color="#3b88d0"/></linearGradient><linearGradient id="ba-cloud-fill" x2="0" y2="1"><stop stop-color="#f4fbff"/><stop offset="1" stop-color="#78bff3"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-cloud-bg)"/><path d="M0 117Q65 70 143 119T301 111T440 95V150H0Z" fill="#c5e6ff" opacity=".55"/><path d="M0 135Q80 101 150 133T300 126T440 123V150H0Z" fill="#e8f6ff" opacity=".3"/><path d="M166 105h105a29 29 0 0 0 0-58 45 45 0 0 0-84-11 35 35 0 0 0-21 69Z" fill="url(#ba-cloud-fill)" stroke="#e9f7ff" stroke-width="2"/><g fill="none" stroke="#f0fbff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M220 128V65m-15 16 15-16 15 16M188 129V99m-9 9 9-9 9 9m55 21V99m-9 9 9-9 9 9"/></g></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.5 9.2 4.7 4.7 0 0 0 7 18.5Z"/></svg>Bulut</span><time datetime="2025-03-05">5 Mar 2025</time></div>
+                    <h2>Bulut Geçişinde Dikkat Edilmesi Gerekenler</h2>
+                    <p>Bulut’a geçiş sürecinde doğru planlama, güvenlik ve maliyet yönetimi ile sorunsuz bir dönüşüm sağlayın.</p>
+                    <a class="utx-read-more" data-blog-open="bulut-gecis-plani" href="#/blog/bulut-gecis-plani">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-managed" x2="1" y2="1"><stop stop-color="#6cafe9"/><stop offset="1" stop-color="#a2d0f5"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-managed)"/><g fill="none" stroke="#e4f5ff"><circle cx="220" cy="73" r="59" opacity=".7"/><circle cx="220" cy="73" r="79" opacity=".4" stroke-dasharray="3 6"/><circle cx="220" cy="73" r="106" opacity=".2"/></g><path d="M188 84V65a32 32 0 0 1 64 0v19" fill="none" stroke="#075693" stroke-width="8"/><path d="M189 84V65a31 31 0 0 1 61-7" fill="none" stroke="#c8efff" stroke-width="3"/><rect x="178" y="70" width="18" height="34" rx="8" fill="#116ba8" stroke="#bdeaff" stroke-width="2"/><rect x="244" y="70" width="18" height="34" rx="8" fill="#116ba8" stroke="#bdeaff" stroke-width="2"/><path d="M252 104v7a13 13 0 0 1-13 13h-13" fill="none" stroke="#075693" stroke-width="5"/><rect x="213" y="118" width="18" height="10" rx="5" fill="#075693"/><g fill="#ddf5ff"><circle cx="114" cy="57" r="2"/><circle cx="323" cy="91" r="2"/><circle cx="300" cy="28" r="2"/><circle cx="134" cy="116" r="2"/></g></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg>Yönetilen Hizmetler</span><time datetime="2025-03-03">3 Mar 2025</time></div>
+                    <h2>Yönetilen Hizmetlerin İş Sürekliliğine Katkısı</h2>
+                    <p>Proaktif izleme, yönetim ve operasyonel destek ile BT altyapınızda kesintisiz ve güvenilir bir iş sürekliliği oluşturun.</p>
+                    <a class="utx-read-more" data-blog-open="yonetilen-hizmetler-is-surekliligi" href="#/blog/yonetilen-hizmetler-is-surekliligi">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-integration" x2="1" y2="1"><stop stop-color="#5ba6e3"/><stop offset="1" stop-color="#145ca6"/></linearGradient><linearGradient id="ba-layer" x2="1" y2="1"><stop stop-color="#e2f6ff"/><stop offset="1" stop-color="#72bff0"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-integration)"/><g fill="none" stroke="#acdfff" opacity=".18"><path d="m80 90 140-70 140 70-140 70Zm-30 20L220 25l170 85M80 90l140 70M150 55l140 70M290 55 150 125" stroke-dasharray="3 5"/></g><g stroke="#c5efff" stroke-width="2" stroke-linejoin="round"><path d="m220 91 54 23-54 24-54-24Z" fill="#63b3ee"/><path d="m166 114 54 24 54-24v8l-54 23-54-23Z" fill="#1b76be"/><path d="m220 56 54 23-54 24-54-24Z" fill="url(#ba-layer)"/><path d="m166 79 54 24 54-24v8l-54 23-54-23Z" fill="#3998d8"/><path d="m220 21 54 23-54 24-54-24Z" fill="url(#ba-layer)"/><path d="m166 44 54 24 54-24v8l-54 23-54-23Z" fill="#73c5f4"/></g><path d="M220 75v17m0 18v17" stroke="#d7f5ff" stroke-width="2" stroke-dasharray="2 3"/></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5Zm-9 10 9 5 9-5"/></svg>Sistem Entegrasyonu</span><time datetime="2025-02-28">28 Şub 2025</time></div>
+                    <h2>Sistem Entegrasyonunda Doğru Mimari</h2>
+                    <p>Farklı BT bileşenlerini uyumlu bir şekilde bir araya getirerek daha verimli, esnek ve ölçeklenebilir bir altyapı oluşturun.</p>
+                    <a class="utx-read-more" data-blog-open="sistem-entegrasyonu-mimari" href="#/blog/sistem-entegrasyonu-mimari">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-support" x2="1" y2="1"><stop stop-color="#4d9bda"/><stop offset="1" stop-color="#8bc2f0"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-support)"/><g fill="none" stroke="#e1f6ff"><path d="M0 129Q104 60 211 112T440 85" opacity=".4"/><path d="M0 143Q106 89 221 128T440 106" opacity=".3" stroke-dasharray="2 5"/></g><path d="M177 64a46 46 0 0 1 76-24" fill="none" stroke="#effaff" stroke-width="7" stroke-linecap="round"/><path d="m244 27 15 21-25-1Z" fill="#effaff"/><path d="M263 87a46 46 0 0 1-76 24" fill="none" stroke="#effaff" stroke-width="7" stroke-linecap="round"/><path d="m196 124-15-21 25 1Z" fill="#effaff"/><text x="220" y="87" text-anchor="middle" fill="#f6fcff" font-family="sans-serif" font-size="36" font-weight="700">7/24</text></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg>Teknik Destek</span><time datetime="2025-02-25">25 Şub 2025</time></div>
+                    <h2>7/24 Teknik Desteğin Önemi</h2>
+                    <p>Kritik BT sistemlerinizin kesintisiz çalışması ve hızlı çözüm süreçleri için 7/24 teknik desteğin sağladığı katma değeri öğrenin.</p>
+                    <a class="utx-read-more" data-blog-open="teknik-destek-onemi" href="#/blog/teknik-destek-onemi">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-growth" x2="1" y2="1"><stop stop-color="#3884c9"/><stop offset="1" stop-color="#71b2e9"/></linearGradient><linearGradient id="ba-bar" x2="0" y2="1"><stop stop-color="#f1fbff"/><stop offset="1" stop-color="#9ad6fc"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-growth)"/><path d="M0 141Q90 86 190 126T440 99" fill="none" stroke="#d9f2ff" opacity=".4"/><path d="M0 122Q100 79 208 116T440 81" fill="none" stroke="#d9f2ff" opacity=".25" stroke-dasharray="2 5"/><g fill="url(#ba-bar)"><rect x="155" y="115" width="27" height="35" rx="3"/><rect x="193" y="98" width="27" height="52" rx="3"/><rect x="231" y="78" width="27" height="72" rx="3"/><rect x="269" y="53" width="27" height="97" rx="3"/></g><path d="M143 94c68-5 115-33 157-74" fill="none" stroke="#e4f7ff" stroke-width="7" stroke-linecap="round"/><path d="m283 17 27-5-7 27-8-13Z" fill="#e4f7ff"/></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 17v-5m5 5V9m5 8V6m5 11V3M3 8l5-4 5 1 8-4"/></svg>Dijital Dönüşüm</span><time datetime="2025-02-20">20 Şub 2025</time></div>
+                    <h2>Dijital Dönüşüm Yolculuğunda BT</h2>
+                    <p>İş süreçlerinizi daha çevik, verimli ve rekabetçi hale getirmek için dijital dönüşümde BT’nin stratejik rolünü keşfedin.</p>
+                    <a class="utx-read-more" data-blog-open="dijital-donusum-bt" href="#/blog/dijital-donusum-bt">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+            <article class="utx-blog-card">
+                <div class="utx-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-globe" x2="1" y2="1"><stop stop-color="#2d7cc3"/><stop offset="1" stop-color="#0d5195"/></linearGradient><radialGradient id="ba-glow"><stop stop-color="#91d4ff" stop-opacity=".6"/><stop offset="1" stop-color="#79caff" stop-opacity="0"/></radialGradient></defs><rect width="440" height="150" fill="url(#ba-globe)"/><circle cx="220" cy="119" r="115" fill="url(#ba-glow)"/><g fill="none" stroke="#94dbff" stroke-width="1.2"><circle cx="220" cy="119" r="101"/><ellipse cx="220" cy="119" rx="69" ry="101"/><ellipse cx="220" cy="119" rx="30" ry="101"/><ellipse cx="220" cy="119" rx="101" ry="35"/><ellipse cx="220" cy="119" rx="93" ry="71"/><path d="M119 119h202M220 18v132M135 65l51-40 69 1 50 44-85 14-85-19 25 54 60-35 57 35 28-49m-145 49 24 31m93-31-24 31" opacity=".8"/></g><g fill="#e4faff"><circle cx="220" cy="18" r="3"/><circle cx="186" cy="25" r="3"/><circle cx="255" cy="26" r="3"/><circle cx="135" cy="65" r="3"/><circle cx="305" cy="70" r="3"/><circle cx="220" cy="84" r="3"/><circle cx="160" cy="119" r="3"/><circle cx="277" cy="119" r="3"/><circle cx="119" cy="119" r="3"/><circle cx="321" cy="119" r="3"/></g></svg>
+                </div>
+                <div class="utx-blog-body">
+                    <div class="utx-blog-meta"><span class="utx-blog-category"><svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M12 7.2v4.3m0 0-5.3 4.8m5.3-4.8 5.3 4.8"/></svg>Ağ Altyapıları</span><time datetime="2025-02-18">18 Şub 2025</time></div>
+                    <h2>Kurumsal Ağ Altyapısında Yeni Trendler</h2>
+                    <p>Daha güvenli, esnek ve yüksek performanslı ağlar için kurumsal ağ altyapılarında öne çıkan güncel trendleri inceleyin.</p>
+                    <a class="utx-read-more" data-blog-open="kurumsal-ag-trendleri" href="#/blog/kurumsal-ag-trendleri">Devamını Oku <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+                
+            </article>
+        </div></div></section></div>
+<div class="utx-page" id="utx-detail-view" hidden aria-label="Hizmet detayı"><section class="page-banner" style="background-image: url('https://dev.munitek.com/img/sayfa/cozumlerimiz.jpg')"><div class="wrap page-banner-inner"><nav class="breadcrumb-nav" aria-label="Sayfa konumu"><a href="/" data-utx-view="home">Ana Sayfa</a><span> / </span><a href="/hizmetler" data-utx-view="services">Hizmetlerimiz</a></nav><h1 id="utx-detail-title"></h1><p id="utx-detail-description"></p></div></section><section class="page-body"><div class="wrap"><div class="utx-service-detail" id="utx-detail-topics"></div><a class="btn-ut btn-ut-primary" href="/iletisim">İletişime Geçin <svg class="utx-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></section></div>
+<div class="utx-page utx-article-page" id="utx-article-view" hidden>
+    <article class="utx-article" aria-labelledby="utx-article-title">
+        <div class="utx-article-heading">
+            <nav class="utx-article-nav" aria-label="Blog gezinmesi"><a href="#/blog" data-utx-view="blog"><span aria-hidden="true">←</span> Tüm yazılar</a><span>UNITURK JOURNAL</span></nav>
+            <div class="utx-article-kicker"><span id="utx-article-category"></span><span class="utx-article-sample">Örnek yazı</span></div>
+            <h1 id="utx-article-title" tabindex="-1"></h1>
+            <p class="utx-article-deck" id="utx-article-deck"></p>
+            <div class="utx-article-byline"><span class="utx-article-avatar" aria-hidden="true">U</span><div><strong>Uniturk Editör</strong><div class="utx-article-meta"><time id="utx-article-date"></time><span aria-hidden="true">·</span><span id="utx-article-reading"></span></div></div></div>
+        </div>
+        <figure class="utx-article-cover" id="utx-article-cover" aria-label="Yazı kapak görseli"></figure>
+        <div class="utx-article-prose" id="utx-article-body"></div>
+        <footer class="utx-article-end"><span class="utx-article-end-mark" aria-hidden="true">◆</span><p>Teknolojiyi işiniz için anlamlı kılan fikirler.</p><a href="#/blog" data-utx-view="blog">Bloga geri dön <span aria-hidden="true">→</span></a></footer>
+    </article>
+    <section class="utx-article-related" aria-labelledby="utx-related-heading"><div class="utx-article-related-heading"><span>OKUMAYA DEVAM EDİN</span><h2 id="utx-related-heading">İlginizi çekebilir</h2></div><div class="utx-article-related-grid" id="utx-article-related"></div></section>
+</div>
+
+    </main>
+
+    <footer class="site-footer img-footer">
+        <div class="wrap footer-inner">
+            <a class="brand" href="/" aria-label="Unitürk Bilişim Teknolojileri - Ana Sayfa">
+                <img class="brand-logo" src="https://dev.munitek.com/img/logo.png" alt="Unitürk" width="331" height="48" />
+                <span class="brand-sub">Bilişim Teknolojileri</span>
+            </a>
+            <nav class="footer-nav" aria-label="Alt menü">
+                    <a href="/kurumsal/hakkimizda">Kurumsal</a>
+                    <a href="/hizmetler">Hizmetlerimiz</a>
+                    <a href="/is-ortaklarimiz">&#x130;&#x15F; Ortaklar&#x131;m&#x131;z</a>
+                    <a href="/referanslar/musteri-referanslari">Referanslar</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/iletisim">&#x130;leti&#x15F;im</a>
+            </nav>
+            <div class="footer-copy">&copy; 2026 Unitürk. Tüm hakları saklıdır.</div>
+        </div>
+        <div class="wrap footer-links">
+            <div class="footer-group">
+                <h3 class="footer-group-title">Kurumsal Bakış</h3>
+                <ul>
+                    <li><a href="/kurumsal/vizyonumuz">Vizyonumuz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                    <li><a href="/kurumsal/misyonumuz">Misyonumuz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <h3 class="footer-group-title">Güven &amp; Standartlar</h3>
+                <ul>
+                    
+                    <li><a href="/bilgi-guvenligi-politikasi">Bilgi Güvenliği Politikası <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-group utx-legal-bar">
+                <h3 class="footer-group-title">Yasal &amp; Gizlilik</h3>
+                <ul>
+                    <li><a href="/kurumsal/belgelerimiz">Belgelerimiz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                    <li><a href="/kvkk-aydinlatma-metni">KVKK Aydınlatma Metni <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                    <li><a href="/gizlilik-politikasi">Gizlilik Politikası <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://dev.munitek.com/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://dev.munitek.com/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://dev.munitek.com/js/site.js?v=4DNNy-49A_lb9xPH-rYyHqcV-S-DtEkhhp4YcjnX9Og"></script>
+    
+<script type="application/json" id="utx-services-data">[
+  {"slug":"ag-altyapilari-ve-sd-wan","title":"Ağ Altyapıları ve SD-WAN","icon":"network","description":"Güvenli, esnek ve yüksek performanslı kurumsal ağ altyapıları ve SD-WAN çözümleri.","topics":[{"slug":"kurumsal-ag","title":"Kurumsal Ağ ve Kampüs","text":"Ofis, kampüs ve şube ağlarını kurumunuzun bağlantı, kapasite ve büyüme ihtiyaçlarına göre birlikte planlıyoruz."},{"slug":"kablosuz-ag","title":"Kablosuz Ağ Çözümleri","text":"Çalışma alanlarınızın kapsama ve erişim ihtiyaçlarını değerlendirerek yönetilebilir kablosuz ağ yapıları tasarlıyoruz."},{"slug":"sd-wan","title":"SD-WAN ve Şube Bağlantıları","text":"Birden fazla lokasyonun bağlantılarını merkezi yönetim ve iş sürekliliği hedefleriniz doğrultusunda ele alıyoruz."}]},
+  {"slug":"siber-guvenlik","title":"Siber Güvenlik","icon":"shield","description":"Kurumsal verilerinizi ve sistemlerinizi korumaya yönelik uçtan uca güvenlik çözümleri.","topics":[{"slug":"ag-guvenligi","title":"Ağ ve Erişim Güvenliği","text":"Ağınızın ve kullanıcı erişimlerinin güvenlik ihtiyaçlarını mevcut altyapınızla birlikte değerlendiriyoruz."},{"slug":"soc-edr","title":"SOC ve EDR Çözümleri","text":"Güvenlik izleme ve uç nokta korumasını kurumunuzun operasyonel ihtiyaçları doğrultusunda planlıyoruz."},{"slug":"guvenlik-operasyonlari","title":"Güvenlik Operasyonları","text":"Güvenlik bileşenlerinin birlikte yönetilmesine ve sürdürülebilir operasyon süreçlerinin oluşturulmasına destek veriyoruz."}]},
+  {"slug":"veri-merkezi-ve-bulut","title":"Veri Merkezi ve Bulut","icon":"server","description":"Modern veri merkezi altyapıları ve ölçeklenebilir bulut çözümleri ile sürdürülebilir BT operasyonları.","topics":[{"slug":"sanallastirma-hci","title":"Sanallaştırma ve HCI","text":"Sunucu, depolama ve sanallaştırma ihtiyaçlarınızı birlikte ele alarak kurumunuza uygun veri merkezi mimarileri tasarlıyoruz."},{"slug":"hibrit-bulut","title":"Hibrit Bulut Çözümleri","text":"Mevcut altyapınız ile bulut kaynaklarının birlikte çalışmasını iş yükleriniz ve yönetim ihtiyaçlarınıza göre planlıyoruz."},{"slug":"yedekleme-felaket-kurtarma","title":"Yedekleme ve Felaket Kurtarma","text":"Verilerinizin korunması ve kritik sistemlerinizin sürekliliği için yedekleme ve kurtarma ihtiyaçlarınızı değerlendiriyoruz."}]},
+  {"slug":"bt-danismanligi","title":"BT Danışmanlığı","icon":"compass","description":"İhtiyaçlarınıza özel, stratejik ve sürdürülebilir BT danışmanlık hizmetleri.","topics":[{"slug":"altyapi-analizi","title":"Altyapı ve İhtiyaç Analizi","text":"Mevcut sistemlerinizi ve iş hedeflerinizi birlikte inceleyerek öncelikli teknoloji ihtiyaçlarınızı belirliyoruz."},{"slug":"teknoloji-yol-haritasi","title":"Teknoloji Yol Haritası","text":"Kısa ve uzun vadeli ihtiyaçlarınızı dikkate alan, uygulanabilir bir teknoloji planı oluşturmanıza destek oluyoruz."},{"slug":"proje-danismanligi","title":"Proje Danışmanlığı","text":"Teknoloji projelerinizde kapsamın belirlenmesinden uygulama planına kadar uzmanlığımızla yanınızda yer alıyoruz."}]},
+  {"slug":"yonetilen-hizmetler","title":"Yönetilen Hizmetler","icon":"monitor","description":"BT altyapınızın sürekli, güvenli ve verimli yönetilmesine yönelik uçtan uca hizmetler.","topics":[{"slug":"izleme-yonetim","title":"Altyapı İzleme ve Yönetimi","text":"BT bileşenlerinin izlenmesi ve günlük operasyonlarının yönetimi için kurumunuza uygun bir hizmet kapsamı oluşturuyoruz."},{"slug":"bakim-operasyon","title":"Bakım ve Operasyon","text":"Düzenli bakım ve operasyon ihtiyaçlarınızı iş süreçlerinizin sürekliliğini gözeterek planlıyoruz."},{"slug":"sureklilik","title":"İş Sürekliliği","text":"İzleme, bakım ve destek süreçlerini bir araya getirerek BT operasyonlarınızın sürdürülebilirliğine katkı sağlıyoruz."}]},
+  {"slug":"sistem-entegrasyonu","title":"Sistem Entegrasyonu","icon":"layers","description":"Farklı teknolojileri bir bütün halinde çalışacak şekilde bir araya getiren esnek çözümler.","topics":[{"slug":"kurulum-devreye-alma","title":"Kurulum ve Devreye Alma","text":"Yeni altyapı bileşenlerinin kurulumunu mevcut sistemleriniz ve uygulama takviminizle birlikte planlıyoruz."},{"slug":"migrasyon","title":"Migrasyon ve Geçiş","text":"Sistem ve veri geçişlerini bağımlılıkları, iş yüklerini ve operasyonel ihtiyaçlarınızı dikkate alarak ele alıyoruz."},{"slug":"altyapi-entegrasyonu","title":"Altyapı Entegrasyonu","text":"Ağ, güvenlik, veri merkezi ve yönetim bileşenlerinin uyum içinde çalışmasına yönelik çözümler geliştiriyoruz."}]},
+  {"slug":"teknik-destek","title":"Teknik Destek","icon":"headset","description":"Uzman ekibimizle 7/24 hızlı, etkin ve kesintisiz teknik destek hizmeti.","topics":[{"slug":"uzaktan-destek","title":"Uzaktan Teknik Destek","text":"Teknik taleplerinizi değerlendirerek uzaktan müdahaleye uygun ihtiyaçlarınız için destek sağlıyoruz."},{"slug":"yerinde-destek","title":"Yerinde Destek","text":"Yerinde inceleme ve müdahale gerektiren ihtiyaçlarınızı destek kapsamınız doğrultusunda planlıyoruz."},{"slug":"bakim-destek","title":"Bakım ve Destek Planları","text":"Altyapınızın ihtiyaçlarına uygun bakım, destek ve iletişim süreçlerini birlikte belirliyoruz."}]},
+  {"slug":"bt-urunleri-ve-diger-cozumler","title":"BT Ürünleri ve Diğer Çözümler","icon":"laptop","description":"Laptop, masaüstü bilgisayar, donanım ve yazılım ihtiyaçlarınıza uygun ürün ve çözümler.","topics":[{"slug":"laptop-masaustu","title":"Laptop ve Masaüstü Bilgisayarlar","text":"Kullanım amacınıza ve çalışma ortamınıza uygun laptop ve masaüstü bilgisayar seçeneklerini birlikte değerlendiriyoruz."},{"slug":"sunucu-depolama","title":"Sunucu ve Depolama Ürünleri","text":"Kapasite ve iş yükü ihtiyaçlarınıza uygun sunucu, depolama ve ilgili donanım ürünlerinin seçimine destek oluyoruz."},{"slug":"lisans-cevre-birimleri","title":"Yazılım, Lisans ve Çevre Birimleri","text":"İşletmenizin yazılım, lisanslama, monitör ve diğer çevre birimi ihtiyaçları için uygun seçenekleri sunuyoruz."}]}
+]
+</script>
+<script type="application/json" id="utx-articles-data">{
+  "sd-wan-sube-aglari": {
+    "slug": "sd-wan-sube-aglari",
+    "title": "SD-WAN ile Şube Ağlarında Verimlilik",
+    "deck": "Birden fazla lokasyonu aynı ağda buluştururken bağlantının ötesine bakmak: uygulamalar, yönetim ve iş sürekliliği.",
+    "category": "Ağ Altyapıları",
+    "bodyHtml": "<p>Bir kurum büyüdükçe ağı da farklı ihtiyaçlarla karşılaşır. Yeni bir şube, uzaktan çalışan bir ekip veya buluta taşınan bir uygulama, bağlantı beklentilerini değiştirir. Bu noktada amaç, lokasyonları birbirine bağlamanın yanında kullanıcıların ihtiyaç duyduğu uygulamalara tutarlı biçimde erişebilmesini sağlamaktır. SD-WAN yaklaşımını değerlendirirken de başlangıç noktası kurumun gerçek çalışma biçimi olmalıdır.</p><h2>Önce uygulamaları ve bağlantıları tanıyın</h2><p>Her şubenin aynı tür trafiği üretmesi beklenemez. Bir lokasyon yoğun biçimde dosya aktarırken başka birinde sesli görüşmeler veya merkezi iş uygulamaları öne çıkabilir. Tasarıma başlamadan önce hangi uygulamaların kullanıldığını, bağlantıların kapasitesini ve kesintinin iş süreçlerine etkisini belirlemek, ihtiyaçları görünür hale getirir.</p><p>Mevcut internet hatları, merkezi sistemlere erişim yolları ve şubelerin destek olanakları birlikte incelenmelidir. Böyle bir envanter, teknoloji seçimini bir özellik karşılaştırmasından çıkararak kullanım senaryolarına dayanan bir değerlendirmeye dönüştürür. Büyüme planları da bu aşamada masaya gelmelidir; bugün yeterli görünen bağlantı düzeni yeni lokasyonlarla farklılaşabilir.</p><blockquote><p>İyi bir şube ağı tasarımı, bağlantı kararlarını günlük iş akışlarıyla birlikte ele alır.</p></blockquote><h2>Merkezi yönetimi ortak bir dil haline getirin</h2><p>Çok sayıda lokasyonda benzer ayarların ayrı ayrı yönetilmesi, operasyonu zorlaştırabilir. Ortak politikalar ve belgelenmiş değişiklik süreçleri, ekiplerin aynı çerçevede çalışmasına yardımcı olur. Bununla birlikte merkezi yönetim, her şubenin koşullarını göz ardı etmek anlamına gelmez. Yerel bağlantı seçenekleri ve uygulama öncelikleri tasarımın parçası olmaya devam eder.</p><ul><li>Kritik uygulamalar ve kullanıcı grupları için beklentileri tanımlayın.</li><li>Bağlantı değişikliklerinin nasıl değerlendirileceğini ve onaylanacağını belirleyin.</li><li>İzleme verilerini anlaşılır operasyon raporlarına dönüştürün.</li></ul><h2>Geçişi küçük adımlarla değerlendirin</h2><p>Bir pilot çalışma, önerilen yapının gerçek şube koşullarında nasıl davrandığını görme fırsatı sunar. Kullanıcı deneyimi, destek süreçleri ve günlük yönetim birlikte gözlemlenebilir. Pilotun kapsamını ve değerlendirme ölçütlerini önceden belirlemek, sonraki kararların ortak bir zeminde alınmasını kolaylaştırır.</p><p>Geçiş tamamlandığında çalışma bitmiş sayılmaz. Kullanım alışkanlıkları, uygulamalar ve bağlantı ihtiyaçları zamanla değişir. Düzenli değerlendirme toplantıları, tasarımın iş hedefleriyle ilişkisini korur. Böylece SD-WAN, tek seferlik bir kurulum başlığı olmaktan çıkarak kurumun ağını yönetme yaklaşımının bir parçasına dönüşür.</p>"
+  },
+  "proaktif-siber-guvenlik": {
+    "slug": "proaktif-siber-guvenlik",
+    "title": "Siber Güvenlikte Proaktif Yaklaşım",
+    "deck": "Güvenlik operasyonunu yalnızca olay anına bırakmadan; görünürlük, sorumluluk ve düzenli değerlendirme etrafında kurmak.",
+    "category": "Siber Güvenlik",
+    "bodyHtml": "<p>Güvenlik hakkında konuşmalar çoğu zaman bir olay yaşandığında hız kazanır. Oysa kurumların günlük işleyişi içinde de değerlendirilebilecek pek çok konu vardır: hangi sistemlerin kullanıldığı, verilere kimlerin eriştiği ve beklenmeyen bir durumda kimin hangi sorumluluğu üstleneceği gibi. Proaktif yaklaşım, bu soruları olay anından önce ele almak için bir çalışma düzeni oluşturur.</p><h2>Görmediğiniz yapıyı yönetmek zordur</h2><p>Bir güvenlik planının anlaşılır bir varlık envanterine dayanması gerekir. Sunucular, kullanıcı cihazları, bulut hizmetleri ve kurum dışından alınan uygulamalar birlikte düşünülmelidir. Sistemin sahibi, kullanım amacı ve iş açısından önemi bilindiğinde, güvenlik değerlendirmelerinde neye öncelik verileceği daha açık hale gelir.</p><p>Envanterin tek sefer hazırlanması yeterli değildir. Yeni çalışanlar, değişen uygulamalar ve devreye giren hizmetler bu resmi sürekli etkiler. Bilginin güncel tutulmasından kimin sorumlu olduğu belirlenmeli; değişiklik süreçleriyle envanter arasında ilişki kurulmalıdır. Böylece güvenlik çalışmaları günlük operasyonun dışındaki ayrı bir belgeye dönüşmez.</p><blockquote><p>Hazırlık, yalnızca araç sahibi olmakla değil, neyi neden koruduğunu bilmekle başlar.</p></blockquote><h2>Sorumlulukları açıkça paylaşın</h2><p>Bir uyarının alınması ile değerlendirilmesi arasında anlaşılır bir süreç bulunmalıdır. Bildirimin kim tarafından inceleneceği, hangi durumda ilgili ekibe iletileceği ve yapılan işlemin nerede kaydedileceği bilinmelidir. Bu çerçeve, teknik ekiplerin yanında iş birimlerinin de ihtiyaçlarını dikkate almalıdır.</p><ul><li>Kritik hizmetleri ve bu hizmetlerden sorumlu kişileri belirleyin.</li><li>Olay bildirimi ve değerlendirme adımlarını anlaşılır biçimde belgeleyin.</li><li>İlgili ekiplerin ulaşabileceği güncel iletişim bilgilerini tutun.</li></ul><h2>Düzenli gözden geçirmeyi alışkanlık haline getirin</h2><p>Güncelleme planları, erişimlerin değerlendirilmesi ve çalışan farkındalığı birbirinden kopuk başlıklar olarak ele alınmamalıdır. Kurumun çalışma düzenine uyan bir takvim oluşturmak, bu işlerin sürdürülebilir biçimde yürütülmesine yardımcı olur. Yapılan kontrollerin sonuçları da sonraki iyileştirme adımlarına girdi sağlamalıdır.</p><p>Proaktif güvenlik, hiçbir olayın yaşanmayacağı yönünde bir vaat değildir. Kurumun durumunu daha iyi anlamasını, sorumluluklarını netleştirmesini ve değişen ihtiyaçlara göre hazırlığını geliştirmesini amaçlar. Değerini de günlük çalışma içinde sürdürülebilen bu dikkatli ve düzenli yaklaşımdan alır. Değerlendirme sonuçlarının ilgili ekiplerle paylaşılması, önceliklerin ortaklaşmasını ve bir sonraki dönemin çalışmalarının somut gözlemlere dayanmasını da kolaylaştırır.</p>"
+  },
+  "veri-merkezi-modernizasyonu": {
+    "slug": "veri-merkezi-modernizasyonu",
+    "title": "Veri Merkezi Modernizasyonu",
+    "deck": "Altyapı yenilemesini donanım listesinden çıkarıp iş yükleri, operasyon ve sürdürülebilir bir geçiş planı üzerinden değerlendirmek.",
+    "category": "Veri Merkezi",
+    "bodyHtml": "<p>Veri merkezi modernizasyonu, çoğu zaman donanımın yenilenmesiyle ilişkilendirilir. Ancak kurumun altyapıdan beklediği değer, cihazların yaşından daha geniş bir çerçevede değerlendirilmelidir. Uygulamaların ihtiyaçları, günlük yönetim yükü, büyüme beklentileri ve iş sürekliliği hedefleri birlikte ele alındığında, modernizasyonun kapsamı daha anlamlı bir biçimde ortaya çıkar.</p><h2>Başlangıç noktasını mevcut iş yükleri belirlesin</h2><p>İlk adım, mevcut ortamın anlaşılır bir resmini oluşturmaktır. Hangi uygulama hangi kaynakları kullanıyor, sistemler arasında hangi bağımlılıklar bulunuyor ve hangi hizmetin kesintisi iş birimlerini nasıl etkiliyor? Bu soruların yanıtları, her bileşeni aynı öncelikle değiştirme alışkanlığının önüne geçebilir.</p><p>Kapasite verileri, kullanım alışkanlıkları ve destek süreçleri bu incelemeye dahil edilmelidir. Mevcut yapıda iyi çalışan noktaların da belirlenmesi önemlidir. Modernizasyon, bütün bileşenlerin aynı anda değiştirilmesini gerektiren bir yaklaşım olmak zorunda değildir; kapsam, gerçek ihtiyaçların değerlendirilmesiyle şekillenebilir.</p><blockquote><p>Yeni bir altyapının değeri, üzerinde çalışacak iş yükleri ve onu yönetecek ekiplerle birlikte anlaşılır.</p></blockquote><h2>Geçişi operasyonun bir parçası olarak tasarlayın</h2><p>Yeni mimari kadar, mevcut yapıdan bu mimariye nasıl geçileceği de önem taşır. Uygulama sahiplerinin beklentileri, uygun çalışma aralıkları ve doğrulama adımları önceden konuşulmalıdır. Sorumlulukların belirli olması, farklı ekiplerin aynı uygulama planı etrafında hareket etmesini kolaylaştırır.</p><ul><li>İş yükleri arasındaki bağımlılıkları ve geçiş sırasını tanımlayın.</li><li>Her aşamanın nasıl değerlendirileceğini ve kayıt altına alınacağını belirleyin.</li><li>Destek, iletişim ve gerektiğinde geri dönüş adımlarını planlayın.</li></ul><h2>Yönetilebilirliği kalıcı bir hedef olarak görün</h2><p>Devreye alma sonrasında günlük operasyonun nasıl yürütüleceği baştan düşünülmelidir. İzleme, bakım, yedekleme ve erişim yönetimi için belirlenen süreçlerin yeni yapıyla uyumlu olması gerekir. Ekiplerin ihtiyaç duyduğu belgeler ve bilgi paylaşımı da teknik kurulum kadar projenin bir parçasıdır.</p><p>Modernizasyonun sonuçlarını değerlendirmek için kurumun kendi hedeflerine dönmek yararlıdır. Yönetim kolaylaştı mı, yeni ihtiyaçlar daha anlaşılır biçimde karşılanabiliyor mu, sorumluluklar net mi? Bu sorular, çalışmanın yalnızca bir yenileme projesi olarak kalmamasını ve sonraki altyapı kararlarına da yön vermesini sağlar. Ortaya çıkan bilgi birikiminin belgelenmesi, sonraki kapasite değerlendirmeleri ve yeni uygulama talepleri için kurum içinde kullanılabilir bir kaynak oluşturur.</p>"
+  },
+  "bulut-gecis-plani": {
+    "slug": "bulut-gecis-plani",
+    "title": "Bulut Geçişinde Dikkat Edilmesi Gerekenler",
+    "deck": "Buluta geçişi bir taşıma işinden çok, uygulamalar ve çalışma biçimleri için hazırlanan bir yol haritası olarak düşünmek.",
+    "category": "Bulut",
+    "bodyHtml": "<p>Bulut hizmetleri, kurumların teknoloji ihtiyaçlarını farklı biçimlerde ele almasına olanak tanır. Ancak bir uygulamayı başka bir ortamda çalıştırmak, tek başına dönüşümün tamamlandığı anlamına gelmez. Geçişin kapsamını belirlerken uygulamaların bağımlılıkları, ekiplerin çalışma biçimi ve hizmetin nasıl yönetileceği birlikte değerlendirilmelidir. Sağlam bir başlangıç, beklenen faydayı açıkça tanımlamaktır.</p><h2>Her iş yükü için aynı soruları sorun</h2><p>Hangi uygulamanın neden taşınacağı bilinmelidir. Kullanıcıların erişim alışkanlıkları, uygulamanın diğer sistemlerle ilişkisi ve veri akışları bu karar üzerinde etkili olabilir. Bütün iş yükleri için tek bir geçiş yöntemi seçmek yerine, farklı ihtiyaçları ortak bir değerlendirme çerçevesi içinde incelemek daha anlaşılır sonuçlar üretir.</p><p>Mevcut ortamın belgelenmesi de bu çalışmanın parçasıdır. Uygulama sahipleri ile teknik ekiplerin aynı bilgiye dayanması, geçiş sırasının belirlenmesini kolaylaştırır. Bu aşamada hangi bileşenlerin mevcut ortamda kalacağı ve iki yapının birlikte nasıl yönetileceği gibi sorular da açıkça konuşulmalıdır.</p><blockquote><p>Buluta geçiş planı, hedef ortam kadar değişecek sorumlulukları da tarif etmelidir.</p></blockquote><h2>Operasyon ve maliyeti birlikte planlayın</h2><p>Yeni ortamda kaynakların kim tarafından takip edileceği, taleplerin nasıl onaylanacağı ve kullanımın nasıl değerlendirileceği önceden belirlenmelidir. Erişim yönetimi, izleme ve yedekleme gibi konuların farklı ekipler arasında belirsiz kalması, günlük yönetimi zorlaştırabilir. Anlaşılır bir sorumluluk paylaşımı bu nedenle önemlidir.</p><ul><li>Kaynak kullanımının ve hizmet kapsamının nasıl izleneceğini belirleyin.</li><li>İş birimlerinin değişiklik taleplerini karşılayacak ortak bir süreç kurun.</li><li>Düzenli maliyet ve kapasite değerlendirmeleri için bir takvim oluşturun.</li></ul><h2>Geçişi doğrulanabilir aşamalara ayırın</h2><p>Sınırlı kapsamlı bir pilot, kullanıcı deneyimini ve operasyonel gereksinimleri gerçek çalışma koşullarında değerlendirmek için fırsat sunar. Pilotun hangi sorulara yanıt vermesi beklendiği önceden belirlenmelidir. Böylece elde edilen gözlemler, sonraki aşamaların planlanmasında kullanılabilir ve kararlar yalnızca ilk izlenime dayanmaz.</p><p>Taşıma tamamlandıktan sonra da planın güncel tutulması gerekir. Kullanım düzeyi, uygulamalar ve ekiplerin beklentileri zamanla değişebilir. Düzenli gözden geçirme, bulut ortamının kurumun iş hedefleriyle bağını korumasına yardımcı olur. Başarılı bir geçiş yaklaşımı, bu sürekli değerlendirme sorumluluğunu da başlangıçtan itibaren içerir. Açık kapsam, güncel belgeler ve ortak bir değerlendirme takvimi bu yaklaşımın sürdürülmesini kolaylaştırır.</p>"
+  },
+  "yonetilen-hizmetler-is-surekliligi": {
+    "slug": "yonetilen-hizmetler-is-surekliligi",
+    "title": "Yönetilen Hizmetlerin İş Sürekliliğine Katkısı",
+    "deck": "Günlük BT operasyonunda görünür sorumluluklar, düzenli takip ve birlikte çalışmanın getirdiği süreklilik.",
+    "category": "Yönetilen Hizmetler",
+    "bodyHtml": "<p>BT altyapısının çalışması, arka planda düzenli olarak yürütülen pek çok göreve bağlıdır. Kontrollerin yapılması, taleplerin değerlendirilmesi ve değişikliklerin takip edilmesi çoğu zaman kullanıcıların doğrudan görmediği işlerdir. Yönetilen hizmet yaklaşımı, bu günlük operasyonun belirli bir kapsam ve sorumluluk paylaşımı içinde ele alınmasına yardımcı olur. İş sürekliliğine katkısı da bu düzenin kurulmasında ortaya çıkar.</p><h2>Hizmet kapsamını görünür hale getirin</h2><p>Bir hizmet ilişkisinin sağlıklı işlemesi için neyin kapsama dahil olduğunun açık olması gerekir. Hangi sistemlerin takip edileceği, hangi taleplerin nasıl ele alınacağı ve kurum içindeki ekiplerle nasıl iletişim kurulacağı konuşulmalıdır. Teknik kapsam kadar, çalışma düzeninin taraflar için anlaşılır olması da önemlidir.</p><p>Bu çerçeve hazırlanırken iş birimlerinin beklentileri dikkate alınmalıdır. Bir hizmetin kurum için ne kadar önemli olduğunu yalnızca cihaz sayısı veya teknik özellikleri anlatmaz. Kullanım amacı, kullanıcı grupları ve günlük süreçlere etkisi de değerlendirmeye dahil edildiğinde, öncelikler daha doğru biçimde paylaşılabilir.</p><blockquote><p>Süreklilik, görünmeyen operasyon görevlerinin açık sorumluluklarla düzenli biçimde yürütülmesiyle desteklenir.</p></blockquote><h2>Düzenli takip için ortak bir dil oluşturun</h2><p>Raporlar, teknik verilerin sıralandığı belgelerden daha fazlası olabilir. Yapılan işlerin, açık konuların ve planlanan adımların birlikte görülebildiği bir çerçeve sunmalıdır. Kurum ile hizmet ekibinin aynı başlıkları aynı anlamda kullanması, günlük iletişimdeki belirsizlikleri azaltmaya yardımcı olur.</p><ul><li>Takip edilecek hizmetleri ve sorumluları açık biçimde tanımlayın.</li><li>Taleplerin kaydedileceği ve durumlarının görülebileceği bir süreç belirleyin.</li><li>Değerlendirme toplantılarında açık konuları ve sonraki adımları birlikte ele alın.</li></ul><h2>Bilgi paylaşımını hizmetin parçası yapın</h2><p>Yapılan değişikliklerin ve alınan kararların belgelenmesi, operasyon bilgisinin kişilerle sınırlı kalmamasına katkı sağlar. Yeni bir ekip üyesinin sürece dahil olması veya bir sorumluluğun devredilmesi gerektiğinde, güncel belgeler ortak bir başvuru noktası oluşturur. Bu bilgi, kurum içindeki ekipler için de erişilebilir olmalıdır.</p><p>Yönetilen hizmetlerin değerlendirilmesi yalnızca bir sorun yaşandığında yapılmamalıdır. Düzenli görüşmeler, değişen ihtiyaçları ve iyileştirme fırsatlarını erken konuşmayı mümkün kılar. Böylece hizmet, sabit bir görev listesinden çıkarak kurumun çalışma düzeniyle birlikte gelişen bir iş ortaklığına dönüşebilir. Ortak takip alışkanlığı, açık konuların unutulmamasını ve hizmetin kurumun gerçek ihtiyaçlarıyla birlikte değerlendirilmesini destekler.</p>"
+  },
+  "sistem-entegrasyonu-mimari": {
+    "slug": "sistem-entegrasyonu-mimari",
+    "title": "Sistem Entegrasyonunda Doğru Mimari",
+    "deck": "Farklı bileşenleri birbirine bağlarken bütünün nasıl çalışacağını, yönetileceğini ve değişeceğini birlikte düşünmek.",
+    "category": "Sistem Entegrasyonu",
+    "bodyHtml": "<p>Kurumların teknoloji ortamları farklı zamanlarda seçilmiş uygulamalar, altyapılar ve hizmetlerden oluşabilir. Bu bileşenlerin birbiriyle çalışması gerektiğinde, yalnızca bağlantının kurulmuş olması yeterli bir değerlendirme değildir. Verinin nasıl aktığı, sorumlulukların nerede başladığı ve değişikliklerin bütün yapıyı nasıl etkilediği de anlaşılmalıdır. Entegrasyon mimarisi, bu ilişkileri görünür hale getiren ortak bir çerçeve sunar.</p><h2>İş akışını teknik bileşenlerden önce anlayın</h2><p>Entegrasyon ihtiyacının arkasında çoğu zaman somut bir iş süreci bulunur. Bir talebin onaylanması, bilginin başka bir uygulamada kullanılması veya farklı ekiplerin aynı kayda erişmesi gibi. Tasarımın başlangıcında bu akışın ve katılımcılarının açıkça tanımlanması, teknik kararların gerçek ihtiyaca dayanmasını sağlar.</p><p>Hangi sistemin hangi bilgiden sorumlu olduğu da belirlenmelidir. Aynı verinin farklı yerlerde tutulması, güncelliğin ve doğruluğun nasıl değerlendirileceği sorusunu beraberinde getirir. Ortak tanımlar ve belgelenmiş sorumluluklar, ekiplerin entegrasyonu yalnızca kendi bileşenleri açısından ele almasının önüne geçebilir.</p><blockquote><p>Birlikte çalışan sistemlerin sürdürülebilirliği, aralarındaki ilişkilerin anlaşılabilir olmasına bağlıdır.</p></blockquote><h2>Beklenmeyen durumları tasarımda konuşun</h2><p>Bir bileşen geçici olarak kullanılamadığında veya beklenmeyen bir veriyle karşılaşıldığında nasıl davranılacağı önceden değerlendirilmelidir. Bildirim, kayıt ve sorumlu ekibe yönlendirme adımlarının açık olması, operasyon sırasında ne yapılacağının anlaşılmasını kolaylaştırır. Bu konular uygulama tamamlandıktan sonra ele alınacak ayrıntılar olarak görülmemelidir.</p><ul><li>Veri akışlarını ve sistemler arasındaki bağımlılıkları belgeleyin.</li><li>Değişikliklerin nasıl değerlendirileceğini ve ilgili ekiplere nasıl duyurulacağını belirleyin.</li><li>İzleme ve kayıt ihtiyaçlarını günlük operasyonla birlikte tasarlayın.</li></ul><h2>Entegrasyonu yaşayan bir yapı olarak görün</h2><p>Uygulamalar ve iş süreçleri değiştikçe entegrasyon ihtiyaçları da değişir. Bir arayüzün veya bileşenin güncellenmesi, başka ekiplerin kullandığı akışları etkileyebilir. Bu nedenle değişiklik süreçlerinde bütün yapının dikkate alınması ve ilgili ekiplerin ortak bir değerlendirme yapması gerekir.</p><p>Doğru mimari, yalnızca ilk kurulum anında çalışan bir çözüm üretmeyi hedeflemez. Ekiplerin sistemi anlayabilmesini, geliştirebilmesini ve sorumluluklarını sürdürebilmesini de gözetir. Güncel belgeler, aşamalı doğrulama ve düzenli iletişim, farklı teknolojilerin kurum için yönetilebilir bir bütün oluşturmasına katkı sağlar. Bu yaklaşım, yeni bir talep ortaya çıktığında hangi bağlantıların ve sorumlulukların gözden geçirileceğinin daha kolay anlaşılmasına da yardımcı olur.</p>"
+  },
+  "teknik-destek-onemi": {
+    "slug": "teknik-destek-onemi",
+    "title": "7/24 Teknik Desteğin Önemi",
+    "deck": "Mesai saatlerini aşan iş süreçleri için anlaşılır destek kanalları, ortak öncelikler ve sürdürülebilir bilgi paylaşımı.",
+    "category": "Teknik Destek",
+    "bodyHtml": "<p>Bir kurumun iş akışları her zaman mesai saatleriyle sınırlı değildir. Farklı lokasyonlarda çalışan ekipler, çevrimiçi hizmetler ve sürekli kullanılan uygulamalar, destek ihtiyacının günün farklı saatlerinde ortaya çıkmasına neden olabilir. Bu nedenle teknik desteği değerlendirirken yalnızca ulaşılabilirliği değil, talebin nasıl karşılanacağını ve hangi sorumluluklarla ilerleyeceğini de düşünmek gerekir.</p><h2>Destek ihtiyacını işin çalışma düzenine göre belirleyin</h2><p>Her sistemin kurum için aynı öneme sahip olduğu varsayılmamalıdır. Hangi hizmetlerin hangi saatlerde kullanıldığı, hangi kullanıcı gruplarını etkilediği ve bir sorunun iş akışına nasıl yansıdığı değerlendirilmelidir. Destek kapsamının bu bilgilerle oluşturulması, beklentilerin daha açık biçimde paylaşılmasına yardımcı olur.</p><p>İletişim kanalları da bu düzenin parçasıdır. Kullanıcıların bir talebi nereye ileteceğini, hangi bilgileri paylaşacağını ve talebin durumunu nasıl takip edeceğini bilmesi gerekir. Anlaşılır bir bildirim süreci, teknik ekiplerin konuyu değerlendirmek için ihtiyaç duyduğu başlangıç bilgisini toplamasını kolaylaştırabilir.</p><blockquote><p>İyi bir destek deneyimi, doğru kişiye ulaşmak kadar sürecin nasıl ilerlediğini anlayabilmektir.</p></blockquote><h2>Olay anındaki iş birliğini önceden tarif edin</h2><p>Birden fazla ekibin dahil olması gereken durumlarda sorumluluk sınırları belirsiz kalmamalıdır. Kurum içindeki yetkililer, hizmet sağlayıcılar ve uygulama ekipleri arasında nasıl iletişim kurulacağı konuşulmalıdır. Gerekli iletişim bilgilerinin güncel ve erişilebilir tutulması da bu hazırlığın günlük hayattaki karşılığıdır.</p><ul><li>Destek kapsamını ve talep bildirim kanallarını açıkça paylaşın.</li><li>Önceliklerin hangi iş ihtiyaçlarına göre değerlendirileceğini belirleyin.</li><li>Kayıtların ve yapılan işlemlerin ilgili ekiplerce takip edilmesini sağlayın.</li></ul><h2>Tekrarlayan ihtiyaçlardan öğrenin</h2><p>Destek kayıtları, yalnızca geçmişte yaşanmış sorunları göstermek için kullanılmamalıdır. Tekrarlayan talepler, kullanıcıların zorlandığı noktalar veya bilgi paylaşımındaki eksikler hakkında fikir verebilir. Bu gözlemlerin düzenli değerlendirilmesi, bakım planları ve kullanıcı bilgilendirmeleri için yararlı bir başlangıç oluşturur.</p><p>7/24 destek yaklaşımı, sürekli aynı müdahaleleri yapmak yerine kurumun ihtiyaçlarını daha iyi anlamayı da kapsamalıdır. Hizmet kapsamının düzenli gözden geçirilmesi, tarafların beklentilerini güncel tutar. Açık iletişim, belgelenmiş işlemler ve ortak değerlendirme alışkanlığı, desteğin kurumun iş sürekliliği çalışmalarına anlamlı biçimde katılmasını sağlar. Ekiplerin bu süreçten edindiği bilginin paylaşılması, sonraki taleplerin değerlendirilmesi ve destek ihtiyacının planlanması için ortak bir deneyim oluşturur.</p>"
+  },
+  "dijital-donusum-bt": {
+    "slug": "dijital-donusum-bt",
+    "title": "Dijital Dönüşüm Yolculuğunda BT",
+    "deck": "Teknoloji yatırımlarını günlük çalışma biçimleri, ekiplerin ihtiyaçları ve somut iş hedefleriyle ilişkilendirmek.",
+    "category": "Dijital Dönüşüm",
+    "bodyHtml": "<p>Dijital dönüşüm konuşmalarında yeni uygulamalar ve teknolojiler kolayca öne çıkar. Ancak bir kurumun dönüşüm ihtiyacını anlamak için önce nasıl çalıştığına bakmak gerekir. Bilginin ekipler arasında nasıl dolaştığı, hangi adımların tekrarlandığı ve kullanıcıların nerelerde zorlandığı, teknoloji kararlarına yön verebilecek önemli sorulardır. BT altyapısı da bu çalışma biçimlerinin gelişmesini destekleyen bir temel oluşturur.</p><h2>Somut bir iş ihtiyacından başlayın</h2><p>Bir dönüşüm çalışmasının amacı bütün taraflar için anlaşılır olmalıdır. Bir sürecin daha görünür hale gelmesi, ekiplerin aynı bilgi üzerinde çalışabilmesi veya yeni bir hizmetin sunulması gibi hedefler, değerlendirme için ortak bir zemin sağlar. Hedefin açıklığı, teknoloji seçiminin tek başına projenin merkezine yerleşmesini önleyebilir.</p><p>Bu amaç belirlenirken işi günlük olarak yürüten ekiplerin görüşleri alınmalıdır. Süreçteki küçük ayrıntılar, dışarıdan bakıldığında kolayca gözden kaçabilir. Kullanıcıların deneyimlerinin tasarıma dahil edilmesi, önerilen çözümün gerçek çalışma koşullarıyla ilişkisinin kurulmasına yardımcı olur ve sonraki değerlendirmeleri daha anlamlı kılar.</p><blockquote><p>Dönüşümün yönünü teknoloji listesi değil, kurumun çözmek istediği somut ihtiyaç belirlemelidir.</p></blockquote><h2>Altyapı ile çalışma biçimini birlikte ele alın</h2><p>Yeni bir uygulamanın kullanılabilmesi, bağlantıdan erişim yönetimine kadar farklı altyapı bileşenlerini ilgilendirebilir. Bunun yanında kullanıcıların yeni süreci nasıl öğreneceği ve destek taleplerinin nasıl karşılanacağı da planlanmalıdır. Teknik kurulum ile ekiplerin uygulamayı günlük işine katması, aynı çalışmanın birbirini tamamlayan parçalarıdır.</p><ul><li>İş hedefini, kullanıcı gruplarını ve kapsamı açıkça tanımlayın.</li><li>Altyapı ve operasyon gereksinimlerini uygulama ihtiyaçlarıyla birlikte değerlendirin.</li><li>Kullanıcıların geri bildirimini ve bilgi paylaşımını sürece dahil edin.</li></ul><h2>Küçük adımları düzenli değerlendirin</h2><p>Sınırlı kapsamlı bir uygulama, varsayımların gerçek çalışma koşullarında incelenmesini sağlayabilir. Bu aşamada yalnızca sistemin çalışıp çalışmadığına değil, kullanıcıların yeni akışı nasıl deneyimlediğine de bakılmalıdır. Gözlemler, sonraki adımların kapsamını ve önceliklerini belirlemek için ortak bir kaynak oluşturur.</p><p>Dijital dönüşüm tek bir uygulamanın devreye alınmasıyla tamamlanan bir başlık değildir. İş ihtiyaçları değiştikçe kullanılan araçlar ve süreçler de değerlendirilmeye devam eder. BT ekiplerinin iş birimleriyle düzenli iletişimi, teknoloji yatırımlarının kurumun hedefleriyle bağını korumasına ve dönüşüm yolculuğunun sürdürülebilir bir çalışma düzenine yerleşmesine katkı sağlar.</p>"
+  },
+  "kurumsal-ag-trendleri": {
+    "slug": "kurumsal-ag-trendleri",
+    "title": "Kurumsal Ağ Altyapısında Yeni Trendler",
+    "deck": "Değişen çalışma alışkanlıklarını karşılayacak ağ kararlarında yönetim, görünürlük ve esnekliği birlikte düşünmek.",
+    "category": "Ağ Altyapıları",
+    "bodyHtml": "<p>Kurumsal ağlar, kullanıcıların farklı cihazlardan ve farklı konumlardan çalışabildiği bir ortamı destekler. Bulut uygulamaları, kablosuz bağlantılar ve değişen ofis düzenleri, ağdan beklenenleri çeşitlendirir. Bu nedenle yeni yaklaşımları değerlendirirken yalnızca ürün özelliklerine bakmak yeterli değildir. Kurumun çalışma biçimi, yönetim olanakları ve büyüme beklentileri aynı çerçevede ele alınmalıdır.</p><h2>Bağlantı deneyimini kullanım alanıyla birlikte değerlendirin</h2><p>Bir toplantı alanı, yoğun kullanılan bir ofis katı ve farklı koşullardaki bir şube aynı bağlantı ihtiyaçlarına sahip olmayabilir. Kullanıcı sayısı, uygulamaların niteliği ve mekânın koşulları tasarım kararlarını etkiler. Mevcut kullanımın incelenmesi, yeni teknolojilerin hangi ihtiyaçlara karşılık verebileceğini daha anlaşılır hale getirir.</p><p>Ağ değerlendirmelerinde kullanıcıların deneyimleri ile teknik gözlemlerin birlikte ele alınması yararlıdır. Sorunun ne zaman, nerede ve hangi uygulamayla ilişkili olarak görüldüğünü bilmek, yalnızca genel kapasiteye bakmaktan farklı bir resim sunabilir. Böylece iyileştirme kararları, günlük çalışma koşullarıyla ilişkilendirilebilir.</p><blockquote><p>Yeni bir ağ yaklaşımının değeri, kurumun onu nasıl kullanacağı ve yöneteceği üzerinden değerlendirilmelidir.</p></blockquote><h2>Merkezi yönetim ve görünürlüğü birlikte düşünün</h2><p>Birden fazla lokasyonun ve farklı ağ bileşenlerinin yönetilmesi, ortak süreçlere duyulan ihtiyacı artırır. Yapılandırmaların belgelenmesi, değişikliklerin takip edilmesi ve gözlemlerin bir arada değerlendirilmesi bu sürecin parçalarıdır. Merkezi araçlar değerlendirilirken ekiplerin günlük kullanımına ne kattığı da açıkça konuşulmalıdır.</p><ul><li>Günlük yönetim görevlerini ve bu görevlerin sorumlularını belirleyin.</li><li>Değişiklikleri ve altyapı bilgisini güncel tutacak süreçler oluşturun.</li><li>İzleme verilerini kullanıcı deneyimi ve iş ihtiyaçlarıyla birlikte yorumlayın.</li></ul><h2>Uyumu ve sürdürülebilirliği önceliklendirin</h2><p>Yeni bir bileşenin mevcut altyapıyla nasıl çalışacağı ve operasyon ekibinin bu yapıyı nasıl destekleyeceği önceden değerlendirilmelidir. Teknik özellikler kadar, bilgi paylaşımı ve bakım süreçleri de seçimde rol oynar. Kurumun olanaklarına uyan bir yönetim düzeni, tasarımın zaman içinde kullanılabilir kalmasına yardımcı olur.</p><p>Ağ altyapısındaki değişimleri izlemek değerlidir; her yeni yaklaşımın aynı kurum için uygun olduğu varsayılmamalıdır. Somut ihtiyaçları belirlemek, sınırlı kapsamda değerlendirmek ve sonuçları gözden geçirmek daha anlaşılır kararlar alınmasını sağlar. Böylece teknoloji tercihleri, değişen iş koşullarına uyum sağlayabilen bir altyapı planının parçası olur. Kurumun kendi gözlemleriyle ilerlemesi, sonraki yatırım kararları için de anlamlı bir temel sağlar.</p>"
+  }
+}
+</script>
+<script id="utx-enhancements">(() => {
+    'use strict';
+    const select = (selector, root = document) => root.querySelector(selector);
+    const all = (selector, root = document) => [...root.querySelectorAll(selector)];
+    const header = document.getElementById('siteHeader');
+    const main = select('main');
+    const services = JSON.parse(document.getElementById('utx-services-data').textContent);
+    const articles = JSON.parse(document.getElementById('utx-articles-data').textContent);
+    const pages = all('.utx-page', main);
+    const homeSections = [...main.children].filter(element => !element.classList.contains('utx-page'));
+    const triggers = all('[data-utx-dropdown]');
+    let activeTrigger;
+    let openedByHover = false;
+    let leaveTimer;
+    let currentView = 'home';
+    let blogScroll = 0;
+
+    function positionPanel() {
+        if (!activeTrigger) return;
+        const panel = document.getElementById(activeTrigger.dataset.utxDropdown);
+        const anchor = activeTrigger.getBoundingClientRect();
+        const mobile = matchMedia('(max-width: 991.98px)').matches;
+        const viewportWidth = document.documentElement.clientWidth;
+        const viewportHeight = window.visualViewport?.height || innerHeight;
+        const width = Math.min(panel.id === 'utx-services-menu' ? 320 : 250, viewportWidth - 32);
+        const left = Math.min(Math.max(16, anchor.left - 14), viewportWidth - width - 16);
+        const top = Math.min(mobile ? anchor.bottom + 5 : header.getBoundingClientRect().bottom + 7, viewportHeight - 100);
+        panel.style.left = `${left}px`;
+        panel.style.top = `${top}px`;
+        panel.style.width = `${width}px`;
+        panel.style.maxHeight = `${Math.max(80, viewportHeight - top - 16)}px`;
+    }
+    function closePanel(focus = false) {
+        clearTimeout(leaveTimer);
+        if (!activeTrigger) return;
+        const previous = activeTrigger;
+        document.getElementById(previous.dataset.utxDropdown).hidden = true;
+        previous.setAttribute('aria-expanded', 'false');
+        activeTrigger = null;
+        openedByHover = false;
+        if (focus) previous.focus();
+    }
+    function openPanel(trigger, fromHover = false) {
+        clearTimeout(leaveTimer);
+        const searchButton = header.querySelector('[aria-controls="headerSearch"]');
+        if (searchButton?.getAttribute('aria-expanded') === 'true') searchButton.click();
+        if (activeTrigger !== trigger) closePanel();
+        activeTrigger = trigger;
+        openedByHover = fromHover;
+        const panel = document.getElementById(trigger.dataset.utxDropdown);
+        panel.hidden = false;
+        trigger.setAttribute('aria-expanded', 'true');
+        positionPanel();
+        requestAnimationFrame(positionPanel);
+        setTimeout(positionPanel, 220);
+    }
+    function modified(event) { return event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey; }
+    triggers.forEach(trigger => {
+        if (trigger.dataset.utxDropdown === 'utx-services-menu') trigger.setAttribute('href', '#/hizmetler');
+        trigger.addEventListener('click', event => {
+            if (modified(event)) return;
+            event.preventDefault();
+            event.stopPropagation();
+            if (activeTrigger === trigger && !openedByHover) closePanel(); else openPanel(trigger);
+        });
+        trigger.addEventListener('keydown', event => {
+            if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                openPanel(trigger);
+                select('a', document.getElementById(trigger.dataset.utxDropdown))?.focus();
+            }
+        });
+        trigger.addEventListener('pointerenter', event => {
+            if (event.pointerType === 'mouse' && matchMedia('(min-width: 992px)').matches) openPanel(trigger, true);
+        });
+        trigger.addEventListener('pointerleave', () => {
+            leaveTimer = setTimeout(() => {
+                const panel = document.getElementById(trigger.dataset.utxDropdown);
+                if (!panel.matches(':hover') && !panel.contains(document.activeElement)) closePanel();
+            }, 180);
+        });
+        const panel = document.getElementById(trigger.dataset.utxDropdown);
+        panel.addEventListener('pointerenter', () => clearTimeout(leaveTimer));
+        panel.addEventListener('pointerleave', () => {
+            if (matchMedia('(min-width: 992px)').matches) leaveTimer = setTimeout(() => {
+                if (!panel.contains(document.activeElement)) closePanel();
+            }, 180);
+        });
+        panel.addEventListener('click', event => { if (event.target.closest('a')) closePanel(); });
+    });
+    window.addEventListener('resize', positionPanel);
+    window.addEventListener('scroll', () => closePanel(), { passive: true });
+    document.addEventListener('click', event => {
+        if (!event.target.closest('[data-utx-dropdown],.utx-panel')) closePanel();
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && activeTrigger) { event.preventDefault(); closePanel(true); }
+    });
+
+    function closeExistingMobileMenu() {
+        const button = select('.nav-toggle', header);
+        if (button?.getAttribute('aria-expanded') === 'true') button.click();
+    }
+    function uniqueSvgIds(root, prefix) {
+        const ids = all('[id]', root).map(element => [element.id, `${prefix}-${element.id}`]);
+        ids.forEach(([previous, next]) => {
+            all('*', root).forEach(element => {
+                [...element.attributes].forEach(attribute => {
+                    let value = attribute.value.replaceAll(`url(#${previous})`, `url(#${next})`);
+                    if (value === `#${previous}`) value = `#${next}`;
+                    if (value !== attribute.value) element.setAttribute(attribute.name, value);
+                });
+            });
+            const element = all('[id]', root).find(item => item.id === previous);
+            if (element) element.id = next;
+        });
+    }
+    function populateArticle(slug) {
+        const article = articles[slug];
+        const card = all('#utx-blog-view .utx-blog-card').find(item => select('[data-blog-open]', item).dataset.blogOpen === slug);
+        if (!article || !card) return false;
+        document.getElementById('utx-article-title').textContent = article.title;
+        document.getElementById('utx-article-deck').textContent = article.deck;
+        document.getElementById('utx-article-category').textContent = article.category;
+        const sourceTime = select('time', card);
+        const date = document.getElementById('utx-article-date');
+        date.dateTime = sourceTime.dateTime;
+        date.textContent = sourceTime.textContent;
+        const body = document.getElementById('utx-article-body');
+        body.innerHTML = article.bodyHtml;
+        const words = body.textContent.trim().split(/\s+/).length;
+        document.getElementById('utx-article-reading').textContent = `${Math.max(1, Math.ceil(words / 200))} dk okuma`;
+        const cover = select('.utx-blog-art', card).cloneNode(true);
+        uniqueSvgIds(cover, `utx-cover-${slug}`);
+        document.getElementById('utx-article-cover').replaceChildren(cover);
+        const related = all('#utx-blog-view .utx-blog-card').filter(item => item !== card).slice(0, 2).map((item, index) => {
+            const clone = item.cloneNode(true);
+            uniqueSvgIds(clone, `utx-related-${index}`);
+            return clone;
+        });
+        document.getElementById('utx-article-related').replaceChildren(...related);
+        return true;
+    }
+    function showPage(name, serviceSlug, topicSlug, focus = true) {
+        if (name === 'article' && !populateArticle(serviceSlug)) {
+            history.replaceState(null, '', '#/blog');
+            showPage('blog', null, null, focus);
+            return;
+        }
+        const page = name === 'home' ? null : document.getElementById(`utx-${name}-view`);
+        if (name !== 'home' && !page) return;
+        const previousView = currentView;
+        if (currentView === 'blog' && name === 'article') blogScroll = window.scrollY;
+        currentView = name;
+        if (name === 'detail') {
+            const service = services.find(item => item.slug === serviceSlug);
+            if (!service) return;
+            document.getElementById('utx-detail-title').textContent = service.title;
+            document.getElementById('utx-detail-description').textContent = service.description;
+            document.getElementById('utx-detail-topics').replaceChildren(...service.topics.map(topic => {
+                const section = document.createElement('section');
+                section.className = 'utx-detail-topic';
+                section.id = `utx-topic-${topic.slug}`;
+                const heading = document.createElement('h2');
+                heading.textContent = topic.title;
+                const paragraph = document.createElement('p');
+                paragraph.textContent = topic.text;
+                section.append(heading, paragraph);
+                return section;
+            }));
+        }
+        homeSections.forEach(section => { section.hidden = name !== 'home'; });
+        pages.forEach(element => { element.hidden = element !== page; });
+        // İç sayfalarda sitenin kendi is-solid düzenini, ana sayfada özgün overlay düzenini kullan.
+        document.body.classList.toggle('has-overlay-header', name === 'home');
+        header.classList.toggle('is-overlay', name === 'home');
+        header.classList.toggle('is-solid', name !== 'home');
+        closePanel();
+        closeExistingMobileMenu();
+        all('a.is-current[aria-current]', select('#mainNav')).forEach(link => { link.classList.remove('is-current'); link.removeAttribute('aria-current'); });
+        const activeLink = name === 'blog' || name === 'article' ? select('#mainNav [href$="/blog"]') : name === 'services' || name === 'detail' ? select('[data-utx-dropdown="utx-services-menu"]') : null;
+        if (activeLink) { activeLink.classList.add('is-current'); activeLink.setAttribute('aria-current', 'page'); }
+        const title = name === 'home' ? 'Ana Sayfa' : name === 'blog' ? 'Blog' : name === 'services' ? 'Hizmetlerimiz' : name === 'article' ? articles[serviceSlug].title : document.getElementById('utx-detail-title').textContent;
+        document.title = `${title} - Unitürk Bilişim Teknolojileri`;
+        requestAnimationFrame(() => {
+            const topic = topicSlug ? document.getElementById(`utx-topic-${topicSlug}`) : null;
+            if (topic) {
+                topic.scrollIntoView({ block: 'start', behavior: 'instant' });
+                if (focus) { topic.tabIndex = -1; topic.focus({ preventScroll: true }); }
+            } else {
+                window.scrollTo({ top: name === 'blog' && previousView === 'article' ? blogScroll : 0, behavior: 'instant' });
+                if (focus && page) { const heading = select('h1', page); heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
+            }
+        });
+    }
+    function readHash(focus = true) {
+        const hash = location.hash;
+        if (!hash || hash === '#/') showPage('home', null, null, focus);
+        else if (hash === '#/blog') showPage('blog', null, null, focus);
+        else if (hash.startsWith('#/blog/')) {
+            let slug;
+            try { slug = decodeURIComponent(hash.slice('#/blog/'.length)); } catch { slug = ''; }
+            showPage('article', slug, null, focus);
+        }
+        else if (hash === '#/hizmetler') showPage('services', null, null, focus);
+        else if (hash.startsWith('#/hizmetler/')) {
+            const [slug, query] = hash.slice('#/hizmetler/'.length).split('?');
+            showPage('detail', slug, new URLSearchParams(query || '').get('konu'), focus);
+        }
+    }
+    function navigate(hash) {
+        if (location.hash === hash) readHash(); else location.hash = hash;
+    }
+    all('a[href="/blog"],a[href="/hizmetler"],a.brand[href="/"],[data-utx-view],[data-utx-service]').forEach(link => {
+        if (link.hasAttribute('data-utx-dropdown')) return;
+        const href = link.getAttribute('href');
+        let hash = '#/';
+        if (link.dataset.utxService) hash = `#/hizmetler/${link.dataset.utxService}${link.dataset.utxTopic ? `?konu=${link.dataset.utxTopic}` : ''}`;
+        else if (link.dataset.utxView) hash = link.dataset.utxView === 'home' ? '#/' : link.dataset.utxView === 'blog' ? '#/blog' : '#/hizmetler';
+        else if (href === '/blog') hash = '#/blog';
+        else if (href === '/hizmetler') hash = '#/hizmetler';
+        link.setAttribute('href', hash);
+        link.addEventListener('click', event => {
+            if (modified(event)) return;
+            event.preventDefault();
+            navigate(hash);
+        });
+    });
+    // file:// ile açılan kopyada mevcut sunucu bağlantıları doğru sitede çalışsın.
+    // Sayfaların içeriğini veya mevcut JavaScript davranışlarını değiştirmez.
+    if (location.protocol === 'file:') {
+        all('a[href^="/"],form[action^="/"]').forEach(element => {
+            const attribute = element.tagName === 'FORM' ? 'action' : 'href';
+            const value = element.getAttribute(attribute);
+            if (value.startsWith('/') && !value.startsWith('//')) element.setAttribute(attribute, `https://dev.munitek.com${value}`);
+        });
+    }
+    window.addEventListener('hashchange', () => readHash());
+
+    if (location.hash) readHash(false);
+})();
+</script>
+</body>
+</html>

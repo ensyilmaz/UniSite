@@ -1,0 +1,182 @@
+﻿{
+    "runtimeErrors":  [
+
+                      ],
+    "failed":  0,
+    "checks":  [
+                   {
+                       "name":  "Navbar Services title opens its own local page",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "hash":  "#/hizmetler",
+                                       "columns":  4,
+                                       "count":  8,
+                                       "allLinks":  true,
+                                       "firstRow":  [
+                                                        459.078125,
+                                                        459.078125,
+                                                        459.078125,
+                                                        459.078125
+                                                    ],
+                                       "secondRow":  [
+                                                         665.078125,
+                                                         665.078125,
+                                                         665.078125,
+                                                         665.078125
+                                                     ],
+                                       "banner":  160
+                                   }
+                   },
+                   {
+                       "name":  "Services match the four-by-two clickable card layout",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "hash":  "#/hizmetler",
+                                       "columns":  4,
+                                       "count":  8,
+                                       "allLinks":  true,
+                                       "firstRow":  [
+                                                        459.078125,
+                                                        459.078125,
+                                                        459.078125,
+                                                        459.078125
+                                                    ],
+                                       "secondRow":  [
+                                                         665.078125,
+                                                         665.078125,
+                                                         665.078125,
+                                                         665.078125
+                                                     ],
+                                       "banner":  160
+                                   }
+                   },
+                   {
+                       "name":  "Services use the requested short image banner",
+                       "passed":  true,
+                       "details":  160
+                   },
+                   {
+                       "name":  "Card opens correct service: Ağ Altyapıları ve SD-WAN",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "Ağ Altyapıları ve SD-WAN",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Card opens correct service: Siber Güvenlik",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "Siber Güvenlik",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Card opens correct service: Veri Merkezi ve Bulut",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "Veri Merkezi ve Bulut",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Card opens correct service: BT Danışmanlığı",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "BT Danışmanlığı",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Card opens correct service: Yönetilen Hizmetler",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "Yönetilen Hizmetler",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Card opens correct service: Sistem Entegrasyonu",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "Sistem Entegrasyonu",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Card opens correct service: Teknik Destek",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "Teknik Destek",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Card opens correct service: BT Ürünleri ve Diğer Çözümler",
+                       "passed":  true,
+                       "details":  {
+                                       "visible":  true,
+                                       "title":  "BT Ürünleri ve Diğer Çözümler",
+                                       "topics":  3
+                                   }
+                   },
+                   {
+                       "name":  "Services arrow retains the simple eight-title dropdown",
+                       "passed":  true,
+                       "details":  {
+                                       "open":  true,
+                                       "links":  8,
+                                       "hash":  "#/"
+                                   }
+                   },
+                   {
+                       "name":  "Services page opens correctly after direct reload offline",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Service cards fit a single column on mobile",
+                       "passed":  true,
+                       "details":  {
+                                       "columns":  1,
+                                       "left":  57.59375,
+                                       "right":  332.40625,
+                                       "width":  390
+                                   }
+                   },
+                   {
+                       "name":  "Working Blog page markup is exactly unchanged",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Working full article page markup is exactly unchanged",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "No online resource requests from fixed Services page",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   },
+                   {
+                       "name":  "No JavaScript runtime exceptions",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   }
+               ],
+    "passed":  18
+}

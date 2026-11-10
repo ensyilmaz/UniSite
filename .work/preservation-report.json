@@ -1,0 +1,251 @@
+﻿{
+    "original":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\deneme.original.html",
+    "updated":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\deneme.html",
+    "originalSha256":  "2E244BAC19B7639F9E08BFF1CC0466074AA0187523E680EB60C68F2A877C5564",
+    "checks":  [
+                   {
+                       "name":  "Comparison uses the unchanged original attachment",
+                       "passed":  true,
+                       "details":  "2E244BAC19B7639F9E08BFF1CC0466074AA0187523E680EB60C68F2A877C5564"
+                   },
+                   {
+                       "name":  "Original stylesheet tags, URLs and order are unchanged",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  [
+                                                        "\u003clink href=\"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\u0026display=swap\" rel=\"stylesheet\" /\u003e",
+                                                        "\u003clink rel=\"stylesheet\" href=\"/lib/bootstrap/dist/css/bootstrap.min.css\" /\u003e",
+                                                        "\u003clink rel=\"stylesheet\" href=\"/css/site.css?v=BZMF6I8mnm2caYx5YETUbaym5d8vuAVBtjcrC8UTOH4\" /\u003e"
+                                                    ],
+                                       "actual":  [
+                                                      "\u003clink href=\"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\u0026display=swap\" rel=\"stylesheet\" /\u003e",
+                                                      "\u003clink rel=\"stylesheet\" href=\"/lib/bootstrap/dist/css/bootstrap.min.css\" /\u003e",
+                                                      "\u003clink rel=\"stylesheet\" href=\"/css/site.css?v=BZMF6I8mnm2caYx5YETUbaym5d8vuAVBtjcrC8UTOH4\" /\u003e"
+                                                  ]
+                                   }
+                   },
+                   {
+                       "name":  "All three original script URLs retain their order",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  [
+                                                        "/lib/jquery/dist/jquery.min.js",
+                                                        "/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+                                                        "/js/site.js?v=4DNNy-49A_lb9xPH-rYyHqcV-S-DtEkhhp4YcjnX9Og"
+                                                    ],
+                                       "actual":  [
+                                                      "/lib/jquery/dist/jquery.min.js",
+                                                      "/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+                                                      "/js/site.js?v=4DNNy-49A_lb9xPH-rYyHqcV-S-DtEkhhp4YcjnX9Og"
+                                                  ]
+                                   }
+                   },
+                   {
+                       "name":  "Original head metadata and asset declarations are preserved",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Every original image tag and src remains intact in order",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  [
+                                                        "\u003cimg class=\"brand-logo\" src=\"/img/logo.png\" alt=\"Unitürk\" width=\"331\" height=\"48\" /\u003e",
+                                                        "\u003cimg src=\"/img/uctan-uca-cozumler.svg\" alt=\"\" width=\"28\" height=\"28\" /\u003e",
+                                                        "\u003cimg src=\"/img/guvenli-altyapi.svg\" alt=\"\" width=\"28\" height=\"28\" /\u003e",
+                                                        "\u003cimg src=\"/img/surdurulebilir-teknoloji.svg\" alt=\"\" width=\"28\" height=\"28\" /\u003e",
+                                                        "\u003cimg src=\"/img/step-plan.png\" alt=\"\" /\u003e",
+                                                        "\u003cimg src=\"/img/step-design.png\" alt=\"\" /\u003e",
+                                                        "\u003cimg src=\"/img/step-implement.png\" alt=\"\" /\u003e",
+                                                        "\u003cimg src=\"/img/step-sustain.png\" alt=\"\" /\u003e",
+                                                        "\u003cimg class=\"brand-logo\" src=\"/img/logo.png\" alt=\"Unitürk\" width=\"331\" height=\"48\" /\u003e"
+                                                    ],
+                                       "actual":  [
+                                                      "\u003cimg class=\"brand-logo\" src=\"/img/logo.png\" alt=\"Unitürk\" width=\"331\" height=\"48\" /\u003e",
+                                                      "\u003cimg src=\"/img/uctan-uca-cozumler.svg\" alt=\"\" width=\"28\" height=\"28\" /\u003e",
+                                                      "\u003cimg src=\"/img/guvenli-altyapi.svg\" alt=\"\" width=\"28\" height=\"28\" /\u003e",
+                                                      "\u003cimg src=\"/img/surdurulebilir-teknoloji.svg\" alt=\"\" width=\"28\" height=\"28\" /\u003e",
+                                                      "\u003cimg src=\"/img/step-plan.png\" alt=\"\" /\u003e",
+                                                      "\u003cimg src=\"/img/step-design.png\" alt=\"\" /\u003e",
+                                                      "\u003cimg src=\"/img/step-implement.png\" alt=\"\" /\u003e",
+                                                      "\u003cimg src=\"/img/step-sustain.png\" alt=\"\" /\u003e",
+                                                      "\u003cimg class=\"brand-logo\" src=\"/img/logo.png\" alt=\"Unitürk\" width=\"331\" height=\"48\" /\u003e"
+                                                  ]
+                                   }
+                   },
+                   {
+                       "name":  "Original html opening tag is unchanged",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  "\u003chtml lang=\"tr\"\u003e",
+                                       "actual":  "\u003chtml lang=\"tr\"\u003e"
+                                   }
+                   },
+                   {
+                       "name":  "Original body opening tag is unchanged",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  "\u003cbody class=\"has-overlay-header\"\u003e",
+                                       "actual":  "\u003cbody class=\"has-overlay-header\"\u003e"
+                                   }
+                   },
+                   {
+                       "name":  "Original main opening tag is unchanged",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  "\u003cmain role=\"main\"\u003e",
+                                       "actual":  "\u003cmain role=\"main\"\u003e"
+                                   }
+                   },
+                   {
+                       "name":  "Original header opening tag is unchanged",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  "\u003cheader class=\"site-header is-overlay\" id=\"siteHeader\"\u003e",
+                                       "actual":  "\u003cheader class=\"site-header is-overlay\" id=\"siteHeader\"\u003e"
+                                   }
+                   },
+                   {
+                       "name":  "Original footer opening tag is unchanged",
+                       "passed":  true,
+                       "details":  {
+                                       "expected":  "\u003cfooter class=\"site-footer img-footer\"\u003e",
+                                       "actual":  "\u003cfooter class=\"site-footer img-footer\"\u003e"
+                                   }
+                   },
+                   {
+                       "name":  "Original header brand markup is unchanged",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original footer brand markup is unchanged",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original search and mobile header action markup is unchanged",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original footer primary navigation is unchanged",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original footer copyright markup is unchanged",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Hero is unchanged apart from one marked contact CTA",
+                       "passed":  true,
+                       "details":  {
+                                       "contactInsertions":  1
+                                   }
+                   },
+                   {
+                       "name":  "Original process section is exactly preserved",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original partners section is exactly preserved",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original showcase section is exactly preserved",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original cta section is exactly preserved",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Original homepage sections remain once each in their original order",
+                       "passed":  true,
+                       "details":  [
+                                       "hero",
+                                       "process",
+                                       "partners",
+                                       "solutions",
+                                       "showcase",
+                                       "cta"
+                                   ]
+                   },
+                   {
+                       "name":  "Existing solutions section opening is retained",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Previous global fallback and replacement app are absent",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   },
+                   {
+                       "name":  "Single HTML adds no external stylesheet dependency",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   },
+                   {
+                       "name":  "Added inline styles identify their isolated utx scope",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   },
+                   {
+                       "name":  "Added CSS selectors are scoped to utx components",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   },
+                   {
+                       "name":  "Added inline scripts identify the utx extension",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   },
+                   {
+                       "name":  "Extension does not replace existing slider, search or mobile handlers",
+                       "passed":  true,
+                       "details":  [
+
+                                   ]
+                   },
+                   {
+                       "name":  "Corporate navigation excludes old why and documents pages",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Old corporate why-page link is removed from footer",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Documents retains its original backend URL exactly once in footer",
+                       "passed":  true,
+                       "details":  null
+                   },
+                   {
+                       "name":  "Documents link appears in added legal footer area",
+                       "passed":  true,
+                       "details":  null
+                   }
+               ],
+    "passed":  32,
+    "failed":  0,
+    "verificationLimit":  "Static source preservation only. The sole normalized URL change is qualification of original link/script/img assets with https://dev.munitek.com. Browser verification is recorded separately."
+}

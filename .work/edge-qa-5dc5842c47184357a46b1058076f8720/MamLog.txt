@@ -1,0 +1,22 @@
+[2026-11-10T10:18:15.171Z] [INFO] ========================================================================================================================
+[2026-11-10T10:18:15.171Z] [INFO] Initializing MAM Client.
+App: com.microsoft.edge 157.0.4341.42
+SDK: 2.4.2.0
+OS: windows 10.0.26200.9711
+DeviceType: Desktop
+Manufacturer: LENOVO
+Model: 21SX007JTX
+Telemetry: yes
+Managed device support: enabled
+[2026-11-10T10:18:15.171Z] [INFO] Telemetry session eb0004f7-576d-4a74-92fa-f50588b9e1f5.
+[2026-11-10T10:18:15.171Z] [INFO] ECS client initialized.
+[2026-11-10T10:18:15.172Z] [INFO] Initializing cache (v1).
+[2026-11-10T10:18:15.173Z] [INFO] Flight configuration defaults:
+{"924da161-897f-4061-ad83-eca72d58a16e_0":{"source":0,"value":false},"DesktopMAM_Canary":{"source":0,"value":0},"f9fec151-8ff5-437c-a028-0e92e9878d8d_0":{"source":0,"value":false},"f9fec151-8ff5-437c-a028-0e92e9878d8d_1":{"source":0,"value":false}}
+[2026-11-10T10:18:15.173Z] [INFO] Registered Flight Client FlightClientId:6a1b553f-06f8-43f5-8e14-2f7a7e4c3a01 with new flight key ebf142bd-825a-43b0-a284-721d75f110dc.
+[2026-11-10T10:18:15.178Z] [INFO] Started ECS service request processing.
+[2026-11-10T10:18:15.178Z] [INFO] Fetching flight data for flight key ebf142bd-825a-43b0-a284-721d75f110dc...
+[2026-11-10T10:18:15.535Z] [INFO] Flight data fetch for flight key ebf142bd-825a-43b0-a284-721d75f110dc succeeded. (EcsCorrelationId:MIRA: bbb21b76-adb8-c55b-40ac-2626eeba2e77 VIVP296CA0054 2026-11-10T10:18:15.677Z)
+[2026-11-10T10:18:15.536Z] [INFO] Scheduling next ECS request for flight key ebf142bd-825a-43b0-a284-721d75f110dc at 2026-11-10T11:18:15.535Z.
+[2026-11-10T10:18:15.536Z] [INFO] Application flight configuration updated:
+{"924da161-897f-4061-ad83-eca72d58a16e_0":{"source":0,"value":false},"DesktopMAM_Canary":{"source":1,"value":1},"f9fec151-8ff5-437c-a028-0e92e9878d8d_0":{"source":0,"value":false},"f9fec151-8ff5-437c-a028-0e92e9878d8d_1":{"source":0,"value":false}}

@@ -1,0 +1,17 @@
+2026-11-10 10:17:17.412: [INFO] CurrentProfilePath: C:\Users\EnesYılmaz\Desktop\Yeni klasör\.work\edge-qa-a2df40cb12d94d0bbf3f934f82dc173b\Default
+2026-11-10 10:17:17.412: [INFO] Profiles total count: 1
+2026-11-10 10:17:17.412: [INFO] Profile: name=Profil 1 path=C:\Users\EnesYılmaz\Desktop\Yeni klasör\.work\edge-qa-a2df40cb12d94d0bbf3f934f82dc173b\Default lastActive=null
+2026-11-10 10:17:17.412: [INFO] LastUsedProfileDir: C:\Users\EnesYılmaz\Desktop\Yeni klasör\.work\edge-qa-a2df40cb12d94d0bbf3f934f82dc173b\Default
+2026-11-10 10:17:17.412: [INFO] VisibilityChanged: 0
+2026-11-10 10:17:17.483: [INFO] OnDoneLoading sync enabled: 0
+2026-11-10 10:17:17.483: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-10 10:17:17.483: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-10 10:17:17.483: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-10 10:17:17.492: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-10 10:17:17.701: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-10 10:17:17.708: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-10 10:17:17.714: [INFO] Primary account changed.
+2026-11-10 10:17:17.714: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-10 10:17:17.725: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-10 10:17:25.379: [INFO] Sync initialization duration: 7358ms
+2026-11-10 10:17:37.953: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

@@ -1,0 +1,5 @@
+2026/11/10-12:46:03.137 6f9c Creating DB C:\Users\EnesYılmaz\Desktop\Yeni klasör\.work\edge-qa-a9145e9ff33b4f428c1986f1a9e36727\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/11/10-12:46:03.152 6f9c Reusing MANIFEST C:\Users\EnesYılmaz\Desktop\Yeni klasör\.work\edge-qa-a9145e9ff33b4f428c1986f1a9e36727\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/11/10-12:46:03.240 1f74 Level-0 table #5: started
+2026/11/10-12:46:03.242 1f74 Level-0 table #5: 683273 bytes OK
+2026/11/10-12:46:03.244 1f74 Delete type=0 #3

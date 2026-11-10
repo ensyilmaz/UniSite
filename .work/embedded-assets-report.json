@@ -1,0 +1,228 @@
+{
+    "input":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\connected-draft.html",
+    "output":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\deneme.html",
+    "fetchOnly":  false,
+    "uniqueAssets":  30,
+    "sourceAssetBytes":  15688566,
+    "htmlBytes":  26774537,
+    "stylesheets":  3,
+    "scripts":  3,
+    "imageTags":  9,
+    "cssResourceReferences":  37,
+    "fontFiles":  4,
+    "externalResourceDependencies":  [
+
+                                     ],
+    "assets":  [
+                   {
+                       "url":  "https://dev.munitek.com/css/site.css?v=BZMF6I8mnm2caYx5YETUbaym5d8vuAVBtjcrC8UTOH4",
+                       "mime":  "text/css",
+                       "bytes":  42629,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\2e792e0f27e2f15061b8a18d718358d14c9a571e2033f337a1f0f3b040a5ebba.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/about-mountain-hiker.png",
+                       "mime":  "image/png",
+                       "bytes":  1731468,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\d04606431baaa68595269298db96718bc4d1016f1830113997457e524964221f.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/building-glass-evening.jpg",
+                       "mime":  "image/jpeg",
+                       "bytes":  1364163,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\72406853d76ce1c74daf798a58826eed3dd27f44fe798d2d0820927282eb9930.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/corporate-campus.jpg",
+                       "mime":  "image/jpeg",
+                       "bytes":  1009194,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\f38fd2aed05802de4675adce229eb5bbeb58a34637811a33af06fa7e2e812f8f.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/datacenter-corridor.png",
+                       "mime":  "image/png",
+                       "bytes":  2170222,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\4abf0fbb23f17db6e43db86200bba6d60a07b76dd6924972ac7bec8cc7732d92.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/digital-team-network.png",
+                       "mime":  "image/png",
+                       "bytes":  1370226,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\dc5c15bec7858487383bd087be78345342fcce2b8d2fcc631569d3258ddd6427.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/feature-panel-background.jpg",
+                       "mime":  "image/jpeg",
+                       "bytes":  35031,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\f21886f0cf9846279fdcdead9f9a95a1b83f4f26f7d34537ff746a0126d2e453.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/footer-background.png",
+                       "mime":  "image/png",
+                       "bytes":  1494263,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\d650e64846b362760d5644c2d0f1822c7ce420fb315d114f2e0c2842d8a5fb0c.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/guvenli-altyapi.svg",
+                       "mime":  "image/svg+xml",
+                       "bytes":  429,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\2e7c2df4216c8ec70d2f6a7f213eb958f03c3f840c9c96b5eefc4cf4a27ad0fd.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/hero-slide-main.jpg",
+                       "mime":  "image/jpeg",
+                       "bytes":  1384751,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\e8a2fb8abaa5f3bd34c13139b523407427c1a143c0aa7837651a5527542be7b1.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/icon-arrow-next.png",
+                       "mime":  "image/png",
+                       "bytes":  142218,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\d446d2e8815650845aae735fd3a3058aa841c4ef0493d518064e0ccec624be76.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/logo.png",
+                       "mime":  "image/png",
+                       "bytes":  4397,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\02fdc49838625e002dd2b3d9ec7a6ca7ff9e4291a7a2146c0bf58b10ffe43c33.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/network-globe.png",
+                       "mime":  "image/png",
+                       "bytes":  1599899,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\ab13b535578d47ebbc5be7f178179c469c2f9124ea23049395be2975df6caf4a.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/process-background.png",
+                       "mime":  "image/png",
+                       "bytes":  2298705,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\4c4d4076bda3faa338cabec971ae041984e32ddf57fc0cbb4cf8a2990b2542c9.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/sayfa/cozumlerimiz.jpg",
+                       "mime":  "image/jpeg",
+                       "bytes":  334204,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\14ad8b2e9c1d8c6a301e09a4d9685f6b4e4ad99ac384635e622d9568e79d5e74.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/step-design.png",
+                       "mime":  "image/png",
+                       "bytes":  63470,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\0c1d5bb5b8bd0ac3f37633dd9d00b5ab2a6a59d97a446ec410455303a9c5655a.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/step-implement.png",
+                       "mime":  "image/png",
+                       "bytes":  60121,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\1bdf4c9f208af645768bd24790fa61229fc6877161c371f683ae1785887a4353.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/step-plan.png",
+                       "mime":  "image/png",
+                       "bytes":  51459,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\57ca91bc6bffecc9389aabb132c496371be929224acec31601008b1d69752d39.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/step-sustain.png",
+                       "mime":  "image/png",
+                       "bytes":  56323,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\073c8322955b82300c440266f4940c9666759a09f9c95580a093d3a226bf0c57.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/surdurulebilir-teknoloji.svg",
+                       "mime":  "image/svg+xml",
+                       "bytes":  374,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\d2da57abecd171806c0e774f1df7cbdc32d5d28dada37680503ad585abcad241.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/img/uctan-uca-cozumler.svg",
+                       "mime":  "image/svg+xml",
+                       "bytes":  349,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\f2d233c5ec50038e2e3130c86c12f88d23fc1afb4584f2c6e1bf5a8bcebb8127.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/js/site.js?v=4DNNy-49A_lb9xPH-rYyHqcV-S-DtEkhhp4YcjnX9Og",
+                       "mime":  "text/javascript",
+                       "bytes":  6110,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\8628f33eba303e1fa88e177b4537c222e0c96d0d31fa5a5534786cf015bd20fa.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/lib/bootstrap/dist/css/bootstrap.min.css",
+                       "mime":  "text/css",
+                       "bytes":  232803,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\555bbe9abf32a9369692b036425bcd9bcab93154f3e6ce0b6d521b422320be19.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+                       "mime":  "text/javascript",
+                       "bytes":  80721,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\6394b63ec8d088b0f05bfbe8cf2ceaaaec1645002175b9d4da74865aaf591c50.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://dev.munitek.com/lib/jquery/dist/jquery.min.js",
+                       "mime":  "text/javascript",
+                       "bytes":  87533,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\decc94d66e23691a1047248b41bdc00b16fb524fd3e9770fd57419e6d04f553e.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800\u0026display=swap",
+                       "mime":  "text/css",
+                       "bytes":  8360,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\879c6e235cb078356b3e9e7e929e5ebc53f19e562b852af9f45f5f3ab9262513.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2",
+                       "mime":  "font/woff2",
+                       "bytes":  27348,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\d8c30647abfeffe6d17375f9247d869d821427e9981a391d5b5f019688cdf165.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko40yyygA.woff2",
+                       "mime":  "font/woff2",
+                       "bytes":  21728,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\94d65887a83f128236634c6a1d7887148c8674553072e994f6bdac7c39a91caf.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko50yyygA.woff2",
+                       "mime":  "font/woff2",
+                       "bytes":  8352,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\effc6711249e7349d5e8260350caf8a1a3175643d137dc0fb1f16771cc8326c3.bin",
+                       "cached":  true
+                   },
+                   {
+                       "url":  "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko70yyygA.woff2",
+                       "mime":  "font/woff2",
+                       "bytes":  1716,
+                       "path":  "C:\\Users\\EnesYılmaz\\Desktop\\Yeni klasör\\.work\\asset-cache\\22bd9b393960a42cb32d8a70f596dba2a2a7f7cb866b206070e08c2a43e6bb0f.bin",
+                       "cached":  true
+                   }
+               ]
+}

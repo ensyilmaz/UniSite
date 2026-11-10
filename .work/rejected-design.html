@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sayfa - Unitürk Bilişim Teknolojileri</title>
+    <meta name="description" content="Kurumsal ölçekte güvenli, ölçeklenebilir ve yönetilebilir BT altyapıları." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <script>
+// Orijinal CSS sunucuda varsa koru; tek dosya açılışında gömülü stilleri kullan.
+document.documentElement.classList.add('ut-fallback');
+if (location.protocol !== 'file:') {
+    const bootstrapCss = document.createElement('link');
+    bootstrapCss.rel = 'stylesheet';
+    bootstrapCss.href = '/lib/bootstrap/dist/css/bootstrap.min.css';
+    document.head.append(bootstrapCss);
+    const originalCss = document.createElement('link');
+    originalCss.rel = 'stylesheet';
+    originalCss.href = '/css/site.css?v=BZMF6I8mnm2caYx5YETUbaym5d8vuAVBtjcrC8UTOH4';
+    originalCss.addEventListener('load', () => document.documentElement.classList.remove('ut-fallback'));
+    document.head.append(originalCss);
+}
+</script>
+<style id="uniturk-styles">
+/* Applied only when the original site's stylesheet is unavailable. */
+html.ut-fallback {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+html.ut-fallback *, html.ut-fallback *::before, html.ut-fallback *::after { box-sizing: border-box; }
+html.ut-fallback body { margin: 0; font-family: "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.65; color: #09264b; background: #fff; }
+html.ut-fallback h1, html.ut-fallback h2, html.ut-fallback h3, html.ut-fallback p { margin-top: 0; }
+html.ut-fallback h1, html.ut-fallback h2, html.ut-fallback h3 { line-height: 1.2; letter-spacing: -.035em; }
+html.ut-fallback a { color: inherit; text-decoration: none; }
+html.ut-fallback button, html.ut-fallback input { font: inherit; }
+html.ut-fallback button, html.ut-fallback a { -webkit-tap-highlight-color: transparent; }
+html.ut-fallback button { cursor: pointer; }
+html.ut-fallback img { max-width: 100%; height: auto; }
+html.ut-fallback svg { display: inline-block; vertical-align: middle; }
+html.ut-fallback a:focus-visible, html.ut-fallback button:focus-visible, html.ut-fallback input:focus-visible { outline: 3px solid #1a79ed; outline-offset: 4px; }
+html.ut-fallback .wrap { width: min(1280px, 90%); margin-inline: auto; }
+html.ut-fallback .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+html.ut-fallback .site-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.98); border-bottom: 1px solid #e7eef7; box-shadow: 0 5px 25px rgba(9,38,75,.035); }
+html.ut-fallback .header-inner { min-height: 98px; display: flex; align-items: center; justify-content: space-between; gap: 26px; }
+html.ut-fallback .brand { display: flex; flex-direction: column; flex-shrink: 0; align-items: flex-start; line-height: 1.05; }
+html.ut-fallback .brand-logo { width: 204px; height: auto; object-fit: contain; }
+html.ut-fallback .ut-brand-fallback { color: #09264b; font-size: 38px; line-height: 1; font-weight: 800; letter-spacing: -.075em; }
+html.ut-fallback .brand-sub { margin-top: 7px; font-size: 10px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+html.ut-fallback .main-nav { display: flex; align-items: center; justify-content: center; gap: 24px; margin-left: auto; }
+html.ut-fallback .nav-link { display: inline-flex; align-items: center; padding: 12px 0; color: #17385b; font-size: 13px; font-weight: 700; white-space: nowrap; }
+html.ut-fallback .nav-link:hover { color: #0066db; }
+html.ut-fallback .header-actions { display: flex; align-items: center; flex-shrink: 0; gap: 12px; }
+html.ut-fallback .icon-btn { width: 40px; height: 40px; border: 1px solid #dce7f4; border-radius: 50%; display: grid; place-content: center; background: #fff; color: #09264b; }
+html.ut-fallback .nav-toggle { display: none; }
+html.ut-fallback .nav-toggle span { display: block; width: 17px; height: 2px; background: currentColor; margin: 2px 0; }
+html.ut-fallback .header-search { position: absolute; right: 5%; top: calc(100% + 10px); display: flex; align-items: center; gap: 10px; width: min(420px,90vw); padding: 16px; border: 1px solid #dae5f1; border-radius: 16px; background: #fff; box-shadow: 0 15px 40px #09264b1a; }
+html.ut-fallback .header-search input { width: 100%; min-width: 0; padding: 9px 12px; border: 1px solid #d4e0ee; border-radius: 8px; }
+html.ut-fallback .btn-ut { display: inline-flex; align-items: center; justify-content: center; gap: 14px; min-height: 48px; padding: 12px 22px; border: 0; border-radius: 7px; font-size: 14px; font-weight: 700; }
+html.ut-fallback .btn-ut-primary, html.ut-fallback .btn-ut-gradient { color: #fff; background: #0066db; box-shadow: 0 8px 22px #0066db20; }
+html.ut-fallback .btn-ut-gradient { background: linear-gradient(120deg,#087af1,#0054bd); }
+html.ut-fallback .btn-ut:hover { filter: brightness(.96); }
+html.ut-fallback .btn-ut-sm { min-height: 38px; padding: 7px 15px; }
+html.ut-fallback .btn-ut svg, html.ut-fallback .link-arrow svg { width: 20px; height: 20px; flex-shrink: 0; }
+html.ut-fallback .eyebrow { display: block; margin-bottom: 18px; color: #0066db; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+html.ut-fallback .hero { position: relative; min-height: 680px; overflow: hidden; background: #f7faff; }
+html.ut-fallback .hero-decor { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 10% 15%,#fff 10%,transparent 55%); }
+html.ut-fallback .hero-inner { position: relative; display: flex; align-items: center; min-height: 550px; pointer-events: none; }
+html.ut-fallback .hero-content { position: relative; z-index: 2; width: 48%; max-width: 580px; padding: 48px 24px 52px 0; pointer-events: auto; }
+html.ut-fallback .hero-content .eyebrow { font-size: 10px; letter-spacing: .1em; }
+html.ut-fallback .hero-title { margin-bottom: 22px; font-size: clamp(40px,4.05vw,62px); font-weight: 800; line-height: 1.12; letter-spacing: -.055em; }
+html.ut-fallback .hero-lead { max-width: 440px; margin-bottom: 26px; color: #5d6f85; font-size: 14px; line-height: 1.85; }
+html.ut-fallback .hero-media { position: absolute; inset: 0 0 130px 51%; overflow: hidden; background: #09264b; border-radius: 0 0 0 100px; }
+html.ut-fallback .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .5s ease; background: radial-gradient(circle at 70% 26%,#147eb055,transparent 35%),linear-gradient(135deg,#071c38 5%,#103c6c 60%,#12639b); }
+html.ut-fallback .hero-slide::before { content: ""; position: absolute; inset: -15%; background: repeating-linear-gradient(125deg,transparent 0 105px,#4ca0e214 106px 175px,transparent 176px 235px); transform: rotate(-4deg); }
+html.ut-fallback .hero-slide::after { content: ""; position: absolute; width: 400px; height: 400px; right: -65px; bottom: -80px; border: 1px solid #77d3ff55; border-radius: 50%; background: repeating-radial-gradient(circle,transparent 0 44px,#6ebcf327 45px 46px,transparent 47px 67px); box-shadow: 0 0 100px #31adff30,inset 0 0 70px #3d8bc12b; }
+html.ut-fallback .hero-slide.is-active { opacity: 1; }
+html.ut-fallback .hero-slide.img-building-glass { background: radial-gradient(ellipse at 70% 30%,#35b9d64a,transparent 55%),linear-gradient(140deg,#091e3c,#164b74); }
+html.ut-fallback .hero-slide.img-campus { background: radial-gradient(ellipse at 70% 50%,#4475d977,transparent 55%),linear-gradient(140deg,#0b2646,#274c83); }
+html.ut-fallback .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg,#051c3960,transparent); }
+html.ut-fallback .hero-stage { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; height: 100%; padding: 65px clamp(35px,5vw,90px); color: #fff; }
+html.ut-fallback .hero-caption { display: none; }
+html.ut-fallback .hero-caption.is-active { display: block; }
+html.ut-fallback .hero-caption h3 { margin: 0; font-size: clamp(28px,3vw,45px); font-weight: 700; line-height: 1.25; letter-spacing: -.035em; }
+html.ut-fallback .accent-bar { display: block; width: 60px; height: 5px; margin-top: 30px; border-radius: 8px; background: #3baaff; }
+html.ut-fallback .hero-controls { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 44px; }
+html.ut-fallback .hero-progress { display: flex; align-items: center; gap: 12px; font-size: 11px; font-weight: 600; }
+html.ut-fallback .hero-progress-bar { width: 90px; height: 2px; background: #ffffff3b; }
+html.ut-fallback .hero-progress-bar > span { display: block; width: 33.333%; height: 100%; background: #7ac8ff; transition: width .25s; }
+html.ut-fallback .hero-arrows { display: flex; gap: 9px; }
+html.ut-fallback .round-btn { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid #ffffff55; border-radius: 50%; background: transparent; color: #fff; }
+html.ut-fallback .round-btn svg { width: 17px; height: 17px; }
+html.ut-fallback .round-btn:hover { background: #ffffff1a; }
+html.ut-fallback .hero-features { position: relative; z-index: 3; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: center; width: min(1280px,90%); min-height: 130px; margin: 0 auto; padding: 22px 0; list-style: none; }
+html.ut-fallback .hero-features > li { display: flex; align-items: center; gap: 16px; padding: 0 25px; }
+html.ut-fallback .hero-features > li:first-child { padding-left: 0; }
+html.ut-fallback .hero-features > li + li { border-left: 1px solid #dce6f1; }
+html.ut-fallback .hero-feature-icon { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; color: #0066db; background: #e7f0ff; border-radius: 12px; }
+html.ut-fallback .hero-feature-icon svg { width: 26px; height: 26px; }
+html.ut-fallback .hero-features strong { display: block; margin-bottom: 5px; font-size: 13px; }
+html.ut-fallback .hero-features p { margin: 0; max-width: 240px; color: #697a8f; font-size: 11px; line-height: 1.7; }
+html.ut-fallback .process { padding: 65px 0; color: #fff; background: linear-gradient(115deg,#071c38,#0c315c); }
+html.ut-fallback .process-inner { display: grid; grid-template-columns: 1fr 1.55fr; gap: 60px; align-items: center; }
+html.ut-fallback .eyebrow-light { color: #66b9ff; }
+html.ut-fallback .process-text h2 { margin-bottom: 18px; font-size: 32px; line-height: 1.22; }
+html.ut-fallback .process-text p { max-width: 375px; margin: 0; color: #bacbe0; font-size: 13px; }
+html.ut-fallback .process-steps { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 22px; margin: 0; padding: 0; list-style: none; counter-reset: step; }
+html.ut-fallback .process-steps > li { position: relative; counter-increment: step; }
+html.ut-fallback .process-steps > li::before { content: "0" counter(step); position: absolute; top: 1px; right: 3px; color: #8eb4dc; font-size: 10px; }
+html.ut-fallback .process-steps img, html.ut-fallback .process-steps > li > svg { display: block; width: 42px; height: 42px; margin-bottom: 24px; object-fit: contain; color: #8ec8ff; }
+html.ut-fallback .process-steps h3 { margin: 0 0 9px; font-size: 17px; font-weight: 700; }
+html.ut-fallback .process-steps p { margin: 0; color: #a9bfd8; font-size: 11px; line-height: 1.75; }
+html.ut-fallback .partners { padding: 43px 0; border-bottom: 1px solid #edf1f7; }
+html.ut-fallback .partners .eyebrow { margin-bottom: 25px; text-align: center; font-size: 9px; color: #778aa2; }
+html.ut-fallback .partner-logos { display: flex; justify-content: space-between; align-items: center; gap: 32px; margin: 0; padding: 0; color: #4a607c; list-style: none; }
+html.ut-fallback .partner-logos > li { font-size: 22px; line-height: 1; white-space: nowrap; font-weight: 700; letter-spacing: -.06em; }
+html.ut-fallback .partner-logos sup { font-size: 9px; }
+html.ut-fallback .logo-fortinet { letter-spacing: -.04em; }
+html.ut-fallback .ft-o { display: inline-block; width: 14px; height: 14px; margin: 0 1px; border: 4px dashed currentColor; }
+html.ut-fallback .logo-cisco { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+html.ut-fallback .logo-cisco svg { width: 55px; height: 20px; }
+html.ut-fallback .logo-cisco span { font-size: 13px; letter-spacing: .12em; }
+html.ut-fallback .logo-nutanix { font-weight: 800; }
+html.ut-fallback .logo-cohesity b { color: #73b377; }
+html.ut-fallback .logo-vmware { font-weight: 400; }
+html.ut-fallback .logo-vmware span { font-weight: 600; }
+html.ut-fallback .logo-microsoft { display: flex; align-items: center; gap: 7px; font-size: 20px; font-weight: 500; }
+html.ut-fallback .ms-grid { width: 25px; height: 25px; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+html.ut-fallback .ms-grid i { background: currentColor; }
+html.ut-fallback .solutions { padding: 78px 0 82px; background: linear-gradient(180deg,#fff,#f8fbff); }
+html.ut-fallback .section-head { display: grid; grid-template-columns: 1.1fr 1fr auto; align-items: end; gap: 40px; margin-bottom: 36px; }
+html.ut-fallback .section-head .eyebrow { margin-bottom: 13px; }
+html.ut-fallback .section-title { margin: 0; font-size: 35px; font-weight: 800; line-height: 1.22; }
+html.ut-fallback .section-desc { margin: 0; font-size: 12px; color: #6c7c92; }
+html.ut-fallback .link-arrow { display: inline-flex; align-items: center; gap: 10px; color: #0066db; font-size: 12px; font-weight: 800; white-space: nowrap; }
+html.ut-fallback .link-arrow:hover { color: #004ca9; }
+html.ut-fallback .showcase { display: grid; grid-template-columns: .85fr 1.15fr; min-height: 510px; }
+html.ut-fallback .showcase-about { position: relative; overflow: hidden; display: flex; align-items: center; min-height: 510px; padding: 65px max(35px,6.5vw); color: #fff; background: radial-gradient(ellipse at 100% 100%,#257cc588,transparent 60%),linear-gradient(135deg,#09264b,#123d6b); }
+html.ut-fallback .showcase-about::before { content: ""; position: absolute; width: 460px; height: 460px; right: -180px; bottom: -240px; border: 1px solid #75c9ff44; border-radius: 50%; box-shadow: 0 0 0 42px #5ba9f00d,0 0 0 85px #5ba9f00b,0 0 0 127px #5ba9f008; }
+html.ut-fallback .showcase-about-text { position: relative; z-index: 1; }
+html.ut-fallback .showcase-about h2 { margin-bottom: 22px; font-size: 36px; line-height: 1.28; }
+html.ut-fallback .showcase-about p { max-width: 390px; margin: 0; font-size: 13px; line-height: 1.85; color: #c2d4e7; }
+html.ut-fallback .showcase-projects { min-width: 0; padding: 50px 5vw; background: #f3f7fc; }
+html.ut-fallback .projects-head { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
+html.ut-fallback .projects-head h2 { margin: 0; font-size: 24px; }
+html.ut-fallback .projects-head .link-arrow { font-size: 10px; }
+html.ut-fallback .projects-track { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+html.ut-fallback .projects-track::-webkit-scrollbar { display: none; }
+html.ut-fallback .project-card { flex: 0 0 calc(50% - 10px); min-width: 0; overflow: hidden; border: 1px solid #dfe8f1; border-radius: 14px; background: #fff; scroll-snap-align: start; }
+html.ut-fallback .project-media { position: relative; height: 145px; overflow: hidden; background: radial-gradient(circle at 75% 20%,#81c4f4,transparent 50%),linear-gradient(145deg,#174e86,#69a5d4); }
+html.ut-fallback .project-media::before { content: ""; position: absolute; width: 45%; height: 105%; right: 17%; bottom: -25%; border: 1px solid #d0eaff88; transform: skewY(-16deg); background: repeating-linear-gradient(0deg,#ffffff06 0 17px,#ffffff4d 18px 19px),repeating-linear-gradient(90deg,transparent 0 25px,#ffffff4d 26px 27px),linear-gradient(145deg,#73bde7,#185b94); box-shadow: -35px 16px 0 #d2ecff33; }
+html.ut-fallback .project-media.img-datacenter { background: linear-gradient(150deg,#0e325c,#438dba); }
+html.ut-fallback .project-media.img-datacenter::before { width: 50%; right: 20%; height: 70%; bottom: 10%; transform: skewY(-8deg); background: repeating-linear-gradient(0deg,#154476 0 16px,#70d0f6 17px 18px,#133d6d 19px 24px); border-radius: 4px; box-shadow: -34px 12px 0 #204f7f; }
+html.ut-fallback .project-media.img-campus { background: linear-gradient(145deg,#87b2d6,#d6e9f5); }
+html.ut-fallback .project-body { padding: 20px 18px; }
+html.ut-fallback .project-body h3 { margin-bottom: 16px; font-size: 14px; line-height: 1.45; }
+html.ut-fallback .tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+html.ut-fallback .tags li { padding: 4px 7px; font-size: 8px; color: #446c97; background: #edf4fb; border-radius: 4px; }
+html.ut-fallback .projects-controls { display: flex; align-items: center; justify-content: space-between; margin-top: 22px; }
+html.ut-fallback .projects-dots { display: flex; gap: 6px; }
+html.ut-fallback .projects-dots button { width: 6px; height: 6px; padding: 0; border: 0; border-radius: 50%; background: #c2d2e6; }
+html.ut-fallback .projects-dots button.is-active { width: 19px; border-radius: 5px; background: #0066db; }
+html.ut-fallback .next-img-btn { display: grid; place-content: center; width: 36px; height: 36px; padding: 0; border: 1px solid #cbdbee; border-radius: 50%; background: #fff; color: #0066db; }
+html.ut-fallback .next-img-btn::after { content: "→"; font-size: 20px; line-height: 1; }
+html.ut-fallback .next-img-btn svg { width: 18px; height: 18px; }
+html.ut-fallback .next-img-btn:has(svg)::after { content: none; }
+html.ut-fallback .cta { padding: 52px 0; color: #fff; background: #082347; }
+html.ut-fallback .cta-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 25px 50px; }
+html.ut-fallback .cta-text { display: flex; align-items: center; gap: 24px; }
+html.ut-fallback .cta-icon { flex-shrink: 0; width: 68px; height: 68px; }
+html.ut-fallback .cta-icon svg { width: 100%; height: 100%; }
+html.ut-fallback .cta-eyebrow { display: block; margin-bottom: 9px; color: #75baf9; font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: .1em; }
+html.ut-fallback .cta h2 { margin: 0; font-size: 28px; line-height: 1.3; }
+html.ut-fallback .cta-contact { grid-column: 1/-1; display: flex; justify-content: flex-end; gap: 30px; margin: 0; padding: 20px 0 0; list-style: none; border-top: 1px solid #ffffff1c; }
+html.ut-fallback .cta-contact li { display: flex; align-items: center; gap: 9px; color: #b8cce4; font-size: 12px; }
+html.ut-fallback .cta-contact svg { width: 17px; height: 17px; color: #6fb4f4; }
+html.ut-fallback .cta-contact a:hover { color: #fff; }
+html.ut-fallback .site-footer { padding: 44px 0 26px; color: #b5c5d8; background: #061b37; }
+html.ut-fallback .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-bottom: 30px; border-bottom: 1px solid #ffffff13; }
+html.ut-fallback .site-footer .brand { color: #fff; }
+html.ut-fallback .site-footer .ut-brand-fallback { color: #fff; font-size: 30px; }
+html.ut-fallback .site-footer .brand-logo { width: 175px; }
+html.ut-fallback .site-footer .brand-sub { font-size: 8px; letter-spacing: .09em; }
+html.ut-fallback .footer-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 17px; }
+html.ut-fallback .footer-nav a { font-size: 10px; font-weight: 600; }
+html.ut-fallback .footer-nav a:hover, html.ut-fallback .footer-group a:hover { color: #fff; }
+html.ut-fallback .footer-copy { flex-shrink: 0; font-size: 9px; }
+html.ut-fallback .footer-links { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 45px; padding-top: 30px; }
+html.ut-fallback .footer-group-title { margin-bottom: 18px; color: #e4edf8; font-size: 12px; letter-spacing: 0; }
+html.ut-fallback .footer-group ul { margin: 0; padding: 0; list-style: none; }
+html.ut-fallback .footer-group li + li { margin-top: 10px; }
+html.ut-fallback .footer-group a { display: inline-flex; gap: 8px; align-items: center; font-size: 10px; }
+html.ut-fallback .footer-group a svg { width: 12px; height: 12px; }
+@media (min-width: 1600px) {
+    html.ut-fallback .hero-media { left: calc(50% + 15px); }
+}
+@media (max-width: 1120px) {
+    html.ut-fallback .header-inner { gap: 15px; }
+    html.ut-fallback .brand-logo { width: 174px; }
+    html.ut-fallback .ut-brand-fallback { font-size: 33px; }
+    html.ut-fallback .main-nav { gap: 16px; }
+    html.ut-fallback .nav-link { font-size: 12px; }
+    html.ut-fallback .hero-features > li { padding-inline: 18px; }
+    html.ut-fallback .hero-features strong { font-size: 12px; }
+    html.ut-fallback .hero-features p { font-size: 10px; }
+    html.ut-fallback .process-inner { grid-template-columns: .85fr 1.3fr; gap: 35px; }
+    html.ut-fallback .process-text h2 { font-size: 27px; }
+    html.ut-fallback .process-steps { gap: 15px; }
+    html.ut-fallback .partner-logos { gap: 20px; }
+    html.ut-fallback .partner-logos > li { font-size: 19px; }
+    html.ut-fallback .section-head { grid-template-columns: 1fr 1fr; gap: 24px; }
+    html.ut-fallback .section-head .link-arrow { grid-column: 1/-1; }
+    html.ut-fallback .showcase { grid-template-columns: .8fr 1.2fr; }
+    html.ut-fallback .showcase-about { padding: 45px 5vw; }
+    html.ut-fallback .showcase-about h2 { font-size: 30px; }
+    html.ut-fallback .showcase-projects { padding: 40px 4vw; }
+    html.ut-fallback .projects-head { align-items: flex-start; }
+    html.ut-fallback .projects-head h2 { font-size: 21px; }
+    html.ut-fallback .footer-inner { flex-wrap: wrap; }
+    html.ut-fallback .footer-copy { margin-left: auto; }
+}
+@media (max-width: 900px) {
+    html.ut-fallback .header-inner { min-height: 82px; }
+    html.ut-fallback .main-nav { gap: 12px; }
+    html.ut-fallback .brand-logo { width: 150px; }
+    html.ut-fallback .brand-sub { font-size: 8px; }
+    html.ut-fallback .nav-link { font-size: 11px; }
+    html.ut-fallback .icon-btn { width: 35px; height: 35px; }
+    html.ut-fallback .hero { min-height: auto; }
+    html.ut-fallback .hero-inner { min-height: 500px; }
+    html.ut-fallback .hero-content { width: 50%; padding-right: 20px; }
+    html.ut-fallback .hero-title { font-size: 41px; }
+    html.ut-fallback .hero-lead { font-size: 12px; }
+    html.ut-fallback .hero-stage { padding-inline: 35px; }
+    html.ut-fallback .hero-caption h3 { font-size: 32px; }
+    html.ut-fallback .hero-controls { gap: 12px; flex-wrap: wrap; }
+    html.ut-fallback .hero-media { bottom: 128px; }
+    html.ut-fallback .process-inner { grid-template-columns: 1fr; gap: 35px; }
+    html.ut-fallback .process-text h2 br { display: none; }
+    html.ut-fallback .process-text p { max-width: 550px; }
+    html.ut-fallback .process-steps { gap: 30px; }
+    html.ut-fallback .partner-logos { flex-wrap: wrap; justify-content: center; gap: 30px 45px; }
+    html.ut-fallback .showcase { grid-template-columns: 1fr; }
+    html.ut-fallback .showcase-about { min-height: 370px; padding: 55px 8%; }
+    html.ut-fallback .showcase-about-text { max-width: 600px; }
+    html.ut-fallback .showcase-projects { padding: 45px 8%; }
+    html.ut-fallback .project-card { flex-basis: calc(50% - 10px); }
+    html.ut-fallback .cta h2 { font-size: 24px; }
+    html.ut-fallback .cta-inner { gap: 25px; }
+    html.ut-fallback .cta-icon { width: 55px; height: 55px; }
+    html.ut-fallback .cta .btn-ut { font-size: 12px; padding-inline: 17px; }
+}
+@media (max-width: 760px) {
+    html.ut-fallback { scroll-padding-top: 88px; }
+    html.ut-fallback .wrap { width: 90%; }
+    html.ut-fallback .header-inner { min-height: 76px; }
+    html.ut-fallback .ut-brand-fallback { font-size: 31px; }
+    html.ut-fallback .main-nav { display: none; }
+    html.ut-fallback .nav-toggle { display: grid; }
+    html.ut-fallback .header-actions { margin-left: auto; gap: 8px; }
+    html.ut-fallback .hero { display: flex; flex-direction: column; }
+    html.ut-fallback .hero-inner { order: 0; min-height: auto; padding-block: 40px; }
+    html.ut-fallback .hero-content { width: 100%; max-width: 580px; padding: 0; }
+    html.ut-fallback .hero-title { font-size: clamp(38px,7.8vw,53px); margin-bottom: 20px; }
+    html.ut-fallback .hero-lead { max-width: 500px; font-size: 13px; }
+    html.ut-fallback .hero-content .eyebrow { font-size: 9px; }
+    html.ut-fallback .hero-media { position: relative; order: 1; inset: auto; width: 90%; margin: 0 auto; height: 290px; flex-shrink: 0; border-radius: 18px; }
+    html.ut-fallback .hero-stage { padding: 30px; justify-content: space-between; }
+    html.ut-fallback .hero-caption h3 { font-size: 27px; line-height: 1.16; }
+    html.ut-fallback .hero-caption h3 br:nth-of-type(2) { display: none; }
+    html.ut-fallback .accent-bar { width: 44px; height: 3px; margin-top: 16px; }
+    html.ut-fallback .hero-controls { margin-top: 20px; }
+    html.ut-fallback .hero-features { order: 2; grid-template-columns: 1fr; width: 90%; padding-block: 12px; }
+    html.ut-fallback .hero-features > li { gap: 14px; padding: 17px 0; }
+    html.ut-fallback .hero-features > li + li { border-left: 0; border-top: 1px solid #dce6f1; }
+    html.ut-fallback .hero-features strong { font-size: 13px; margin-bottom: 3px; }
+    html.ut-fallback .hero-features p { max-width: 100%; font-size: 11px; }
+    html.ut-fallback .hero-feature-icon { width: 40px; height: 40px; }
+    html.ut-fallback .process { padding: 45px 0; }
+    html.ut-fallback .process-text h2 { font-size: 28px; }
+    html.ut-fallback .process-steps { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 30px; }
+    html.ut-fallback .process-steps > li { padding-right: 10px; }
+    html.ut-fallback .process-steps > li::before { right: 8px; }
+    html.ut-fallback .process-steps img, html.ut-fallback .process-steps > li > svg { margin-bottom: 15px; }
+    html.ut-fallback .partners { padding: 32px 0; }
+    html.ut-fallback .partner-logos { gap: 28px 35px; }
+    html.ut-fallback .partner-logos > li { font-size: 18px; }
+    html.ut-fallback .partner-logos .logo-microsoft { font-size: 18px; }
+    html.ut-fallback .solutions { padding: 48px 0; }
+    html.ut-fallback .section-head { grid-template-columns: 1fr; gap: 17px; margin-bottom: 25px; }
+    html.ut-fallback .section-title { font-size: 29px; }
+    html.ut-fallback .section-desc { max-width: 500px; font-size: 13px; }
+    html.ut-fallback .section-head .eyebrow { margin-bottom: 12px; }
+    html.ut-fallback .section-head .link-arrow { grid-column: auto; }
+    html.ut-fallback .showcase-about { padding: 45px 7%; min-height: 340px; }
+    html.ut-fallback .showcase-about h2 { font-size: 30px; }
+    html.ut-fallback .showcase-projects { padding: 38px 5%; }
+    html.ut-fallback .projects-head { align-items: center; gap: 12px; }
+    html.ut-fallback .projects-head h2 { font-size: 22px; }
+    html.ut-fallback .projects-head .link-arrow { font-size: 10px; gap: 5px; }
+    html.ut-fallback .projects-head .link-arrow svg { width: 15px; height: 15px; }
+    html.ut-fallback .project-card { flex-basis: 78%; }
+    html.ut-fallback .project-media { height: 155px; }
+    html.ut-fallback .project-body h3 { font-size: 15px; }
+    html.ut-fallback .cta { padding: 40px 0; }
+    html.ut-fallback .cta-inner { grid-template-columns: 1fr; gap: 25px; }
+    html.ut-fallback .cta-text { gap: 17px; }
+    html.ut-fallback .cta-icon { width: 48px; height: 48px; }
+    html.ut-fallback .cta h2 { font-size: 23px; }
+    html.ut-fallback .cta h2 br { display: none; }
+    html.ut-fallback .cta .btn-ut { justify-self: start; min-height: 46px; font-size: 13px; }
+    html.ut-fallback .cta-contact { grid-column: auto; flex-direction: column; align-items: flex-start; gap: 12px; }
+    html.ut-fallback .site-footer { padding-top: 32px; }
+    html.ut-fallback .footer-inner { flex-direction: column; align-items: flex-start; gap: 26px; }
+    html.ut-fallback .footer-nav { gap: 14px 22px; }
+    html.ut-fallback .footer-nav a { font-size: 11px; }
+    html.ut-fallback .footer-copy { margin: 0; font-size: 10px; }
+    html.ut-fallback .footer-links { grid-template-columns: 1fr 1fr; gap: 28px; }
+    html.ut-fallback .footer-group-title { font-size: 12px; margin-bottom: 14px; }
+    html.ut-fallback .footer-group a { font-size: 11px; }
+}
+@media (max-width: 400px) {
+    html.ut-fallback .hero-title { font-size: 37px; }
+    html.ut-fallback .hero-content .eyebrow { letter-spacing: .055em; }
+    html.ut-fallback .partner-logos { gap: 25px; }
+    html.ut-fallback .projects-head h2 { font-size: 19px; }
+    html.ut-fallback .cta h2 { font-size: 21px; }
+    html.ut-fallback .footer-links { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html.ut-fallback { scroll-behavior: auto; }
+    html.ut-fallback .hero-slide, html.ut-fallback .hero-progress-bar > span { transition: none; }
+}
+
+/* Ek bileşenler; mevcut site stillerinden bağımsız ve sınırlı kapsam. */
+:root{--ut-navy:#102c50;--ut-blue:#0664d9;--ut-muted:#627188;--ut-line:#e2eaf3;--ut-pale:#eff6ff}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+.ut-icon{width:24px;height:24px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ut-symbols{position:absolute;width:0;height:0;overflow:hidden}
+.ut-skip-link{position:fixed;top:12px;left:12px;z-index:1000;padding:12px 18px;background:#fff;color:var(--ut-navy);border-radius:8px;transform:translateY(-160%)}
+.ut-skip-link:focus{transform:translateY(0)}
+:where(a,button,input,summary):focus-visible{outline:3px solid #40a8ff;outline-offset:4px}
+[tabindex="-1"]:focus{outline:none}
+.ut-brand-fallback{font-size:36px;font-weight:800;line-height:1;letter-spacing:-2px;color:var(--ut-navy)}
+.ut-brand-fallback span{color:var(--ut-blue)}
+.ut-brand-fallback[hidden]{display:none!important}
+.site-header{z-index:100;isolation:isolate}
+.site-header .header-inner{position:relative}
+.main-nav{display:flex;align-items:center;gap:20px}
+.ut-nav-item{display:flex;align-items:center;position:relative;gap:3px}
+.ut-nav-item.ut-nav-mega{position:static}
+.ut-dropdown-toggle{display:grid;place-items:center;width:25px;height:36px;flex-shrink:0;padding:0;border:0;background:transparent;color:inherit;cursor:pointer;border-radius:6px}
+.ut-dropdown-toggle .ut-icon{width:13px;height:13px;transition:transform .18s}
+.ut-dropdown-toggle[aria-expanded=true] .ut-icon{transform:rotate(180deg)}
+.ut-dropdown-panel{position:absolute;top:calc(100% + 20px);left:-18px;min-width:240px;padding:12px;background:#fff;color:var(--ut-navy);border:1px solid var(--ut-line);border-radius:14px;box-shadow:0 18px 45px #14385d26;text-align:left;z-index:101}
+.ut-dropdown-panel ul{list-style:none;padding:0;margin:0}
+.ut-dropdown-panel a{text-decoration:none;color:var(--ut-navy)}
+.ut-dropdown-panel>ul a{display:block;padding:12px 14px;font-size:14px;border-radius:8px}
+.ut-dropdown-panel>ul a:hover{background:var(--ut-pale);color:var(--ut-blue)}
+.ut-mega-panel{left:0;right:0;top:calc(100% + 4px);min-width:0;padding:25px 28px 16px;max-height:calc(100dvh - 125px);overflow:auto}
+.ut-mega-header{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-bottom:17px;margin-bottom:21px;border-bottom:1px solid var(--ut-line)}
+.ut-mega-header strong{font-size:20px;letter-spacing:-.6px}
+.ut-mega-header a,.ut-mega-footer{font-size:13px;color:var(--ut-blue);font-weight:700}
+.ut-mega-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:25px 30px}
+.ut-mega-group h3{font-size:14px;line-height:1.5;margin:0 0 9px;letter-spacing:-.3px}
+.ut-mega-group h3 a{display:flex;align-items:flex-start;gap:9px}
+.ut-mega-group h3 .ut-icon{width:21px;height:21px;color:var(--ut-blue)}
+.ut-mega-group ul{padding-left:30px}
+.ut-mega-group li+li{margin-top:7px}
+.ut-mega-group li a{font-size:12px;line-height:1.6;color:var(--ut-muted);display:block}
+.ut-mega-group a:hover{color:var(--ut-blue);text-decoration:underline;text-underline-offset:3px}
+.ut-mega-footer{display:flex;align-items:center;gap:8px;border-top:1px solid var(--ut-line);margin-top:21px;padding-top:13px;color:var(--ut-muted)}
+.ut-mega-footer .ut-icon{width:18px;height:18px;color:var(--ut-blue)}
+.ut-mega-footer a{color:var(--ut-blue);white-space:nowrap}
+.main-nav .nav-link[aria-current=page]{color:var(--ut-blue)}
+#detail-icon{margin-bottom:20px}
+.ut-page,.ut-page *{box-sizing:border-box}
+.ut-hero-contact{display:inline-flex;align-items:center;gap:27px;background:var(--ut-blue);color:#fff!important;text-decoration:none;font-size:14px;font-weight:700;padding:16px 23px;margin-top:8px;border:1px solid var(--ut-blue);border-radius:8px;box-shadow:0 7px 18px #0664d921;transition:background .2s,transform .2s}
+.ut-hero-contact:hover{background:#034fae;transform:translateY(-2px)}
+.ut-hero-contact .ut-icon{width:20px;height:20px}
+.ut-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:35px}
+.ut-service-card{position:relative;display:flex;flex-direction:column;min-width:0;padding:25px 23px 23px;background:linear-gradient(145deg,#fff,#fcfdff);border:1px solid var(--ut-line);border-radius:20px;box-shadow:0 3px 4px #14385d06,0 12px 24px #14385d08;color:var(--ut-navy);transition:transform .2s,box-shadow .2s,border-color .2s}
+.ut-service-card:hover{transform:translateY(-4px);border-color:#a7cdfb;box-shadow:0 12px 28px #14385d13}
+.ut-service-card:first-child{background:linear-gradient(145deg,#f1f7ff,#f9fbff);border-color:#b7d5f8}
+.ut-service-card h3{font-size:17px;line-height:1.4;font-weight:800;letter-spacing:-.55px;margin:0}
+.ut-service-title{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;min-height:58px}
+.ut-service-title:hover{color:var(--ut-blue)}
+.ut-service-icon{display:grid;place-items:center;width:48px;height:52px;flex-shrink:0;border-radius:12px;color:#194577;background:linear-gradient(145deg,#deecff,#f0f6ff)}
+.ut-service-icon .ut-icon{width:30px;height:30px}
+.ut-service-chevron{width:16px;height:16px;margin-left:auto;color:var(--ut-blue)}
+.ut-service-card>p{font-size:14px;line-height:1.7;color:#52637a;margin:17px 0 18px}
+.ut-service-topics{list-style:none;display:grid;gap:9px;padding:15px 0 0;margin:0;margin-top:auto;border-top:1px solid var(--ut-line)}
+.ut-service-topics a{display:flex;align-items:flex-start;gap:7px;text-decoration:none;font-size:12px;line-height:1.6;color:#4c6583}
+.ut-service-topics .ut-icon{width:12px;height:12px;margin-top:4px;color:var(--ut-blue)}
+.ut-service-topics a:hover{color:var(--ut-blue);text-decoration:underline;text-underline-offset:3px}
+.ut-about-list{list-style:none;padding:0;display:grid;gap:15px;margin:25px 0 0}
+.ut-about-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.7}
+.ut-about-list .ut-icon{width:22px;height:22px;color:#85c6ff;margin-top:2px}
+.ut-about-link{display:inline-flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font-size:13px;font-weight:700;margin-top:28px}
+.ut-about-link .ut-icon{width:18px;height:18px}
+.ut-page{min-height:65vh;background:#fff;color:var(--ut-navy);font-family:'Plus Jakarta Sans',Arial,sans-serif;line-height:1.6}
+.ut-page .wrap{width:min(1280px,90%);margin-inline:auto}
+.ut-page-content{padding-top:38px;padding-bottom:85px}
+.ut-breadcrumb{display:flex;gap:9px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--ut-muted);margin-bottom:20px}
+.ut-breadcrumb a{color:var(--ut-muted);text-decoration:none}
+.ut-breadcrumb a:hover{color:var(--ut-blue)}
+.ut-page h1{font-size:40px;line-height:1.2;letter-spacing:-1.5px;font-weight:800;margin:0 0 12px}
+.ut-page-lead{font-size:16px;color:var(--ut-muted);margin:0;max-width:850px;line-height:1.8}
+.ut-section-mark{display:block;width:48px;height:5px;border-radius:5px;background:var(--ut-blue);margin-bottom:18px}
+.ut-page-note{font-size:13px;font-style:italic;color:#6a7a90;margin:8px 0 0}
+.ut-page-banner{height:150px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 20%,#1077bd88,transparent 45%),repeating-linear-gradient(130deg,transparent 0 110px,#086bb51c 110px 150px,transparent 150px 250px),linear-gradient(105deg,#031a34,#083b67);color:#fff}
+.ut-page-banner::after{content:'';position:absolute;width:650px;height:650px;right:-150px;top:-350px;border:1px solid #56b7ff42;border-radius:50%;box-shadow:0 0 0 70px #56b7ff0b,0 0 0 140px #56b7ff0a}
+.ut-banner-art{position:absolute;right:12%;top:15px;display:flex;align-items:center;gap:40px;transform:rotate(-8deg);color:#5fc9ff88}
+.ut-banner-art .ut-icon{width:100px;height:100px;stroke-width:.8}
+.ut-blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 20px;margin-top:32px}
+.ut-blog-card{min-width:0;display:flex;flex-direction:column;border:1px solid #e0e8f2;border-radius:16px;overflow:hidden;background:linear-gradient(#fff,#fbfdff);box-shadow:0 6px 15px #1a578a0c;transition:transform .2s,box-shadow .2s}
+.ut-blog-card:hover{transform:translateY(-4px);box-shadow:0 12px 27px #1a578a18}
+.ut-blog-art{height:133px;overflow:hidden;background:#a5d0f8}
+.ut-blog-art>svg{display:block;width:100%;height:100%}
+.ut-blog-body{display:flex;flex:1;flex-direction:column;padding:18px 21px 19px}
+.ut-blog-meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px;color:#6c7a8e;font-size:11px;margin-bottom:8px}
+.ut-blog-category{display:inline-flex;align-items:center;gap:7px;color:var(--ut-blue);font-weight:700}
+.ut-blog-category .ut-icon{width:17px;height:17px}
+.ut-blog-meta time{border-left:1px solid #9eacbd;padding-left:10px;white-space:nowrap}
+.ut-blog-card h2{font-size:17px;line-height:1.45;letter-spacing:-.55px;margin:0 0 7px;font-weight:800}
+.ut-blog-card p{font-size:13px;line-height:1.65;color:var(--ut-muted);margin:0 0 15px}
+.ut-read-more{align-self:flex-start;display:inline-flex;align-items:center;gap:7px;background:none;border:0;padding:0;margin-top:auto;font:inherit;font-size:13px;font-weight:800;color:var(--ut-blue);cursor:pointer}
+.ut-read-more .ut-icon{width:15px;height:15px}
+.ut-read-more:hover{text-decoration:underline;text-underline-offset:4px}
+.ut-blog-body .ut-read-more{font-family:inherit;font-size:13px;font-weight:800}
+.ut-detail-layout{display:grid;grid-template-columns:1fr 285px;gap:55px;margin-top:38px;align-items:start}
+.ut-topic{border-top:1px solid var(--ut-line);padding-top:24px;margin-top:24px;scroll-margin-top:120px}
+.ut-topic h2{font-size:22px;letter-spacing:-.7px;margin:0 0 10px}
+.ut-topic p,.ut-info-copy p{font-size:15px;color:var(--ut-muted);line-height:1.9;margin:0 0 15px}
+.ut-detail-aside{padding:25px;background:#f1f7ff;border:1px solid #dceafa;border-radius:16px;position:sticky;top:115px}
+.ut-detail-aside h2{font-size:18px;margin:0 0 12px}
+.ut-detail-aside p{font-size:13px;color:var(--ut-muted);margin-bottom:20px}
+.ut-detail-aside a{display:flex;align-items:center;gap:8px;text-decoration:none;font-size:13px;margin-top:14px;color:var(--ut-blue);overflow-wrap:anywhere}
+.ut-info-copy{margin-top:25px;max-width:780px}
+.ut-info-copy a{color:var(--ut-blue)}
+.ut-legal-bar{border-top:1px solid #ffffff21;padding-block:23px;display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center}
+.ut-legal-bar a{color:inherit;text-decoration:none;font-size:12px;opacity:.8;line-height:1.7}
+.ut-legal-bar a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.ut-legal-bar a:first-child{font-weight:700;opacity:1}
+.ut-legal-bar .ut-icon{width:16px;height:16px;vertical-align:middle;margin-right:5px}
+.ut-dialog{width:min(760px,90vw);max-height:85dvh;border:1px solid var(--ut-line);border-radius:20px;padding:40px;color:var(--ut-navy);font-family:'Plus Jakarta Sans',Arial,sans-serif;box-shadow:0 30px 100px #00183342;overflow:auto}
+.ut-dialog::backdrop{background:#04172e99;backdrop-filter:blur(4px)}
+.ut-dialog-close{display:grid;place-items:center;position:sticky;float:right;top:0;width:36px;height:36px;margin:-20px -20px 10px 10px;border:1px solid var(--ut-line);background:#fff;border-radius:50%;color:var(--ut-navy);cursor:pointer}
+.ut-dialog h2{font-size:28px;line-height:1.4;letter-spacing:-1px;margin:10px 0 22px}
+.ut-dialog p{font-size:15px;line-height:1.85;color:var(--ut-muted)}
+.ut-dialog-label{font-size:12px;font-weight:700;color:var(--ut-blue)}
+.site-header .header-search{right:0;top:calc(100% + 10px)}
+html.ut-fallback .site-header .header-search{right:0;top:calc(100% + 10px)}
+.ut-search-results{position:absolute;right:0;top:calc(100% + 94px);background:#fff;color:var(--ut-navy);box-shadow:0 12px 35px #14385d25;border:1px solid var(--ut-line);border-radius:12px;width:min(420px,90vw);max-height:calc(100dvh - 210px);overflow:auto;padding:14px;z-index:110}
+.ut-search-results p{font-size:13px;margin:8px}
+.ut-search-results a{display:block;padding:12px;border-radius:8px;text-decoration:none;color:var(--ut-navy);font-size:13px}
+.ut-search-results a:hover{background:var(--ut-pale)}
+body.ut-dialog-open{overflow:hidden}
+body.ut-inner-page .site-header{position:sticky;top:0;background:#fff;color:var(--ut-navy);box-shadow:0 2px 18px #10375a0a}
+body.ut-inner-page .site-header .nav-link,body.ut-inner-page .header-actions{color:var(--ut-navy)}
+@media(min-width:1101px){.site-header .nav-toggle{display:none}.main-nav>.nav-link,.main-nav>.ut-nav-item>.nav-link{white-space:nowrap}.main-nav .nav-link{font-size:13px;padding:10px 0}.site-header .header-inner{gap:22px}.site-header .brand{flex-shrink:0}.site-header .brand-logo{max-width:205px;height:auto}.main-nav{gap:18px}}
+@media(max-width:1200px) and (min-width:1101px){.main-nav{gap:10px}.site-header .brand-logo{max-width:175px}.ut-mega-grid{gap:24px 18px}}
+@media(max-width:1100px){html.ut-fallback .site-header .main-nav{display:none;margin-left:0;align-items:stretch;gap:0;justify-content:flex-start}html.ut-fallback .site-header .main-nav.is-open{display:flex}html.ut-fallback .site-header .nav-toggle{display:grid}html.ut-fallback .site-header .main-nav .nav-link{display:block;padding:13px 10px}html.ut-fallback .site-header .header-inner{min-height:82px}}
+@media(max-width:1100px){.site-header .nav-toggle{display:flex}.site-header .main-nav{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;max-height:calc(100dvh - 95px);overflow:auto;flex-direction:column;align-items:stretch;gap:0;padding:16px;background:#fff;color:var(--ut-navy);border:1px solid var(--ut-line);border-radius:0 0 16px 16px;box-shadow:0 15px 30px #14385d20}.site-header .main-nav.is-open{display:flex}.site-header .main-nav .nav-link{color:var(--ut-navy);padding:13px 10px;display:block;font-size:14px}.ut-nav-item,.ut-nav-item.ut-nav-mega{position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;border-bottom:1px solid var(--ut-line)}.ut-nav-item>.nav-link{flex:1}.ut-dropdown-toggle{height:46px;width:44px;color:var(--ut-navy)}.ut-dropdown-panel,.ut-mega-panel{position:static;flex-basis:100%;width:100%;padding:12px;border-radius:8px;box-shadow:none;border:0;background:#f7faff;margin-bottom:12px;max-height:none;min-width:0}.ut-mega-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}.ut-mega-header strong{font-size:17px}.ut-mega-header a{font-size:11px}.ut-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ut-service-card h3{font-size:18px}.ut-detail-layout{grid-template-columns:1fr 240px;gap:30px}}
+@media(max-width:800px){.ut-blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ut-page h1{font-size:34px}.ut-page-lead{font-size:14px}.ut-detail-layout{grid-template-columns:1fr}.ut-detail-aside{position:static}.ut-blog-body{padding:16px}.ut-blog-card h2{font-size:16px}.ut-page-banner{height:110px}.ut-page-content{padding-top:28px;padding-bottom:55px}}
+@media(max-width:560px){.ut-service-grid,.ut-blog-grid{grid-template-columns:1fr;gap:18px;margin-top:26px}.ut-service-card{padding:22px}.ut-service-card>p{margin:14px 0;font-size:14px}.ut-service-title{min-height:52px}.ut-service-topics{gap:10px}.ut-service-topics a{font-size:13px}.ut-blog-art{height:132px}.ut-blog-body{padding:18px 21px}.ut-blog-card h2{font-size:18px}.ut-blog-card p{font-size:14px}.ut-blog-meta{font-size:11px}.ut-read-more{font-size:14px}.ut-mega-grid{grid-template-columns:1fr}.ut-mega-header{align-items:flex-start;flex-direction:column;gap:5px;margin-bottom:16px}.ut-mega-group h3{font-size:14px}.ut-mega-group li a{font-size:12px}.ut-mega-footer{font-size:11px}.ut-page h1{font-size:31px;letter-spacing:-1px}.ut-page-banner{height:85px}.ut-banner-art .ut-icon{width:70px;height:70px}.ut-dialog{padding:28px}.ut-dialog h2{font-size:23px}.ut-dialog-close{margin:-12px -12px 10px 10px}.ut-legal-bar{gap:13px 20px}.ut-hero-contact{margin-top:7px;padding:15px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+</style>
+</head>
+<body class="has-overlay-header"><a class="ut-skip-link" href="#mainContent">Ana içeriğe geç</a><svg class="ut-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="ut-i-network" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 6.5v6m0-2-6 6m6-6 6 6"/></symbol>
+<symbol id="ut-i-shield" viewBox="0 0 24 24"><path d="m12 2-8 3v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5Z"/><path d="m8 12 3 3 5-6"/></symbol>
+<symbol id="ut-i-server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M15 6.5h3M15 17.5h3"/></symbol>
+<symbol id="ut-i-cloud" viewBox="0 0 24 24"><path d="M7 19h11a4.5 4.5 0 0 0 .4-9A6.5 6.5 0 0 0 6 8a5.5 5.5 0 0 0 1 11Z"/></symbol>
+<symbol id="ut-i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 8-3 5-5 3 3-5Z"/></symbol>
+<symbol id="ut-i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
+<symbol id="ut-i-layers" viewBox="0 0 24 24"><path d="m12 2 10 6-10 6L2 8Zm-10 11 10 6 10-6M2 18l10 6 10-6"/></symbol>
+<symbol id="ut-i-headset" viewBox="0 0 24 24"><path d="M3 14v-3a9 9 0 0 1 18 0v7a4 4 0 0 1-4 4h-3"/><rect x="2" y="11" width="5" height="8" rx="2"/><rect x="17" y="11" width="5" height="8" rx="2"/></symbol>
+<symbol id="ut-i-support" viewBox="0 0 24 24"><path d="M3 8a9 9 0 0 1 16-3l2 3M3 2v6h6m12 8a9 9 0 0 1-16 3l-2-3m18 6v-6h-6"/></symbol>
+<symbol id="ut-i-growth" viewBox="0 0 24 24"><path d="M3 21h18M5 17v-5m5 5V9m5 8V6m5 11V3M3 8l5-4 5 1 8-4"/></symbol>
+<symbol id="ut-i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20M4 6h16M4 18h16"/></symbol>
+<symbol id="ut-i-laptop" viewBox="0 0 24 24"><path d="M4 16V4h16v12M2 16h20v4H2Z"/></symbol>
+<symbol id="ut-i-document" viewBox="0 0 24 24"><path d="M14 2H5v20h14V7Zm0 0v6h5M8 12h8m-8 4h6"/></symbol>
+<symbol id="ut-i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="ut-i-chevron-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+<symbol id="ut-i-chevron-down" viewBox="0 0 24 24"><path d="m5 9 7 7 7-7"/></symbol>
+<symbol id="ut-i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+<symbol id="ut-i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z"/></symbol>
+<symbol id="ut-i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+</defs></svg>
+    <header class="site-header is-overlay" id="siteHeader">
+        <div class="wrap header-inner">
+            <a class="brand" href="/" aria-label="Unitürk Bilişim Teknolojileri - Ana Sayfa">
+                <img class="brand-logo" src="/img/logo.png" alt="Unitürk" width="331" height="48" /><span class="ut-brand-fallback" hidden aria-hidden="true">uni<span>turk</span></span>
+                <span class="brand-sub">Bilişim Teknolojileri</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Ana menü">
+                <div class="ut-nav-item">
+                    <a class="nav-link" href="/kurumsal/hakkimizda">Kurumsal</a>
+                    <button class="ut-dropdown-toggle" type="button" data-dropdown aria-label="Kurumsal alt menüsünü aç" aria-controls="corporateMenu" aria-expanded="false"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-down"></use></svg></button>
+                    <div class="ut-dropdown-panel" id="corporateMenu" hidden><ul>
+                        <li><a href="/kurumsal/hakkimizda">Hakkımızda</a></li>
+                        <li><a href="/kurumsal/vizyonumuz">Vizyonumuz</a></li>
+                        <li><a href="/kurumsal/misyonumuz">Misyonumuz</a></li>
+                    </ul></div>
+                </div>
+                <div class="ut-nav-item ut-nav-mega">
+                    <a class="nav-link" href="/hizmetler">Hizmetlerimiz</a>
+                    <button class="ut-dropdown-toggle" type="button" data-dropdown aria-label="Hizmetler mega menüsünü aç" aria-controls="servicesMenu" aria-expanded="false"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-down"></use></svg></button>
+                    <div class="ut-dropdown-panel ut-mega-panel" id="servicesMenu" hidden>
+                        <div class="ut-mega-header"><strong>İşinizi ileri taşıyan çözümler.</strong><a href="/hizmetler">Tüm hizmetleri keşfedin →</a></div>
+                        <div class="ut-mega-grid"><section class="ut-mega-group"><h3><a href="/hizmetler/ag-altyapilari-ve-sd-wan"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"></use></svg><span>Ağ Altyapıları ve SD-WAN</span></a></h3><ul><li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=kurumsal-ag">Kurumsal Ağ ve Kampüs</a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=kablosuz-ag">Kablosuz Ağ Çözümleri</a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=sd-wan">SD-WAN ve Şube Bağlantıları</a></li></ul></section>
+<section class="ut-mega-group"><h3><a href="/hizmetler/siber-guvenlik"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"></use></svg><span>Siber Güvenlik</span></a></h3><ul><li><a href="/hizmetler/siber-guvenlik?konu=ag-guvenligi">Ağ ve Erişim Güvenliği</a></li>
+<li><a href="/hizmetler/siber-guvenlik?konu=soc-edr">SOC ve EDR Çözümleri</a></li>
+<li><a href="/hizmetler/siber-guvenlik?konu=guvenlik-operasyonlari">Güvenlik Operasyonları</a></li></ul></section>
+<section class="ut-mega-group"><h3><a href="/hizmetler/veri-merkezi-ve-bulut"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"></use></svg><span>Veri Merkezi ve Bulut</span></a></h3><ul><li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=sanallastirma-hci">Sanallaştırma ve HCI</a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=hibrit-bulut">Hibrit Bulut Çözümleri</a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=yedekleme-felaket-kurtarma">Yedekleme ve Felaket Kurtarma</a></li></ul></section>
+<section class="ut-mega-group"><h3><a href="/hizmetler/bt-danismanligi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-compass"></use></svg><span>BT Danışmanlığı</span></a></h3><ul><li><a href="/hizmetler/bt-danismanligi?konu=altyapi-analizi">Altyapı ve İhtiyaç Analizi</a></li>
+<li><a href="/hizmetler/bt-danismanligi?konu=teknoloji-yol-haritasi">Teknoloji Yol Haritası</a></li>
+<li><a href="/hizmetler/bt-danismanligi?konu=proje-danismanligi">Proje Danışmanlığı</a></li></ul></section>
+<section class="ut-mega-group"><h3><a href="/hizmetler/yonetilen-hizmetler"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-monitor"></use></svg><span>Yönetilen Hizmetler</span></a></h3><ul><li><a href="/hizmetler/yonetilen-hizmetler?konu=izleme-yonetim">Altyapı İzleme ve Yönetimi</a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler?konu=bakim-operasyon">Bakım ve Operasyon</a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler?konu=sureklilik">İş Sürekliliği</a></li></ul></section>
+<section class="ut-mega-group"><h3><a href="/hizmetler/sistem-entegrasyonu"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-layers"></use></svg><span>Sistem Entegrasyonu</span></a></h3><ul><li><a href="/hizmetler/sistem-entegrasyonu?konu=kurulum-devreye-alma">Kurulum ve Devreye Alma</a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu?konu=migrasyon">Migrasyon ve Geçiş</a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu?konu=altyapi-entegrasyonu">Altyapı Entegrasyonu</a></li></ul></section>
+<section class="ut-mega-group"><h3><a href="/hizmetler/teknik-destek"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-headset"></use></svg><span>Teknik Destek</span></a></h3><ul><li><a href="/hizmetler/teknik-destek?konu=uzaktan-destek">Uzaktan Teknik Destek</a></li>
+<li><a href="/hizmetler/teknik-destek?konu=yerinde-destek">Yerinde Destek</a></li>
+<li><a href="/hizmetler/teknik-destek?konu=bakim-destek">Bakım ve Destek Planları</a></li></ul></section>
+<section class="ut-mega-group"><h3><a href="/hizmetler/bt-urunleri-ve-diger-cozumler"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-laptop"></use></svg><span>BT Ürünleri ve Diğer Çözümler</span></a></h3><ul><li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=laptop-masaustu">Laptop ve Masaüstü Bilgisayarlar</a></li>
+<li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=sunucu-depolama">Sunucu ve Depolama Ürünleri</a></li>
+<li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=lisans-cevre-birimleri">Yazılım, Lisans ve Çevre Birimleri</a></li></ul></section></div>
+                        <div class="ut-mega-footer"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-headset"></use></svg> İhtiyacınıza uygun çözümü birlikte belirleyelim. <a href="/iletisim">İletişime geçin →</a></div>
+                    </div>
+                </div>
+                <a class="nav-link" href="/is-ortaklarimiz">İş Ortaklarımız</a>
+                <div class="ut-nav-item">
+                    <a class="nav-link" href="/referanslar/musteri-referanslari">Referanslar</a>
+                    <button class="ut-dropdown-toggle" type="button" data-dropdown aria-label="Referanslar alt menüsünü aç" aria-controls="referencesMenu" aria-expanded="false"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-down"></use></svg></button>
+                    <div class="ut-dropdown-panel" id="referencesMenu" hidden><ul>
+                        <li><a href="/referanslar/musteri-referanslari">Müşteri Referansları</a></li>
+                        <li><a href="/referanslar/projelerimiz">Projelerimiz</a></li>
+                    </ul></div>
+                </div>
+                <a class="nav-link" href="/blog">Blog</a>
+                <a class="nav-link" href="/iletisim">İletişim</a>
+            </nav>
+            <div class="header-actions">
+                <button type="button" class="icon-btn" id="searchToggle" aria-label="Ara" aria-controls="headerSearch" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+                </button>
+                <form class="header-search" id="headerSearch" action="/arama" method="get" role="search" hidden>
+                    <input type="search" name="q" maxlength="100" placeholder="Sitede ara…" aria-label="Sitede ara" required />
+                    <button type="submit" class="btn-ut btn-ut-primary btn-ut-sm">Ara</button>
+                </form><div class="ut-search-results" id="ut-search-results" aria-live="polite" hidden></div>
+                <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-controls="mainNav" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" id="mainContent" tabindex="-1"><div id="page-home" class="ut-view">
+        
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-decor" aria-hidden="true"></div>
+    <div class="hero-media" id="heroSlider" role="region" aria-label="Teknoloji çözümlerimiz" aria-roledescription="carousel">
+        <div class="hero-slide is-active img-hero-1" role="group" aria-label="1 / 3"></div>
+        <div class="hero-slide img-building-glass" role="group" aria-label="2 / 3"></div>
+        <div class="hero-slide img-campus" role="group" aria-label="3 / 3"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-stage">
+            <div class="hero-caption is-active">
+                <h3>Güçlü<br />Altyapılarla<br />Sürdürülebilir<br />Gelecek</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-caption">
+                <h3>Güvenli<br />Ağlarla<br />Kesintisiz<br />İş Sürekliliği</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-caption">
+                <h3>Kampüsten<br />Buluta<br />Uçtan Uca<br />Çözümler</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-controls">
+                <div class="hero-progress">
+                    <span id="heroCurrent">01</span>
+                    <span class="hero-progress-bar"><span id="heroProgress"></span></span>
+                    <span id="heroTotal">03</span>
+                </div>
+                <div class="hero-arrows"><button type="button" class="round-btn" id="heroPause" aria-label="Slaytları duraklat" aria-pressed="false"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-pause"></use></svg></button>
+                    <button type="button" class="round-btn" id="heroPrev" aria-label="Önceki slayt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+                    </button>
+                    <button type="button" class="round-btn" id="heroNext" aria-label="Sonraki slayt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap hero-inner">
+        <div class="hero-content">
+            <span class="eyebrow">Daha güvenli, daha verimli yarınlar için</span>
+            <h1 class="hero-title">Teknolojiyi<br />İşiniz İçin<br />Anlamlı Kılıyoruz</h1>
+            <p class="hero-lead">
+                Kurumsal ölçekte güvenli, ölçeklenebilir ve yönetilebilir BT altyapıları tasarlıyor,
+                iş süreçlerinizi geleceğe taşıyoruz.
+            </p>
+            <a class="ut-hero-contact" id="heroContact" href="#iletisim">İletişime Geçin <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"></use></svg></a>
+        </div>
+    </div>
+
+    <ul class="hero-features">
+        <li>
+            <span class="hero-feature-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-layers"></use></svg></span>
+            <div>
+                <strong>Uçtan Uca Çözümler</strong>
+                <p>Analizden devreye kadar tek noktadan yönetim</p>
+            </div>
+        </li>
+        <li>
+            <span class="hero-feature-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"></use></svg></span>
+            <div>
+                <strong>Güvenli Altyapı</strong>
+                <p>Kurumsal standartlarda yüksek güvenlik</p>
+            </div>
+        </li>
+        <li>
+            <span class="hero-feature-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-growth"></use></svg></span>
+            <div>
+                <strong>Sürdürülebilir Teknoloji</strong>
+                <p>Uzun vadeli, ölçeklenebilir ve verimli yapılar</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- SÜREÇ -->
+<section class="process" id="sektorler">
+    <div class="wrap process-inner">
+        <div class="process-text">
+            <span class="eyebrow eyebrow-light">Uçtan uca teknoloji çözümleri</span>
+            <h2>İşinizin her<br />aşamasında yanınızdayız.</h2>
+            <p>İhtiyacınıza özel, entegre ve sürdürülebilir BT altyapılarıyla dijital dönüşümünüzü destekliyoruz.</p>
+        </div>
+        <ol class="process-steps">
+            <li>
+                <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-compass"></use></svg>
+                <h3>Planla</h3>
+                <p>İhtiyaçlarınızı analiz ediyoruz.</p>
+            </li>
+            <li>
+                <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-layers"></use></svg>
+                <h3>Tasarla</h3>
+                <p>Size özel çözümler geliştiriyoruz.</p>
+            </li>
+            <li>
+                <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"></use></svg>
+                <h3>Uygula</h3>
+                <p>Uzman ekibimizle hayata geçiriyoruz.</p>
+            </li>
+            <li>
+                <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-support"></use></svg>
+                <h3>Sürdür</h3>
+                <p>Sürekli destekle yanınızdayız.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- TEKNOLOJİ ORTAKLARI -->
+<section class="partners" id="ortaklar">
+    <div class="wrap">
+        <span class="eyebrow">Teknoloji ortaklarımız</span>
+        <ul class="partner-logos">
+            <li class="logo-fortinet" title="Fortinet"><span aria-hidden="true">F<i class="ft-o"></i>RTINET<sup>.</sup></span><span class="visually-hidden">Fortinet</span></li>
+            <li class="logo-cisco" title="Cisco">
+                <svg viewBox="0 0 60 22" aria-hidden="true"><g fill="currentColor"><rect x="1" y="8" width="2.6" height="6" rx="1.3" /><rect x="7.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="14" y="0" width="2.6" height="22" rx="1.3" /><rect x="20.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="27" y="8" width="2.6" height="6" rx="1.3" /><rect x="33.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="40" y="0" width="2.6" height="22" rx="1.3" /><rect x="46.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="53" y="8" width="2.6" height="6" rx="1.3" /></g></svg>
+                <span>CISCO</span>
+            </li>
+            <li class="logo-nutanix" title="Nutanix">NUTANIX</li>
+            <li class="logo-cohesity" title="Cohesity">COHE<span>S</span>ITY<b>.</b></li>
+            <li class="logo-vmware" title="VMware">vm<span>ware</span><sup>®</sup></li>
+            <li class="logo-microsoft" title="Microsoft">
+                <span class="ms-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                Microsoft
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ÇÖZÜMLER -->
+<section class="solutions" id="cozumler">
+    <div class="wrap">
+        <div class="section-head">
+            <div><span class="eyebrow">Hizmetlerimiz</span><h2 class="section-title">Güvenli altyapılar,<br />daha güçlü kurumlar.</h2></div>
+            <p class="section-desc">Altyapıdan güvenliğe, danışmanlıktan 7/24 desteğe uçtan uca BT çözümleri. İhtiyacınız olan hizmete ve alt başlıklarına doğrudan ulaşın.</p>
+            <a class="link-arrow" href="/hizmetler">Tüm Hizmetlerimiz <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"></use></svg></a>
+        </div>
+        <div class="ut-service-grid"><article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/ag-altyapilari-ve-sd-wan"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"></use></svg></span><span>Ağ Altyapıları ve SD-WAN</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Güvenli, esnek ve yüksek performanslı kurumsal ağ altyapıları ve SD-WAN çözümleri.</p><ul class="ut-service-topics" aria-label="Ağ Altyapıları ve SD-WAN alt başlıkları"><li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=kurumsal-ag"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Kurumsal Ağ ve Kampüs</span></a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=kablosuz-ag"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Kablosuz Ağ Çözümleri</span></a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=sd-wan"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>SD-WAN ve Şube Bağlantıları</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/siber-guvenlik"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"></use></svg></span><span>Siber Güvenlik</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Kurumsal verilerinizi ve sistemlerinizi korumaya yönelik uçtan uca güvenlik çözümleri.</p><ul class="ut-service-topics" aria-label="Siber Güvenlik alt başlıkları"><li><a href="/hizmetler/siber-guvenlik?konu=ag-guvenligi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Ağ ve Erişim Güvenliği</span></a></li>
+<li><a href="/hizmetler/siber-guvenlik?konu=soc-edr"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>SOC ve EDR Çözümleri</span></a></li>
+<li><a href="/hizmetler/siber-guvenlik?konu=guvenlik-operasyonlari"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Güvenlik Operasyonları</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/veri-merkezi-ve-bulut"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"></use></svg></span><span>Veri Merkezi ve Bulut</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Modern veri merkezi altyapıları ve ölçeklenebilir bulut çözümleri ile sürdürülebilir BT operasyonları.</p><ul class="ut-service-topics" aria-label="Veri Merkezi ve Bulut alt başlıkları"><li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=sanallastirma-hci"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Sanallaştırma ve HCI</span></a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=hibrit-bulut"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Hibrit Bulut Çözümleri</span></a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=yedekleme-felaket-kurtarma"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Yedekleme ve Felaket Kurtarma</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/bt-danismanligi"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-compass"></use></svg></span><span>BT Danışmanlığı</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>İhtiyaçlarınıza özel, stratejik ve sürdürülebilir BT danışmanlık hizmetleri.</p><ul class="ut-service-topics" aria-label="BT Danışmanlığı alt başlıkları"><li><a href="/hizmetler/bt-danismanligi?konu=altyapi-analizi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Altyapı ve İhtiyaç Analizi</span></a></li>
+<li><a href="/hizmetler/bt-danismanligi?konu=teknoloji-yol-haritasi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Teknoloji Yol Haritası</span></a></li>
+<li><a href="/hizmetler/bt-danismanligi?konu=proje-danismanligi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Proje Danışmanlığı</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/yonetilen-hizmetler"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-monitor"></use></svg></span><span>Yönetilen Hizmetler</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>BT altyapınızın sürekli, güvenli ve verimli yönetilmesine yönelik uçtan uca hizmetler.</p><ul class="ut-service-topics" aria-label="Yönetilen Hizmetler alt başlıkları"><li><a href="/hizmetler/yonetilen-hizmetler?konu=izleme-yonetim"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Altyapı İzleme ve Yönetimi</span></a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler?konu=bakim-operasyon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Bakım ve Operasyon</span></a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler?konu=sureklilik"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>İş Sürekliliği</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/sistem-entegrasyonu"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-layers"></use></svg></span><span>Sistem Entegrasyonu</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Farklı teknolojileri bir bütün halinde çalışacak şekilde bir araya getiren esnek çözümler.</p><ul class="ut-service-topics" aria-label="Sistem Entegrasyonu alt başlıkları"><li><a href="/hizmetler/sistem-entegrasyonu?konu=kurulum-devreye-alma"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Kurulum ve Devreye Alma</span></a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu?konu=migrasyon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Migrasyon ve Geçiş</span></a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu?konu=altyapi-entegrasyonu"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Altyapı Entegrasyonu</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/teknik-destek"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-headset"></use></svg></span><span>Teknik Destek</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Uzman ekibimizle 7/24 hızlı, etkin ve kesintisiz teknik destek hizmeti.</p><ul class="ut-service-topics" aria-label="Teknik Destek alt başlıkları"><li><a href="/hizmetler/teknik-destek?konu=uzaktan-destek"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Uzaktan Teknik Destek</span></a></li>
+<li><a href="/hizmetler/teknik-destek?konu=yerinde-destek"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Yerinde Destek</span></a></li>
+<li><a href="/hizmetler/teknik-destek?konu=bakim-destek"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Bakım ve Destek Planları</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/bt-urunleri-ve-diger-cozumler"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-laptop"></use></svg></span><span>BT Ürünleri ve Diğer Çözümler</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Laptop, masaüstü bilgisayar, donanım ve yazılım ihtiyaçlarınıza uygun ürün ve çözümler.</p><ul class="ut-service-topics" aria-label="BT Ürünleri ve Diğer Çözümler alt başlıkları"><li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=laptop-masaustu"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Laptop ve Masaüstü Bilgisayarlar</span></a></li>
+<li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=sunucu-depolama"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Sunucu ve Depolama Ürünleri</span></a></li>
+<li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=lisans-cevre-birimleri"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Yazılım, Lisans ve Çevre Birimleri</span></a></li></ul></article></div>
+    </div>
+</section>
+<!-- HAKKIMIZDA + PROJELER -->
+<section class="showcase">
+    <div class="showcase-about img-mountain" id="hakkimizda">
+        <div class="showcase-about-text" id="neden-uniturk">
+            <span class="eyebrow eyebrow-light">Teknoloji ile sınırları birlikte aşıyoruz</span>
+            <h2>Neden Uniturk?</h2>
+            <p>Güvenilir iş ortağınız olarak daha verimli, daha sürdürülebilir bir gelecek için çalışıyoruz. İhtiyaçlarınızı dinliyor, teknolojiyi işinize değer katan çözümlere dönüştürüyoruz.</p>
+            <ul class="ut-about-list">
+                <li><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-compass"></use></svg><span><strong>İşinize özel yaklaşım</strong><br />İhtiyaçlarınıza uygun, ölçeklenebilir mimariler.</span></li>
+                <li><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-layers"></use></svg><span><strong>Uçtan uca uzmanlık</strong><br />Analizden uygulamaya tek noktadan çözüm.</span></li>
+                <li><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-headset"></use></svg><span><strong>Sürekli yanınızdayız</strong><br />Destek ve yönetimle sürdürülebilir iş sürekliliği.</span></li>
+            </ul>
+            <a class="ut-about-link" href="/kurumsal/hakkimizda">Bizi daha yakından tanıyın <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"></use></svg></a>
+        </div>
+    </div>
+    <div class="showcase-projects" id="projeler">
+        <div class="projects-head">
+            <h2>Öne Çıkan Projeler</h2>
+            <a class="link-arrow" href="/referanslar/projelerimiz">Tüm Projeler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        </div>
+
+        <div class="projects-track" id="projectsTrack">
+                <article class="project-card">
+                    <div class="project-media img-building-glass"></div>
+                    <div class="project-body">
+                        <h3>&#xC7;ok Lokasyonlu SD-WAN D&#xF6;n&#xFC;&#x15F;&#xFC;m&#xFC;</h3>
+                        <ul class="tags">
+                                <li>SD-WAN</li>
+                                <li>Fortinet</li>
+                                <li>High Availability</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-datacenter"></div>
+                    <div class="project-body">
+                        <h3>Yeni Nesil Veri Merkezi Altyap&#x131;s&#x131;</h3>
+                        <ul class="tags">
+                                <li>Nutanix</li>
+                                <li>Cohesity</li>
+                                <li>Cisco</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-campus"></div>
+                    <div class="project-body">
+                        <h3>Merkezi Y&#xF6;netilen Network D&#xF6;n&#xFC;&#x15F;&#xFC;m&#xFC;</h3>
+                        <ul class="tags">
+                                <li>Cisco</li>
+                                <li>Wireless</li>
+                                <li>Automation</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-datacenter"></div>
+                    <div class="project-body">
+                        <h3>Hibrit Bulut ve Felaket Kurtarma</h3>
+                        <ul class="tags">
+                                <li>VMware</li>
+                                <li>Microsoft</li>
+                                <li>DR</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-campus"></div>
+                    <div class="project-body">
+                        <h3>Kamp&#xFC;s Kablosuz A&#x11F; Modernizasyonu</h3>
+                        <ul class="tags">
+                                <li>Wireless</li>
+                                <li>NAC</li>
+                                <li>Cisco</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-building-glass"></div>
+                    <div class="project-body">
+                        <h3>U&#xE7;tan Uca Siber G&#xFC;venlik Mimarisi</h3>
+                        <ul class="tags">
+                                <li>Fortinet</li>
+                                <li>SOC</li>
+                                <li>EDR</li>
+                        </ul>
+                    </div>
+                </article>
+        </div>
+
+        <div class="projects-controls">
+            <div class="projects-dots" id="projectsDots"></div>
+            <button type="button" class="next-img-btn" id="projectsNext" aria-label="Sonraki projeler"></button>
+        </div>
+    </div>
+</section>
+
+<!-- CTA / İLETİŞİM -->
+<section class="cta" id="iletisim">
+    <div class="wrap cta-inner">
+        <div class="cta-text">
+            <span class="cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none">
+                    <defs>
+                        <linearGradient id="ctaLayer" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#7fd3ff" />
+                            <stop offset="1" stop-color="#1e6bff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M40 52 8 38l32-14 32 14-32 14Z" fill="#0d3d8a" stroke="#4fb6ff" stroke-width="1.5" />
+                    <path d="M40 42 8 28l32-14 32 14-32 14Z" fill="#124fb0" stroke="#58c0ff" stroke-width="1.5" opacity=".95" />
+                    <path d="M40 32 8 18 40 4l32 14-32 14Z" fill="url(#ctaLayer)" stroke="#9fe0ff" stroke-width="1.5" />
+                    <path d="M40 64 8 50v-4l32 14 32-14v4L40 64Z" fill="#0a2f6b" />
+                </svg>
+            </span>
+            <div>
+                <span class="cta-eyebrow">Fikirden gerçeğe</span>
+                <h2>Bir sonraki teknoloji projenizi<br />birlikte tasarlayalım.</h2>
+            </div>
+        </div>
+        <a class="btn-ut btn-ut-gradient" href="mailto:info@uniturk.com.tr">Proje Fikri Konuşalım <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        <ul class="cta-contact">
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 4.2 2 2 0 0 1 3.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" /></svg>
+                <a href="tel:+902162125383">+90 216 212 53 83</a>
+            </li>
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6.5 8.5 6.5 8.5-6.5" /></svg>
+                <a href="mailto:info@uniturk.com.tr">info@uniturk.com.tr</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    </div>
+<section class="ut-view ut-page" id="page-services" hidden aria-labelledby="services-title">
+    <div class="ut-page-banner" aria-hidden="true"><div class="ut-banner-art"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"></use></svg><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"></use></svg><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"></use></svg></div></div>
+    <div class="wrap ut-page-content">
+        <nav class="ut-breadcrumb" aria-label="İçerik yolu"><a href="/">Ana Sayfa</a><span aria-hidden="true">/</span><span aria-current="page">Hizmetlerimiz</span></nav>
+        <span class="ut-section-mark" aria-hidden="true"></span>
+        <h1 id="services-title" tabindex="-1">Hizmetlerimiz</h1>
+        <p class="ut-page-lead">Altyapıdan güvenliğe, danışmanlıktan 7/24 desteğe uçtan uca BT çözüm ve hizmetleri.</p>
+        <div class="ut-service-grid"><article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/ag-altyapilari-ve-sd-wan"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"></use></svg></span><span>Ağ Altyapıları ve SD-WAN</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Güvenli, esnek ve yüksek performanslı kurumsal ağ altyapıları ve SD-WAN çözümleri.</p><ul class="ut-service-topics" aria-label="Ağ Altyapıları ve SD-WAN alt başlıkları"><li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=kurumsal-ag"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Kurumsal Ağ ve Kampüs</span></a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=kablosuz-ag"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Kablosuz Ağ Çözümleri</span></a></li>
+<li><a href="/hizmetler/ag-altyapilari-ve-sd-wan?konu=sd-wan"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>SD-WAN ve Şube Bağlantıları</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/siber-guvenlik"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"></use></svg></span><span>Siber Güvenlik</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Kurumsal verilerinizi ve sistemlerinizi korumaya yönelik uçtan uca güvenlik çözümleri.</p><ul class="ut-service-topics" aria-label="Siber Güvenlik alt başlıkları"><li><a href="/hizmetler/siber-guvenlik?konu=ag-guvenligi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Ağ ve Erişim Güvenliği</span></a></li>
+<li><a href="/hizmetler/siber-guvenlik?konu=soc-edr"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>SOC ve EDR Çözümleri</span></a></li>
+<li><a href="/hizmetler/siber-guvenlik?konu=guvenlik-operasyonlari"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Güvenlik Operasyonları</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/veri-merkezi-ve-bulut"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"></use></svg></span><span>Veri Merkezi ve Bulut</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Modern veri merkezi altyapıları ve ölçeklenebilir bulut çözümleri ile sürdürülebilir BT operasyonları.</p><ul class="ut-service-topics" aria-label="Veri Merkezi ve Bulut alt başlıkları"><li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=sanallastirma-hci"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Sanallaştırma ve HCI</span></a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=hibrit-bulut"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Hibrit Bulut Çözümleri</span></a></li>
+<li><a href="/hizmetler/veri-merkezi-ve-bulut?konu=yedekleme-felaket-kurtarma"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Yedekleme ve Felaket Kurtarma</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/bt-danismanligi"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-compass"></use></svg></span><span>BT Danışmanlığı</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>İhtiyaçlarınıza özel, stratejik ve sürdürülebilir BT danışmanlık hizmetleri.</p><ul class="ut-service-topics" aria-label="BT Danışmanlığı alt başlıkları"><li><a href="/hizmetler/bt-danismanligi?konu=altyapi-analizi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Altyapı ve İhtiyaç Analizi</span></a></li>
+<li><a href="/hizmetler/bt-danismanligi?konu=teknoloji-yol-haritasi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Teknoloji Yol Haritası</span></a></li>
+<li><a href="/hizmetler/bt-danismanligi?konu=proje-danismanligi"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Proje Danışmanlığı</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/yonetilen-hizmetler"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-monitor"></use></svg></span><span>Yönetilen Hizmetler</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>BT altyapınızın sürekli, güvenli ve verimli yönetilmesine yönelik uçtan uca hizmetler.</p><ul class="ut-service-topics" aria-label="Yönetilen Hizmetler alt başlıkları"><li><a href="/hizmetler/yonetilen-hizmetler?konu=izleme-yonetim"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Altyapı İzleme ve Yönetimi</span></a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler?konu=bakim-operasyon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Bakım ve Operasyon</span></a></li>
+<li><a href="/hizmetler/yonetilen-hizmetler?konu=sureklilik"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>İş Sürekliliği</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/sistem-entegrasyonu"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-layers"></use></svg></span><span>Sistem Entegrasyonu</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Farklı teknolojileri bir bütün halinde çalışacak şekilde bir araya getiren esnek çözümler.</p><ul class="ut-service-topics" aria-label="Sistem Entegrasyonu alt başlıkları"><li><a href="/hizmetler/sistem-entegrasyonu?konu=kurulum-devreye-alma"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Kurulum ve Devreye Alma</span></a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu?konu=migrasyon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Migrasyon ve Geçiş</span></a></li>
+<li><a href="/hizmetler/sistem-entegrasyonu?konu=altyapi-entegrasyonu"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Altyapı Entegrasyonu</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/teknik-destek"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-headset"></use></svg></span><span>Teknik Destek</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Uzman ekibimizle 7/24 hızlı, etkin ve kesintisiz teknik destek hizmeti.</p><ul class="ut-service-topics" aria-label="Teknik Destek alt başlıkları"><li><a href="/hizmetler/teknik-destek?konu=uzaktan-destek"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Uzaktan Teknik Destek</span></a></li>
+<li><a href="/hizmetler/teknik-destek?konu=yerinde-destek"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Yerinde Destek</span></a></li>
+<li><a href="/hizmetler/teknik-destek?konu=bakim-destek"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Bakım ve Destek Planları</span></a></li></ul></article>
+<article class="ut-service-card"><h3><a class="ut-service-title" href="/hizmetler/bt-urunleri-ve-diger-cozumler"><span class="ut-service-icon"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-laptop"></use></svg></span><span>BT Ürünleri ve Diğer Çözümler</span><svg class="ut-icon ut-service-chevron" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg></a></h3><p>Laptop, masaüstü bilgisayar, donanım ve yazılım ihtiyaçlarınıza uygun ürün ve çözümler.</p><ul class="ut-service-topics" aria-label="BT Ürünleri ve Diğer Çözümler alt başlıkları"><li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=laptop-masaustu"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Laptop ve Masaüstü Bilgisayarlar</span></a></li>
+<li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=sunucu-depolama"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Sunucu ve Depolama Ürünleri</span></a></li>
+<li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler?konu=lisans-cevre-birimleri"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-chevron-right"></use></svg><span>Yazılım, Lisans ve Çevre Birimleri</span></a></li></ul></article></div>
+    </div>
+</section>
+<section class="ut-view ut-page" id="page-detail" hidden aria-labelledby="detail-title">
+    <div class="ut-page-banner" aria-hidden="true"><div class="ut-banner-art"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"></use></svg><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"></use></svg><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"></use></svg></div></div>
+    <div class="wrap ut-page-content">
+        <nav class="ut-breadcrumb" aria-label="İçerik yolu"><a href="/">Ana Sayfa</a><span aria-hidden="true">/</span><a href="/hizmetler">Hizmetlerimiz</a><span aria-hidden="true">/</span><span id="detail-breadcrumb-title" aria-current="page"></span></nav>
+        <span class="ut-section-mark" aria-hidden="true"></span><span class="ut-service-icon" id="detail-icon" aria-hidden="true"></span>
+        <h1 id="detail-title" tabindex="-1"></h1><p class="ut-page-lead" id="detail-description"></p>
+        <div class="ut-detail-layout"><div id="detail-topics"></div><aside class="ut-detail-aside"><h2>Birlikte planlayalım.</h2><p>İhtiyaçlarınıza uygun çözümü belirlemek için uzman ekibimizle iletişime geçin.</p><a href="/iletisim">İletişime Geçin <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"></use></svg></a><a href="mailto:info@uniturk.com.tr">info@uniturk.com.tr</a><a href="tel:+902162125383">+90 216 212 53 83</a></aside></div>
+    </div>
+</section>
+<section class="ut-view ut-page" id="page-info" hidden aria-labelledby="info-title">
+    <div class="ut-page-banner" aria-hidden="true"><div class="ut-banner-art"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"></use></svg><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"></use></svg><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"></use></svg></div></div>
+    <div class="wrap ut-page-content">
+        <nav class="ut-breadcrumb" aria-label="İçerik yolu"><a href="/">Ana Sayfa</a><span aria-hidden="true">/</span><span id="info-breadcrumb-title" aria-current="page"></span></nav>
+        <span class="ut-section-mark" aria-hidden="true"></span><h1 id="info-title" tabindex="-1"></h1><div class="ut-info-copy" id="info-copy"></div>
+        <a class="ut-hero-contact" href="/iletisim">İletişime Geçin <svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"></use></svg></a>
+    </div>
+</section>
+<section class="ut-view ut-page ut-blog-page" id="page-blog" hidden aria-labelledby="blog-title">
+    <div class="wrap ut-page-content">
+        <nav class="ut-breadcrumb" aria-label="İçerik yolu"><a href="/">Ana Sayfa</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span></nav>
+        <div class="ut-page-heading">
+            <span class="ut-section-mark" aria-hidden="true"></span>
+            <h1 id="blog-title" tabindex="-1">Blog</h1>
+            <p class="ut-page-lead">BT altyapısı, siber güvenlik ve dijital dönüşüm üzerine güncel yazılar.</p>
+            <p class="ut-page-note">Örnek yazılar · Yayın içerikleri hazırlanıyor.</p>
+        </div>
+        <div class="ut-blog-grid">
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-network" x2="1" y2="1"><stop stop-color="#d8ebff"/><stop offset="1" stop-color="#94c7f7"/></linearGradient><linearGradient id="ba-cloud" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d5ecff"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-network)"/><path d="M0 121Q95 65 220 119T440 101V150H0Z" fill="#fff" opacity=".17"/><g fill="none" stroke="#f4fbff" stroke-width="2"><path d="M220 68 106 116M220 68l118 48M220 68v66" stroke-dasharray="5 5"/><ellipse cx="220" cy="97" rx="155" ry="43" opacity=".55"/></g><path d="M186 79h69a22 22 0 0 0 1-44 31 31 0 0 0-59-3 24 24 0 0 0-11 47Z" fill="url(#ba-cloud)" stroke="#fff" stroke-width="2"/><text x="220" y="52" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#0863b7">SD-WAN</text><g fill="#237cc2" stroke="#e2f5ff" stroke-width="1.5"><path d="m88 103 18-9 18 9v28H88Z"/><path d="m320 103 18-9 18 9v28h-36Z"/><path d="m203 132 17-9 17 9v18h-34Z"/></g><g fill="#bdeaff"><path d="M96 107h5v6h-5zm13 0h5v6h-5zm-13 11h5v6h-5zm13 0h5v6h-5zm219-11h5v6h-5zm13 0h5v6h-5zm-13 11h5v6h-5zm13 0h5v6h-5z"/></g></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"/></svg>Ağ Altyapıları</span><time datetime="2025-03-12">12 Mar 2025</time></div>
+                    <h2>SD-WAN ile Şube Ağlarında Verimlilik</h2>
+                    <p>Dağınık şube yapılarında daha esnek, güvenli ve maliyet etkin ağ yönetimi için SD-WAN’ın sunduğu avantajları inceleyin.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="sd-wan-sube-aglari" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-sd-wan-sube-aglari"><h2>SD-WAN ile Şube Ağlarında Verimlilik</h2><p>Örnek içerik: SD-WAN, farklı konumlardaki bağlantıların merkezi politikalarla yönetilmesini sağlar. Uygulamaların gereksinimlerine göre trafik yönlendirmek, şube ağlarının planlanmasını kolaylaştırır.</p><p>Bir geçiş planında mevcut bağlantılar, uygulama öncelikleri ve güvenlik politikaları birlikte değerlendirilmelidir. Pilot uygulama ve izleme adımları, tasarımın kurumun ihtiyaçlarına uygunluğunu görmeye yardımcı olur.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-security" x2="1" y2="1"><stop stop-color="#2e86cb"/><stop offset="1" stop-color="#114b8c"/></linearGradient><linearGradient id="ba-shield" x2="1" y2="1"><stop stop-color="#9deaff"/><stop offset="1" stop-color="#2e85d3"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-security)"/><g fill="none" stroke="#9bddff"><circle cx="220" cy="74" r="61" opacity=".4"/><circle cx="220" cy="74" r="88" opacity=".2" stroke-dasharray="3 6"/><circle cx="220" cy="74" r="115" opacity=".12"/></g><g fill="#6edbff"><circle cx="110" cy="53" r="2"/><circle cx="320" cy="97" r="3"/><circle cx="339" cy="31" r="2"/><circle cx="87" cy="116" r="2"/></g><path d="m220 20-43 16v34c0 31 19 50 43 61 24-11 43-30 43-61V36Z" fill="url(#ba-shield)" stroke="#e0f7ff" stroke-width="4"/><path d="m220 29-34 13v29c0 24 15 41 34 51 19-10 34-27 34-51V42Z" fill="#0d5fa8" opacity=".7"/><rect x="202" y="62" width="36" height="30" rx="5" fill="#e0f6ff"/><path d="M209 62V52a11 11 0 0 1 22 0v10" fill="none" stroke="#e0f6ff" stroke-width="5"/><circle cx="220" cy="75" r="4" fill="#1766aa"/><path d="M220 78v6" stroke="#1766aa" stroke-width="3"/></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-shield"/></svg>Siber Güvenlik</span><time datetime="2025-03-10">10 Mar 2025</time></div>
+                    <h2>Siber Güvenlikte Proaktif Yaklaşım</h2>
+                    <p>Tehditleri oluşmadan önce tespit eden, riskleri azaltan proaktif siber güvenlik stratejileriyle kurumunuzu daha dayanıklı hale getirin.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="proaktif-siber-guvenlik" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-proaktif-siber-guvenlik"><h2>Siber Güvenlikte Proaktif Yaklaşım</h2><p>Örnek içerik: Proaktif güvenlik, riskleri düzenli değerlendirmek ve olağan dışı hareketleri erken fark etmek üzerine kurulur. Varlık envanteri, erişim kontrolü ve güncel sistemler bu yaklaşımın temel parçalarıdır.</p><p>İzleme süreçleri, olay müdahale planları ve çalışan farkındalığı birlikte ele alınmalıdır. Kuruma uygun güvenlik önceliklerini belirlemek, uygulanabilir bir iyileştirme planı oluşturmayı kolaylaştırır.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-data" x2="1" y2="1"><stop stop-color="#d5eaff"/><stop offset="1" stop-color="#80b9ed"/></linearGradient><linearGradient id="ba-rack" x2="1" y2="1"><stop stop-color="#257fc2"/><stop offset="1" stop-color="#064c8c"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-data)"/><path d="M0 120 440 94v56H0Z" fill="#b6ddff"/><path d="M152 131 298 107l57 28-144 15Z" fill="#4e98cc" opacity=".3"/><g stroke="#a9ddff" stroke-width="2"><path d="m133 45 29-8v87l-29-8Z" fill="url(#ba-rack)"/><path d="m169 36 34-9v105l-34-8Z" fill="url(#ba-rack)"/><path d="m211 26 39-10v125l-39-8Z" fill="url(#ba-rack)"/><path d="m258 17 44-11v144l-44-8Z" fill="url(#ba-rack)"/></g><g fill="none" stroke="#8ccbf5" stroke-width="4"><path d="m139 58 17-4m-17 18 17-4m-17 18 17-4m-17 18 17-4m19-40 22-5m-22 23 22-5m-22 23 22-5m-22 23 22-5m20-50 27-6m-27 25 27-6m-27 25 27-6m-27 25 27-6m-27 25 27-6m20-76 31-7m-31 27 31-7m-31 27 31-7m-31 27 31-7m-31 27 31-7"/></g><g fill="#74f1df"><circle cx="291" cy="36" r="2"/><circle cx="291" cy="56" r="2"/><circle cx="291" cy="76" r="2"/><circle cx="291" cy="96" r="2"/><circle cx="239" cy="45" r="2"/><circle cx="239" cy="64" r="2"/></g></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-server"/></svg>Veri Merkezi</span><time datetime="2025-03-07">7 Mar 2025</time></div>
+                    <h2>Veri Merkezi Modernizasyonu</h2>
+                    <p>Mevcut altyapınızı daha esnek, ölçeklenebilir ve verimli bir yapıya kavuşturmak için modernizasyon adımlarını keşfedin.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="veri-merkezi-modernizasyonu" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-veri-merkezi-modernizasyonu"><h2>Veri Merkezi Modernizasyonu</h2><p>Örnek içerik: Modernizasyon planı, mevcut donanımın, iş yüklerinin ve kapasite gereksinimlerinin incelenmesiyle başlar. Sanallaştırma, depolama ve ağ bileşenleri birlikte değerlendirilmelidir.</p><p>Geçiş aşamalarını belirlemek ve geri dönüş planı hazırlamak iş sürekliliğine katkı sağlar. Yedekleme, erişim politikaları ve operasyon süreçleri yeni altyapının tasarımına dahil edilmelidir.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-cloud-bg" x2="1" y2="1"><stop stop-color="#8bc5f3"/><stop offset="1" stop-color="#3b88d0"/></linearGradient><linearGradient id="ba-cloud-fill" x2="0" y2="1"><stop stop-color="#f4fbff"/><stop offset="1" stop-color="#78bff3"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-cloud-bg)"/><path d="M0 117Q65 70 143 119T301 111T440 95V150H0Z" fill="#c5e6ff" opacity=".55"/><path d="M0 135Q80 101 150 133T300 126T440 123V150H0Z" fill="#e8f6ff" opacity=".3"/><path d="M166 105h105a29 29 0 0 0 0-58 45 45 0 0 0-84-11 35 35 0 0 0-21 69Z" fill="url(#ba-cloud-fill)" stroke="#e9f7ff" stroke-width="2"/><g fill="none" stroke="#f0fbff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M220 128V65m-15 16 15-16 15 16M188 129V99m-9 9 9-9 9 9m55 21V99m-9 9 9-9 9 9"/></g></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-cloud"/></svg>Bulut</span><time datetime="2025-03-05">5 Mar 2025</time></div>
+                    <h2>Bulut Geçişinde Dikkat Edilmesi Gerekenler</h2>
+                    <p>Bulut’a geçiş sürecinde doğru planlama, güvenlik ve maliyet yönetimi ile sorunsuz bir dönüşüm sağlayın.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="bulut-gecis-plani" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-bulut-gecis-plani"><h2>Bulut Geçişinde Dikkat Edilmesi Gerekenler</h2><p>Örnek içerik: Buluta geçişte hangi iş yüklerinin taşınacağı, verinin nerede tutulacağı ve erişimlerin nasıl yönetileceği önceden belirlenmelidir. Uygulama bağımlılıklarının incelenmesi, geçiş sırasını planlamaya yardımcı olur.</p><p>Kapasite, yedekleme ve maliyet takibi geçiş sonrasında da düzenli değerlendirme gerektirir. Pilot çalışma ile performans ve bağlantı ihtiyaçları doğrulanabilir.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-managed" x2="1" y2="1"><stop stop-color="#6cafe9"/><stop offset="1" stop-color="#a2d0f5"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-managed)"/><g fill="none" stroke="#e4f5ff"><circle cx="220" cy="73" r="59" opacity=".7"/><circle cx="220" cy="73" r="79" opacity=".4" stroke-dasharray="3 6"/><circle cx="220" cy="73" r="106" opacity=".2"/></g><path d="M188 84V65a32 32 0 0 1 64 0v19" fill="none" stroke="#075693" stroke-width="8"/><path d="M189 84V65a31 31 0 0 1 61-7" fill="none" stroke="#c8efff" stroke-width="3"/><rect x="178" y="70" width="18" height="34" rx="8" fill="#116ba8" stroke="#bdeaff" stroke-width="2"/><rect x="244" y="70" width="18" height="34" rx="8" fill="#116ba8" stroke="#bdeaff" stroke-width="2"/><path d="M252 104v7a13 13 0 0 1-13 13h-13" fill="none" stroke="#075693" stroke-width="5"/><rect x="213" y="118" width="18" height="10" rx="5" fill="#075693"/><g fill="#ddf5ff"><circle cx="114" cy="57" r="2"/><circle cx="323" cy="91" r="2"/><circle cx="300" cy="28" r="2"/><circle cx="134" cy="116" r="2"/></g></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-headset"/></svg>Yönetilen Hizmetler</span><time datetime="2025-03-03">3 Mar 2025</time></div>
+                    <h2>Yönetilen Hizmetlerin İş Sürekliliğine Katkısı</h2>
+                    <p>Proaktif izleme, yönetim ve operasyonel destek ile BT altyapınızda kesintisiz ve güvenilir bir iş sürekliliği oluşturun.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="yonetilen-hizmetler-is-surekliligi" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-yonetilen-hizmetler-is-surekliligi"><h2>Yönetilen Hizmetlerin İş Sürekliliğine Katkısı</h2><p>Örnek içerik: Yönetilen hizmetler, altyapı izleme ve bakım süreçlerinin belirli sorumluluklarla yürütülmesini sağlar. Düzenli kontroller, olayların fark edilmesi ve önceliklendirilmesi için bir çerçeve oluşturur.</p><p>Hizmet kapsamı, müdahale beklentileri ve raporlama sıklığı kurumun iş ihtiyaçlarına göre belirlenmelidir. Yedekleme kontrolleri ve güncelleme planları da operasyonun parçası olarak ele alınabilir.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-integration" x2="1" y2="1"><stop stop-color="#5ba6e3"/><stop offset="1" stop-color="#145ca6"/></linearGradient><linearGradient id="ba-layer" x2="1" y2="1"><stop stop-color="#e2f6ff"/><stop offset="1" stop-color="#72bff0"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-integration)"/><g fill="none" stroke="#acdfff" opacity=".18"><path d="m80 90 140-70 140 70-140 70Zm-30 20L220 25l170 85M80 90l140 70M150 55l140 70M290 55 150 125" stroke-dasharray="3 5"/></g><g stroke="#c5efff" stroke-width="2" stroke-linejoin="round"><path d="m220 91 54 23-54 24-54-24Z" fill="#63b3ee"/><path d="m166 114 54 24 54-24v8l-54 23-54-23Z" fill="#1b76be"/><path d="m220 56 54 23-54 24-54-24Z" fill="url(#ba-layer)"/><path d="m166 79 54 24 54-24v8l-54 23-54-23Z" fill="#3998d8"/><path d="m220 21 54 23-54 24-54-24Z" fill="url(#ba-layer)"/><path d="m166 44 54 24 54-24v8l-54 23-54-23Z" fill="#73c5f4"/></g><path d="M220 75v17m0 18v17" stroke="#d7f5ff" stroke-width="2" stroke-dasharray="2 3"/></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-layers"/></svg>Sistem Entegrasyonu</span><time datetime="2025-02-28">28 Şub 2025</time></div>
+                    <h2>Sistem Entegrasyonunda Doğru Mimari</h2>
+                    <p>Farklı BT bileşenlerini uyumlu bir şekilde bir araya getirerek daha verimli, esnek ve ölçeklenebilir bir altyapı oluşturun.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="sistem-entegrasyonu-mimari" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-sistem-entegrasyonu-mimari"><h2>Sistem Entegrasyonunda Doğru Mimari</h2><p>Örnek içerik: Sistem entegrasyonunda veri akışları, bağlantı noktaları ve bileşenler arasındaki bağımlılıklar açıkça tanımlanmalıdır. Ortak standartlar ve belgelenmiş arayüzler, yönetilebilir bir yapı kurmaya yardımcı olur.</p><p>Tasarım sırasında güvenlik, izlenebilirlik ve hata durumları birlikte değerlendirilmelidir. Aşamalı kurulum ve doğrulama, entegrasyonun mevcut süreçlerle uyumunu inceleme olanağı sağlar.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-support" x2="1" y2="1"><stop stop-color="#4d9bda"/><stop offset="1" stop-color="#8bc2f0"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-support)"/><g fill="none" stroke="#e1f6ff"><path d="M0 129Q104 60 211 112T440 85" opacity=".4"/><path d="M0 143Q106 89 221 128T440 106" opacity=".3" stroke-dasharray="2 5"/></g><path d="M177 64a46 46 0 0 1 76-24" fill="none" stroke="#effaff" stroke-width="7" stroke-linecap="round"/><path d="m244 27 15 21-25-1Z" fill="#effaff"/><path d="M263 87a46 46 0 0 1-76 24" fill="none" stroke="#effaff" stroke-width="7" stroke-linecap="round"/><path d="m196 124-15-21 25 1Z" fill="#effaff"/><text x="220" y="87" text-anchor="middle" fill="#f6fcff" font-family="sans-serif" font-size="36" font-weight="700">7/24</text></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-headset"/></svg>Teknik Destek</span><time datetime="2025-02-25">25 Şub 2025</time></div>
+                    <h2>7/24 Teknik Desteğin Önemi</h2>
+                    <p>Kritik BT sistemlerinizin kesintisiz çalışması ve hızlı çözüm süreçleri için 7/24 teknik desteğin sağladığı katma değeri öğrenin.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="teknik-destek-onemi" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-teknik-destek-onemi"><h2>7/24 Teknik Desteğin Önemi</h2><p>Örnek içerik: Mesai saatleri dışında da çalışan sistemlerde destek süreçlerinin açıkça tanımlanması önemlidir. Olay bildirim kanalları ve sorumluluklar, ihtiyaç duyulduğunda doğru ekibe ulaşmayı kolaylaştırır.</p><p>Destek kapsamı belirlenirken sistemlerin kritikliği ve iş akışları dikkate alınmalıdır. Kayıt tutma, düzenli değerlendirme ve tekrarlayan sorunların analizi hizmetin geliştirilmesine yardımcı olur.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-growth" x2="1" y2="1"><stop stop-color="#3884c9"/><stop offset="1" stop-color="#71b2e9"/></linearGradient><linearGradient id="ba-bar" x2="0" y2="1"><stop stop-color="#f1fbff"/><stop offset="1" stop-color="#9ad6fc"/></linearGradient></defs><rect width="440" height="150" fill="url(#ba-growth)"/><path d="M0 141Q90 86 190 126T440 99" fill="none" stroke="#d9f2ff" opacity=".4"/><path d="M0 122Q100 79 208 116T440 81" fill="none" stroke="#d9f2ff" opacity=".25" stroke-dasharray="2 5"/><g fill="url(#ba-bar)"><rect x="155" y="115" width="27" height="35" rx="3"/><rect x="193" y="98" width="27" height="52" rx="3"/><rect x="231" y="78" width="27" height="72" rx="3"/><rect x="269" y="53" width="27" height="97" rx="3"/></g><path d="M143 94c68-5 115-33 157-74" fill="none" stroke="#e4f7ff" stroke-width="7" stroke-linecap="round"/><path d="m283 17 27-5-7 27-8-13Z" fill="#e4f7ff"/></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-growth"/></svg>Dijital Dönüşüm</span><time datetime="2025-02-20">20 Şub 2025</time></div>
+                    <h2>Dijital Dönüşüm Yolculuğunda BT</h2>
+                    <p>İş süreçlerinizi daha çevik, verimli ve rekabetçi hale getirmek için dijital dönüşümde BT’nin stratejik rolünü keşfedin.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="dijital-donusum-bt" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-dijital-donusum-bt"><h2>Dijital Dönüşüm Yolculuğunda BT</h2><p>Örnek içerik: Dijital dönüşüm, teknoloji seçimleriyle birlikte süreçlerin ve çalışma biçimlerinin değerlendirilmesini gerektirir. BT altyapısı, veriye erişimi ve yeni uygulamaların kullanılmasını destekleyen bir temel oluşturur.</p><p>Yol haritası hazırlarken somut iş ihtiyaçları ve ekiplerin beklentileri belirlenmelidir. Küçük adımlarla başlayan uygulamalar, sonuçların değerlendirilmesine ve sonraki aşamaların planlanmasına yardımcı olur.</p></template>
+            </article>
+            <article class="ut-blog-card">
+                <div class="ut-blog-art">
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ba-globe" x2="1" y2="1"><stop stop-color="#2d7cc3"/><stop offset="1" stop-color="#0d5195"/></linearGradient><radialGradient id="ba-glow"><stop stop-color="#91d4ff" stop-opacity=".6"/><stop offset="1" stop-color="#79caff" stop-opacity="0"/></radialGradient></defs><rect width="440" height="150" fill="url(#ba-globe)"/><circle cx="220" cy="119" r="115" fill="url(#ba-glow)"/><g fill="none" stroke="#94dbff" stroke-width="1.2"><circle cx="220" cy="119" r="101"/><ellipse cx="220" cy="119" rx="69" ry="101"/><ellipse cx="220" cy="119" rx="30" ry="101"/><ellipse cx="220" cy="119" rx="101" ry="35"/><ellipse cx="220" cy="119" rx="93" ry="71"/><path d="M119 119h202M220 18v132M135 65l51-40 69 1 50 44-85 14-85-19 25 54 60-35 57 35 28-49m-145 49 24 31m93-31-24 31" opacity=".8"/></g><g fill="#e4faff"><circle cx="220" cy="18" r="3"/><circle cx="186" cy="25" r="3"/><circle cx="255" cy="26" r="3"/><circle cx="135" cy="65" r="3"/><circle cx="305" cy="70" r="3"/><circle cx="220" cy="84" r="3"/><circle cx="160" cy="119" r="3"/><circle cx="277" cy="119" r="3"/><circle cx="119" cy="119" r="3"/><circle cx="321" cy="119" r="3"/></g></svg>
+                </div>
+                <div class="ut-blog-body">
+                    <div class="ut-blog-meta"><span class="ut-blog-category"><svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-network"/></svg>Ağ Altyapıları</span><time datetime="2025-02-18">18 Şub 2025</time></div>
+                    <h2>Kurumsal Ağ Altyapısında Yeni Trendler</h2>
+                    <p>Daha güvenli, esnek ve yüksek performanslı ağlar için kurumsal ağ altyapılarında öne çıkan güncel trendleri inceleyin.</p>
+                    <button type="button" class="ut-read-more" data-blog-open="kurumsal-ag-trendleri" aria-haspopup="dialog">Devamını Oku <svg class="ut-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-arrow"/></svg></button>
+                </div>
+                <template id="blog-content-kurumsal-ag-trendleri"><h2>Kurumsal Ağ Altyapısında Yeni Trendler</h2><p>Örnek içerik: Merkezi yönetim, otomasyon ve güvenli erişim yaklaşımları kurumsal ağ tasarımlarında birlikte değerlendirilen başlıklardır. Kablosuz bağlantı ihtiyaçları ve bulut uygulamaları da tasarım kararlarını etkiler.</p><p>Yeni bir yaklaşımı seçmeden önce mevcut altyapıyla uyum, yönetim kolaylığı ve kapasite ihtiyaçları incelenmelidir. Kuruma uygun tasarım, teknoloji tercihlerini gerçek kullanım senaryolarıyla ilişkilendirir.</p></template>
+            </article>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer img-footer">
+        <div class="wrap footer-inner">
+            <a class="brand" href="/" aria-label="Unitürk Bilişim Teknolojileri - Ana Sayfa">
+                <img class="brand-logo" src="/img/logo.png" alt="Unitürk" width="331" height="48" /><span class="ut-brand-fallback" hidden aria-hidden="true">uni<span>turk</span></span>
+                <span class="brand-sub">Bilişim Teknolojileri</span>
+            </a>
+            <nav class="footer-nav" aria-label="Alt menü">
+                    <a href="/kurumsal/hakkimizda">Kurumsal</a>
+                    <a href="/hizmetler">Hizmetlerimiz</a>
+                    <a href="/is-ortaklarimiz">&#x130;&#x15F; Ortaklar&#x131;m&#x131;z</a>
+                    <a href="/referanslar/musteri-referanslari">Referanslar</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/iletisim">&#x130;leti&#x15F;im</a>
+            </nav>
+            <div class="footer-copy">&copy; 2026 Unitürk. Tüm hakları saklıdır.</div>
+        </div>
+        <div class="wrap footer-links">
+            <div class="footer-group">
+                <h3 class="footer-group-title">Kurumsal Bakış</h3>
+                <ul><li><a href="/kurumsal/hakkimizda">Hakkımızda</a></li><li><a href="/kurumsal/vizyonumuz">Vizyonumuz</a></li><li><a href="/kurumsal/misyonumuz">Misyonumuz</a></li></ul>
+            </div>
+            <div class="footer-group">
+                <h3 class="footer-group-title">Çözüm Alanları</h3>
+                <ul><li><a href="/hizmetler/ag-altyapilari-ve-sd-wan">Ağ Altyapıları ve SD-WAN</a></li><li><a href="/hizmetler/siber-guvenlik">Siber Güvenlik</a></li><li><a href="/hizmetler/veri-merkezi-ve-bulut">Veri Merkezi ve Bulut</a></li></ul>
+            </div>
+            <div class="footer-group">
+                <h3 class="footer-group-title">Ürün &amp; Destek</h3>
+                <ul><li><a href="/hizmetler/bt-urunleri-ve-diger-cozumler">BT Ürünleri ve Diğer Çözümler</a></li><li><a href="/hizmetler/teknik-destek">Teknik Destek</a></li><li><a href="/iletisim">İletişim</a></li></ul>
+            </div>
+        </div>
+        <nav class="wrap ut-legal-bar" aria-label="Belgeler ve yasal metinler">
+            <a href="/kurumsal/belgelerimiz"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-document"></use></svg> Belgelerimiz</a>
+            <a href="/gizlilik-politikasi">Gizlilik Politikası</a>
+            <a href="/kvkk-aydinlatma-metni">KVKK Aydınlatma Metni</a>
+            <a href="/bilgi-guvenligi-politikasi">Bilgi Güvenliği Politikası</a>
+        </nav>    </footer>
+
+<dialog class="ut-dialog" id="blogDialog" aria-labelledby="blog-dialog-title">
+    <button type="button" class="ut-dialog-close" id="blogDialogClose" aria-label="Yazıyı kapat"><svg class="ut-icon " viewBox="0 0 24 24" aria-hidden="true"><use href="#ut-i-close"></use></svg></button>
+    <span class="ut-dialog-label">Uniturk Blog · Örnek yazı</span>
+    <div id="blogDialogContent"></div>
+</dialog>
+<script type="application/json" id="ut-service-data">[
+  {"slug":"ag-altyapilari-ve-sd-wan","title":"Ağ Altyapıları ve SD-WAN","icon":"network","description":"Güvenli, esnek ve yüksek performanslı kurumsal ağ altyapıları ve SD-WAN çözümleri.","topics":[{"slug":"kurumsal-ag","title":"Kurumsal Ağ ve Kampüs","text":"Ofis, kampüs ve şube ağlarını kurumunuzun bağlantı, kapasite ve büyüme ihtiyaçlarına göre birlikte planlıyoruz."},{"slug":"kablosuz-ag","title":"Kablosuz Ağ Çözümleri","text":"Çalışma alanlarınızın kapsama ve erişim ihtiyaçlarını değerlendirerek yönetilebilir kablosuz ağ yapıları tasarlıyoruz."},{"slug":"sd-wan","title":"SD-WAN ve Şube Bağlantıları","text":"Birden fazla lokasyonun bağlantılarını merkezi yönetim ve iş sürekliliği hedefleriniz doğrultusunda ele alıyoruz."}]},
+  {"slug":"siber-guvenlik","title":"Siber Güvenlik","icon":"shield","description":"Kurumsal verilerinizi ve sistemlerinizi korumaya yönelik uçtan uca güvenlik çözümleri.","topics":[{"slug":"ag-guvenligi","title":"Ağ ve Erişim Güvenliği","text":"Ağınızın ve kullanıcı erişimlerinin güvenlik ihtiyaçlarını mevcut altyapınızla birlikte değerlendiriyoruz."},{"slug":"soc-edr","title":"SOC ve EDR Çözümleri","text":"Güvenlik izleme ve uç nokta korumasını kurumunuzun operasyonel ihtiyaçları doğrultusunda planlıyoruz."},{"slug":"guvenlik-operasyonlari","title":"Güvenlik Operasyonları","text":"Güvenlik bileşenlerinin birlikte yönetilmesine ve sürdürülebilir operasyon süreçlerinin oluşturulmasına destek veriyoruz."}]},
+  {"slug":"veri-merkezi-ve-bulut","title":"Veri Merkezi ve Bulut","icon":"server","description":"Modern veri merkezi altyapıları ve ölçeklenebilir bulut çözümleri ile sürdürülebilir BT operasyonları.","topics":[{"slug":"sanallastirma-hci","title":"Sanallaştırma ve HCI","text":"Sunucu, depolama ve sanallaştırma ihtiyaçlarınızı birlikte ele alarak kurumunuza uygun veri merkezi mimarileri tasarlıyoruz."},{"slug":"hibrit-bulut","title":"Hibrit Bulut Çözümleri","text":"Mevcut altyapınız ile bulut kaynaklarının birlikte çalışmasını iş yükleriniz ve yönetim ihtiyaçlarınıza göre planlıyoruz."},{"slug":"yedekleme-felaket-kurtarma","title":"Yedekleme ve Felaket Kurtarma","text":"Verilerinizin korunması ve kritik sistemlerinizin sürekliliği için yedekleme ve kurtarma ihtiyaçlarınızı değerlendiriyoruz."}]},
+  {"slug":"bt-danismanligi","title":"BT Danışmanlığı","icon":"compass","description":"İhtiyaçlarınıza özel, stratejik ve sürdürülebilir BT danışmanlık hizmetleri.","topics":[{"slug":"altyapi-analizi","title":"Altyapı ve İhtiyaç Analizi","text":"Mevcut sistemlerinizi ve iş hedeflerinizi birlikte inceleyerek öncelikli teknoloji ihtiyaçlarınızı belirliyoruz."},{"slug":"teknoloji-yol-haritasi","title":"Teknoloji Yol Haritası","text":"Kısa ve uzun vadeli ihtiyaçlarınızı dikkate alan, uygulanabilir bir teknoloji planı oluşturmanıza destek oluyoruz."},{"slug":"proje-danismanligi","title":"Proje Danışmanlığı","text":"Teknoloji projelerinizde kapsamın belirlenmesinden uygulama planına kadar uzmanlığımızla yanınızda yer alıyoruz."}]},
+  {"slug":"yonetilen-hizmetler","title":"Yönetilen Hizmetler","icon":"monitor","description":"BT altyapınızın sürekli, güvenli ve verimli yönetilmesine yönelik uçtan uca hizmetler.","topics":[{"slug":"izleme-yonetim","title":"Altyapı İzleme ve Yönetimi","text":"BT bileşenlerinin izlenmesi ve günlük operasyonlarının yönetimi için kurumunuza uygun bir hizmet kapsamı oluşturuyoruz."},{"slug":"bakim-operasyon","title":"Bakım ve Operasyon","text":"Düzenli bakım ve operasyon ihtiyaçlarınızı iş süreçlerinizin sürekliliğini gözeterek planlıyoruz."},{"slug":"sureklilik","title":"İş Sürekliliği","text":"İzleme, bakım ve destek süreçlerini bir araya getirerek BT operasyonlarınızın sürdürülebilirliğine katkı sağlıyoruz."}]},
+  {"slug":"sistem-entegrasyonu","title":"Sistem Entegrasyonu","icon":"layers","description":"Farklı teknolojileri bir bütün halinde çalışacak şekilde bir araya getiren esnek çözümler.","topics":[{"slug":"kurulum-devreye-alma","title":"Kurulum ve Devreye Alma","text":"Yeni altyapı bileşenlerinin kurulumunu mevcut sistemleriniz ve uygulama takviminizle birlikte planlıyoruz."},{"slug":"migrasyon","title":"Migrasyon ve Geçiş","text":"Sistem ve veri geçişlerini bağımlılıkları, iş yüklerini ve operasyonel ihtiyaçlarınızı dikkate alarak ele alıyoruz."},{"slug":"altyapi-entegrasyonu","title":"Altyapı Entegrasyonu","text":"Ağ, güvenlik, veri merkezi ve yönetim bileşenlerinin uyum içinde çalışmasına yönelik çözümler geliştiriyoruz."}]},
+  {"slug":"teknik-destek","title":"Teknik Destek","icon":"headset","description":"Uzman ekibimizle 7/24 hızlı, etkin ve kesintisiz teknik destek hizmeti.","topics":[{"slug":"uzaktan-destek","title":"Uzaktan Teknik Destek","text":"Teknik taleplerinizi değerlendirerek uzaktan müdahaleye uygun ihtiyaçlarınız için destek sağlıyoruz."},{"slug":"yerinde-destek","title":"Yerinde Destek","text":"Yerinde inceleme ve müdahale gerektiren ihtiyaçlarınızı destek kapsamınız doğrultusunda planlıyoruz."},{"slug":"bakim-destek","title":"Bakım ve Destek Planları","text":"Altyapınızın ihtiyaçlarına uygun bakım, destek ve iletişim süreçlerini birlikte belirliyoruz."}]},
+  {"slug":"bt-urunleri-ve-diger-cozumler","title":"BT Ürünleri ve Diğer Çözümler","icon":"laptop","description":"Laptop, masaüstü bilgisayar, donanım ve yazılım ihtiyaçlarınıza uygun ürün ve çözümler.","topics":[{"slug":"laptop-masaustu","title":"Laptop ve Masaüstü Bilgisayarlar","text":"Kullanım amacınıza ve çalışma ortamınıza uygun laptop ve masaüstü bilgisayar seçeneklerini birlikte değerlendiriyoruz."},{"slug":"sunucu-depolama","title":"Sunucu ve Depolama Ürünleri","text":"Kapasite ve iş yükü ihtiyaçlarınıza uygun sunucu, depolama ve ilgili donanım ürünlerinin seçimine destek oluyoruz."},{"slug":"lisans-cevre-birimleri","title":"Yazılım, Lisans ve Çevre Birimleri","text":"İşletmenizin yazılım, lisanslama, monitör ve diğer çevre birimi ihtiyaçları için uygun seçenekleri sunuyoruz."}]}
+]
+</script>
+<script>
+(() => {
+    'use strict';
+    const $ = (selector, scope = document) => scope.querySelector(selector);
+    const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+    const services = JSON.parse($('#ut-service-data').textContent);
+    const home = $('#page-home');
+    const views = $$('.ut-view');
+    const nav = $('#mainNav');
+    const mobileToggle = $('#navToggle');
+    const desktop = matchMedia('(min-width: 1101px)');
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    const dropdowns = $$('[data-dropdown]');
+    const searchForm = $('#headerSearch');
+    const searchToggle = $('#searchToggle');
+    const searchResults = $('#ut-search-results');
+    let lastArticleButton = null;
+    let hoverTimer;
+
+    function icon(name) {
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('class', 'ut-icon');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('aria-hidden', 'true');
+        const use = document.createElementNS(svg.namespaceURI, 'use');
+        use.setAttribute('href', `#ut-i-${name}`);
+        svg.append(use);
+        return svg;
+    }
+
+    function closeDropdowns(except) {
+        clearTimeout(hoverTimer);
+        dropdowns.forEach(button => {
+            if (button === except) return;
+            button.setAttribute('aria-expanded', 'false');
+            document.getElementById(button.getAttribute('aria-controls')).hidden = true;
+        });
+    }
+    function setDropdown(button, open) {
+        if (open) closeDropdowns(button);
+        button.setAttribute('aria-expanded', String(open));
+        document.getElementById(button.getAttribute('aria-controls')).hidden = !open;
+        if (open) closeSearch();
+    }
+    function closeMobile() {
+        nav.classList.remove('is-open');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+        mobileToggle.setAttribute('aria-label', 'Menüyü aç');
+        closeDropdowns();
+    }
+    dropdowns.forEach(button => {
+        button.addEventListener('click', () => setDropdown(button, button.getAttribute('aria-expanded') !== 'true'));
+        button.addEventListener('keydown', event => {
+            if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                setDropdown(button, true);
+                $(`#${button.getAttribute('aria-controls')} a`)?.focus();
+            }
+        });
+        const item = button.closest('.ut-nav-item');
+        item.addEventListener('pointerenter', event => {
+            if (!desktop.matches || event.pointerType !== 'mouse') return;
+            clearTimeout(hoverTimer);
+            hoverTimer = setTimeout(() => setDropdown(button, true), 130);
+        });
+        item.addEventListener('pointerleave', () => {
+            if (!desktop.matches) return;
+            clearTimeout(hoverTimer);
+            hoverTimer = setTimeout(() => {
+                if (!item.contains(document.activeElement)) setDropdown(button, false);
+            }, 220);
+        });
+        item.addEventListener('focusout', () => setTimeout(() => {
+            if (!item.contains(document.activeElement)) setDropdown(button, false);
+        }, 0));
+    });
+    // Hizmetler başlığının kendisi de mega menüyü açar; tüm hizmetler bağlantısı paneldedir.
+    $('#mainNav .ut-nav-mega > .nav-link').addEventListener('click', event => {
+        if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        const button = $('.ut-nav-mega [data-dropdown]');
+        setDropdown(button, button.getAttribute('aria-expanded') !== 'true');
+    });
+    mobileToggle.addEventListener('click', () => {
+        const open = mobileToggle.getAttribute('aria-expanded') !== 'true';
+        nav.classList.toggle('is-open', open);
+        mobileToggle.setAttribute('aria-expanded', String(open));
+        mobileToggle.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+        if (open) closeSearch(); else closeDropdowns();
+    });
+    desktop.addEventListener('change', closeMobile);
+
+    function closeSearch() {
+        searchForm.hidden = true;
+        searchResults.hidden = true;
+        searchToggle.setAttribute('aria-expanded', 'false');
+    }
+    searchToggle.addEventListener('click', () => {
+        const open = searchForm.hidden;
+        closeMobile();
+        searchForm.hidden = !open;
+        searchResults.hidden = true;
+        searchToggle.setAttribute('aria-expanded', String(open));
+        if (open) $('input', searchForm).focus();
+    });
+
+    const infoPages = {
+        '/kurumsal/hakkimizda': {
+            title: 'Hakkımızda',
+            paragraphs: ['Kurumsal ölçekte güvenli, ölçeklenebilir ve yönetilebilir BT altyapıları tasarlıyor, iş süreçlerinizi geleceğe taşıyoruz.', 'Güvenilir iş ortağınız olarak daha verimli, daha sürdürülebilir bir gelecek için çalışıyoruz. Analiz, tasarım, uygulama ve destek süreçlerini bir bütün olarak ele alıyoruz.']
+        },
+        '/kurumsal/vizyonumuz': { title: 'Vizyonumuz', pending: true },
+        '/kurumsal/misyonumuz': { title: 'Misyonumuz', pending: true },
+        '/referanslar/musteri-referanslari': { title: 'Müşteri Referansları', pending: true },
+        '/belgelerimiz': { title: 'Belgelerimiz', paragraphs: ['Belgeler ve sertifikalar bu alanda paylaşılacaktır. Güncel belgelerimiz hakkında bilgi almak için bizimle iletişime geçebilirsiniz.'] },
+        '/bilgi-guvenligi-politikasi': { title: 'Bilgi Güvenliği Politikası', pending: true },
+        '/kvkk-aydinlatma-metni': { title: 'KVKK Aydınlatma Metni', pending: true },
+        '/gizlilik-politikasi': { title: 'Gizlilik Politikası', pending: true }
+    };
+
+    function populateDetail(service) {
+        $('#detail-title').textContent = service.title;
+        $('#detail-breadcrumb-title').textContent = service.title;
+        $('#detail-description').textContent = service.description;
+        $('#detail-topics').replaceChildren(...service.topics.map(topic => {
+            const section = document.createElement('section');
+            section.className = 'ut-topic';
+            section.id = `topic-${topic.slug}`;
+            const heading = document.createElement('h2');
+            heading.textContent = topic.title;
+            const paragraph = document.createElement('p');
+            paragraph.textContent = topic.text;
+            section.append(heading, paragraph);
+            return section;
+        }));
+        $('#detail-icon').replaceChildren(icon(service.icon));
+    }
+    function populateInfo(info) {
+        $('#info-title').textContent = info.title;
+        $('#info-breadcrumb-title').textContent = info.title;
+        const paragraphs = info.paragraphs || ['Bu sayfanın içeriği hazırlanıyor. Ayrıntılı bilgi için bizimle iletişime geçebilirsiniz.'];
+        $('#info-copy').replaceChildren(...paragraphs.map(text => {
+            const paragraph = document.createElement('p');
+            paragraph.textContent = text;
+            return paragraph;
+        }));
+    }
+    function readRoute() {
+        let hash;
+        try { hash = decodeURIComponent(location.hash.slice(1)); } catch { hash = ''; }
+        if (!hash || hash === '/' || hash === 'ana-sayfa') return { path: '/' };
+        if (!hash.startsWith('/')) return { path: '/', anchor: hash };
+        const parts = hash.split('?');
+        return { path: parts[0].replace(/\/$/, '') || '/', topic: new URLSearchParams(parts[1] || '').get('konu') };
+    }
+    function renderRoute(focus = true) {
+        const route = readRoute();
+        let path = route.path;
+        if (path === '/kurumsal/neden-uniturk') { path = '/'; route.anchor = 'neden-uniturk'; }
+        if (path === '/kurumsal/belgelerimiz') path = '/belgelerimiz';
+        if (path === '/iletisim') { path = '/'; route.anchor = 'iletisim'; }
+        if (path === '/is-ortaklarimiz') { path = '/'; route.anchor = 'ortaklar'; }
+        if (path === '/referanslar/projelerimiz') { path = '/'; route.anchor = 'projeler'; }
+        let target = home;
+        let title = 'Ana Sayfa';
+        if (path === '/blog') { target = $('#page-blog'); title = 'Blog'; }
+        else if (path === '/hizmetler') { target = $('#page-services'); title = 'Hizmetlerimiz'; }
+        else if (path.startsWith('/hizmetler/')) {
+            const service = services.find(item => item.slug === path.split('/')[2]);
+            if (service) { populateDetail(service); target = $('#page-detail'); title = service.title; }
+            else { populateInfo({ title: 'Hizmet bulunamadı', paragraphs: ['Aradığınız hizmete Hizmetlerimiz menüsünden ulaşabilirsiniz.'] }); target = $('#page-info'); title = 'Hizmet bulunamadı'; }
+        } else if (infoPages[path]) { populateInfo(infoPages[path]); target = $('#page-info'); title = infoPages[path].title; }
+        else if (path !== '/') { populateInfo({ title: 'Sayfa bulunamadı', paragraphs: ['Aradığınız içeriğe üst menüden veya site içi aramadan ulaşabilirsiniz.'] }); target = $('#page-info'); title = 'Sayfa bulunamadı'; }
+        views.forEach(view => { view.hidden = view !== target; });
+        document.body.classList.toggle('ut-inner-page', target !== home);
+        document.body.classList.toggle('has-overlay-header', target === home);
+        $('#siteHeader').classList.toggle('is-overlay', target === home);
+        document.title = `${title} - Unitürk Bilişim Teknolojileri`;
+        $$('#mainNav a[aria-current]').forEach(link => link.removeAttribute('aria-current'));
+        const activePath = path.startsWith('/hizmetler') ? '/hizmetler' : path.startsWith('/kurumsal') ? '/kurumsal/hakkimizda' : path;
+        const activeLink = $$('#mainNav a').find(link => link.getAttribute('href') === activePath);
+        activeLink?.setAttribute('aria-current', 'page');
+        closeMobile();
+        closeSearch();
+        if ($('#blogDialog').open) $('#blogDialog').close();
+        requestAnimationFrame(() => {
+            const anchor = route.topic ? document.getElementById(`topic-${route.topic}`) : route.anchor ? document.getElementById(route.anchor) : null;
+            if (anchor && target.contains(anchor)) {
+                anchor.scrollIntoView({ behavior: 'instant', block: 'start' });
+                if (focus) { anchor.setAttribute('tabindex', '-1'); anchor.focus({ preventScroll: true }); }
+            } else {
+                window.scrollTo({ top: 0, behavior: 'instant' });
+                if (focus) { const heading = $('h1', target); heading?.setAttribute('tabindex', '-1'); heading?.focus({ preventScroll: true }); }
+            }
+        });
+    }
+
+    document.addEventListener('click', event => {
+        const articleButton = event.target.closest('[data-blog-open]');
+        if (articleButton) {
+            const template = document.getElementById(`blog-content-${articleButton.dataset.blogOpen}`);
+            if (!template) return;
+            lastArticleButton = articleButton;
+            $('#blogDialogContent').replaceChildren(template.content.cloneNode(true));
+            const heading = $('h2', $('#blogDialogContent'));
+            heading.id = 'blog-dialog-title';
+            $('#blogDialog').showModal();
+            document.body.classList.add('ut-dialog-open');
+            return;
+        }
+        const link = event.target.closest('a[href]');
+        if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || link.target === '_blank' || link.hasAttribute('download')) return;
+        const href = link.getAttribute('href');
+        if (href === '#mainContent') {
+            event.preventDefault();
+            $('#mainContent').focus();
+            $('#mainContent').scrollIntoView({ block: 'start' });
+            return;
+        }
+        if (href.startsWith('/') && !href.startsWith('//')) {
+            // Sunucudaki mevcut kurumsal ve yasal sayfalar kendi adreslerinde çalışır.
+            // Tek HTML önizlemesinde bu adresler için yerel görünüm sağlanır.
+            const path = href.split('?')[0];
+            const locallyUpdated = path === '/' || path === '/hizmetler' || path.startsWith('/hizmetler/') || path === '/blog' || path === '/iletisim' || path === '/is-ortaklarimiz' || path === '/referanslar/projelerimiz';
+            if (location.protocol !== 'file:' && !locallyUpdated) return;
+            event.preventDefault();
+            const next = `#${href}`;
+            if (location.hash === next) renderRoute(); else location.hash = next;
+        } else if (href.startsWith('#')) {
+            if (href === location.hash) { event.preventDefault(); renderRoute(); }
+            closeMobile();
+        }
+    });
+    window.addEventListener('hashchange', () => renderRoute());
+    document.addEventListener('click', event => {
+        if (!event.target.closest('.ut-nav-item')) closeDropdowns();
+        if (!event.target.closest('#siteHeader')) { closeMobile(); closeSearch(); }
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape' || $('#blogDialog').open) return;
+        const openButton = dropdowns.find(button => button.getAttribute('aria-expanded') === 'true');
+        if (openButton) { closeDropdowns(); openButton.focus(); }
+        else if (!searchForm.hidden) { closeSearch(); searchToggle.focus(); }
+        else if (mobileToggle.getAttribute('aria-expanded') === 'true') { closeMobile(); mobileToggle.focus(); }
+    });
+    $('#blogDialogClose').addEventListener('click', () => $('#blogDialog').close());
+    $('#blogDialog').addEventListener('click', event => {
+        if (event.target !== $('#blogDialog')) return;
+        const box = event.target.getBoundingClientRect();
+        if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) event.target.close();
+    });
+    $('#blogDialog').addEventListener('close', () => {
+        document.body.classList.remove('ut-dialog-open');
+        if (lastArticleButton && !$('#page-blog').hidden) lastArticleButton.focus();
+    });
+
+    const searchIndex = [
+        ...services.flatMap(service => [{ title: service.title, route: `/hizmetler/${service.slug}` }, ...service.topics.map(topic => ({ title: topic.title, route: `/hizmetler/${service.slug}?konu=${topic.slug}` }))]),
+        ...Object.entries(infoPages).map(([route, info]) => ({ title: info.title, route })),
+        { title: 'İletişim', route: '/iletisim' }, { title: 'Blog', route: '/blog' }, { title: 'Neden Uniturk?', route: '/kurumsal/neden-uniturk' },
+        ...$$('.ut-blog-card').map(card => ({ title: $('h2', card).textContent, route: '/blog', article: $('[data-blog-open]', card).dataset.blogOpen }))
+    ];
+    const normalize = text => text.toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ı/g, 'i');
+    searchForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const query = normalize($('input', searchForm).value.trim());
+        const found = query ? searchIndex.filter(item => normalize(item.title).includes(query)).slice(0, 10) : [];
+        searchResults.replaceChildren();
+        const label = document.createElement('p');
+        label.textContent = found.length ? `${found.length} sonuç bulundu` : 'Sonuç bulunamadı. Farklı bir kelimeyle tekrar arayın.';
+        searchResults.append(label);
+        found.forEach(item => {
+            const link = document.createElement('a');
+            link.href = `#${item.route}`;
+            link.textContent = item.title;
+            if (item.article) link.addEventListener('click', () => setTimeout(() => $(`[data-blog-open="${item.article}"]`)?.click(), 60));
+            link.addEventListener('click', closeSearch);
+            searchResults.append(link);
+        });
+        searchResults.hidden = false;
+    });
+
+    function recoverImage(img) {
+        img.hidden = true;
+        const fallback = img.parentElement.querySelector('.ut-brand-fallback');
+        if (fallback) fallback.hidden = false;
+    }
+    $$('img').forEach(img => {
+        img.addEventListener('error', () => recoverImage(img));
+        if (img.complete && img.naturalWidth === 0) recoverImage(img);
+    });
+
+    const slides = $$('.hero-slide');
+    const captions = $$('.hero-caption');
+    const slider = $('#heroSlider');
+    let slideIndex = 0;
+    let slideTimer;
+    let sliderPaused = false;
+    function showSlide(index) {
+        slideIndex = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => { slide.classList.toggle('is-active', i === slideIndex); slide.setAttribute('aria-hidden', String(i !== slideIndex)); });
+        captions.forEach((caption, i) => { caption.classList.toggle('is-active', i === slideIndex); caption.setAttribute('aria-hidden', String(i !== slideIndex)); });
+        $('#heroCurrent').textContent = String(slideIndex + 1).padStart(2, '0');
+        $('#heroProgress').style.width = `${(slideIndex + 1) / slides.length * 100}%`;
+    }
+    function startSlider() {
+        clearInterval(slideTimer);
+        if (!reducedMotion.matches && !sliderPaused && !document.hidden && !home.hidden) slideTimer = setInterval(() => showSlide(slideIndex + 1), 6500);
+    }
+    $('#heroPrev').addEventListener('click', () => { showSlide(slideIndex - 1); startSlider(); });
+    $('#heroNext').addEventListener('click', () => { showSlide(slideIndex + 1); startSlider(); });
+    $('#heroPause').addEventListener('click', event => {
+        sliderPaused = !sliderPaused;
+        event.currentTarget.setAttribute('aria-pressed', String(sliderPaused));
+        event.currentTarget.setAttribute('aria-label', sliderPaused ? 'Slaytları oynat' : 'Slaytları duraklat');
+        event.currentTarget.replaceChildren(icon(sliderPaused ? 'play' : 'pause'));
+        startSlider();
+    });
+    slider.addEventListener('pointerenter', () => clearInterval(slideTimer));
+    slider.addEventListener('pointerleave', startSlider);
+    slider.addEventListener('focusin', () => clearInterval(slideTimer));
+    slider.addEventListener('focusout', event => { if (!slider.contains(event.relatedTarget)) startSlider(); });
+    document.addEventListener('visibilitychange', startSlider);
+    window.addEventListener('hashchange', startSlider);
+    reducedMotion.addEventListener('change', startSlider);
+    showSlide(0);
+
+    const track = $('#projectsTrack');
+    const projectCards = $$('.project-card', track);
+    const dots = $('#projectsDots');
+    projectCards.forEach((card, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `${index + 1}. projeyi göster`);
+        dot.addEventListener('click', () => track.scrollTo({ left: card.offsetLeft - projectCards[0].offsetLeft, behavior: reducedMotion.matches ? 'instant' : 'smooth' }));
+        dots.append(dot);
+    });
+    function updateProjectDots() {
+        const width = projectCards[1].offsetLeft - projectCards[0].offsetLeft;
+        const index = width ? Math.min(projectCards.length - 1, Math.round(track.scrollLeft / width)) : 0;
+        $$('button', dots).forEach((dot, i) => { dot.classList.toggle('is-active', i === index); dot.setAttribute('aria-pressed', String(i === index)); });
+    }
+    $('#projectsNext').append(icon('arrow'));
+    $('#projectsNext').addEventListener('click', () => {
+        const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 5;
+        track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + track.clientWidth * .8, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+    });
+    track.addEventListener('scroll', updateProjectDots, { passive: true });
+    updateProjectDots();
+    renderRoute(false);
+    startSlider();
+})();
+
+</script></body>
+</html>

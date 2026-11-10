@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sayfa - Unitürk Bilişim Teknolojileri</title>
+    <meta name="description" content="Kurumsal ölçekte güvenli, ölçeklenebilir ve yönetilebilir BT altyapıları." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=BZMF6I8mnm2caYx5YETUbaym5d8vuAVBtjcrC8UTOH4" />
+</head>
+<body class="has-overlay-header">
+    <header class="site-header is-overlay" id="siteHeader">
+        <div class="wrap header-inner">
+            <a class="brand" href="/" aria-label="Unitürk Bilişim Teknolojileri - Ana Sayfa">
+                <img class="brand-logo" src="/img/logo.png" alt="Unitürk" width="331" height="48" />
+                <span class="brand-sub">Bilişim Teknolojileri</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Ana menü">
+                    <a class="nav-link" href="/kurumsal/hakkimizda">Kurumsal</a>
+                    <a class="nav-link" href="/hizmetler">Hizmetlerimiz</a>
+                    <a class="nav-link" href="/is-ortaklarimiz">&#x130;&#x15F; Ortaklar&#x131;m&#x131;z</a>
+                    <a class="nav-link" href="/referanslar/musteri-referanslari">Referanslar</a>
+                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="/iletisim">&#x130;leti&#x15F;im</a>
+            </nav>
+
+            <div class="header-actions">
+                <button type="button" class="icon-btn" id="searchToggle" aria-label="Ara" aria-controls="headerSearch" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+                </button>
+                <form class="header-search" id="headerSearch" action="/arama" method="get" role="search" hidden>
+                    <input type="search" name="q" maxlength="100" placeholder="Sitede ara…" aria-label="Sitede ara" required />
+                    <button type="submit" class="btn-ut btn-ut-primary btn-ut-sm">Ara</button>
+                </form>
+                <button type="button" class="icon-btn nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-controls="mainNav" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-decor" aria-hidden="true"></div>
+    <div class="hero-media" id="heroSlider" aria-roledescription="carousel">
+        <div class="hero-slide is-active img-hero-1" role="group" aria-label="1 / 3"></div>
+        <div class="hero-slide img-building-glass" role="group" aria-label="2 / 3"></div>
+        <div class="hero-slide img-campus" role="group" aria-label="3 / 3"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-stage">
+            <div class="hero-caption is-active">
+                <h3>Güçlü<br />Altyapılarla<br />Sürdürülebilir<br />Gelecek</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-caption">
+                <h3>Güvenli<br />Ağlarla<br />Kesintisiz<br />İş Sürekliliği</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-caption">
+                <h3>Kampüsten<br />Buluta<br />Uçtan Uca<br />Çözümler</h3>
+                <span class="accent-bar"></span>
+            </div>
+            <div class="hero-controls">
+                <div class="hero-progress">
+                    <span id="heroCurrent">01</span>
+                    <span class="hero-progress-bar"><span id="heroProgress"></span></span>
+                    <span id="heroTotal">03</span>
+                </div>
+                <div class="hero-arrows">
+                    <button type="button" class="round-btn" id="heroPrev" aria-label="Önceki slayt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+                    </button>
+                    <button type="button" class="round-btn" id="heroNext" aria-label="Sonraki slayt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap hero-inner">
+        <div class="hero-content">
+            <span class="eyebrow">Daha güvenli, daha verimli yarınlar için</span>
+            <h1 class="hero-title">Teknolojiyi<br />İşiniz İçin<br />Anlamlı Kılıyoruz</h1>
+            <p class="hero-lead">
+                Kurumsal ölçekte güvenli, ölçeklenebilir ve yönetilebilir BT altyapıları tasarlıyor,
+                iş süreçlerinizi geleceğe taşıyoruz.
+            </p>
+        </div>
+    </div>
+
+    <ul class="hero-features">
+        <li>
+            <span class="hero-feature-icon"><img src="/img/uctan-uca-cozumler.svg" alt="" width="28" height="28" /></span>
+            <div>
+                <strong>Uçtan Uca Çözümler</strong>
+                <p>Analizden devreye kadar tek noktadan yönetim</p>
+            </div>
+        </li>
+        <li>
+            <span class="hero-feature-icon"><img src="/img/guvenli-altyapi.svg" alt="" width="28" height="28" /></span>
+            <div>
+                <strong>Güvenli Altyapı</strong>
+                <p>Kurumsal standartlarda yüksek güvenlik</p>
+            </div>
+        </li>
+        <li>
+            <span class="hero-feature-icon"><img src="/img/surdurulebilir-teknoloji.svg" alt="" width="28" height="28" /></span>
+            <div>
+                <strong>Sürdürülebilir Teknoloji</strong>
+                <p>Uzun vadeli, ölçeklenebilir ve verimli yapılar</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- SÜREÇ -->
+<section class="process" id="sektorler">
+    <div class="wrap process-inner">
+        <div class="process-text">
+            <span class="eyebrow eyebrow-light">Uçtan uca teknoloji çözümleri</span>
+            <h2>İşinizin her<br />aşamasında yanınızdayız.</h2>
+            <p>İhtiyacınıza özel, entegre ve sürdürülebilir BT altyapılarıyla dijital dönüşümünüzü destekliyoruz.</p>
+        </div>
+        <ol class="process-steps">
+            <li>
+                <img src="/img/step-plan.png" alt="" />
+                <h3>Planla</h3>
+                <p>İhtiyaçlarınızı analiz ediyoruz.</p>
+            </li>
+            <li>
+                <img src="/img/step-design.png" alt="" />
+                <h3>Tasarla</h3>
+                <p>Size özel çözümler geliştiriyoruz.</p>
+            </li>
+            <li>
+                <img src="/img/step-implement.png" alt="" />
+                <h3>Uygula</h3>
+                <p>Uzman ekibimizle hayata geçiriyoruz.</p>
+            </li>
+            <li>
+                <img src="/img/step-sustain.png" alt="" />
+                <h3>Sürdür</h3>
+                <p>Sürekli destekle yanınızdayız.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- TEKNOLOJİ ORTAKLARI -->
+<section class="partners" id="ortaklar">
+    <div class="wrap">
+        <span class="eyebrow">Teknoloji ortaklarımız</span>
+        <ul class="partner-logos">
+            <li class="logo-fortinet" title="Fortinet"><span aria-hidden="true">F<i class="ft-o"></i>RTINET<sup>.</sup></span><span class="visually-hidden">Fortinet</span></li>
+            <li class="logo-cisco" title="Cisco">
+                <svg viewBox="0 0 60 22" aria-hidden="true"><g fill="currentColor"><rect x="1" y="8" width="2.6" height="6" rx="1.3" /><rect x="7.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="14" y="0" width="2.6" height="22" rx="1.3" /><rect x="20.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="27" y="8" width="2.6" height="6" rx="1.3" /><rect x="33.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="40" y="0" width="2.6" height="22" rx="1.3" /><rect x="46.5" y="4" width="2.6" height="14" rx="1.3" /><rect x="53" y="8" width="2.6" height="6" rx="1.3" /></g></svg>
+                <span>CISCO</span>
+            </li>
+            <li class="logo-nutanix" title="Nutanix">NUTANIX</li>
+            <li class="logo-cohesity" title="Cohesity">COHE<span>S</span>ITY<b>.</b></li>
+            <li class="logo-vmware" title="VMware">vm<span>ware</span><sup>®</sup></li>
+            <li class="logo-microsoft" title="Microsoft">
+                <span class="ms-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                Microsoft
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ÇÖZÜMLER -->
+<section class="solutions" id="cozumler">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">Çözümlerimiz</span>
+                <h2 class="section-title">Güvenli altyapılar,<br />daha güçlü kurumlar.</h2>
+            </div>
+            <p class="section-desc">
+                Modern teknolojilerle kurumların ihtiyaç duyduğu altyapı, güvenlik, veri merkezi ve
+                yönetilen hizmet çözümlerini sunuyoruz.
+            </p>
+            <a class="link-arrow" href="/hizmetler">Tüm Çözümlerimiz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        </div>
+
+        <div class="solution-grid">
+            <article class="solution-card">
+                <div class="solution-head">
+                    <span class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2" /><circle cx="5" cy="18" r="2.2" /><circle cx="19" cy="18" r="2.2" /><path d="M12 7.2v4.3M12 11.5l-5.3 4.8M12 11.5l5.3 4.8" /></svg>
+                    </span>
+                    <h3>Ağ Altyapıları<br />ve SD-WAN</h3>
+                </div>
+                <p>Kurumsal ağ, kampüs, kablosuz ağ ve çok lokasyonlu SD-WAN mimarileri.</p>
+                <div class="solution-media img-building-glass"></div>
+                <a class="solution-link" href="/hizmetler/ag-altyapilari-ve-sd-wan" aria-label="Ağ Altyapıları ve SD-WAN detayları"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </article>
+
+            <article class="solution-card">
+                <div class="solution-head">
+                    <span class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z" /><path d="m8.8 12 2.2 2.2 4.3-4.4" /></svg>
+                    </span>
+                    <h3>Siber Güvenlik</h3>
+                </div>
+                <p>Güvenli erişim, tehdit tespiti, SOC, EDR ve uçtan uca güvenlik operasyonları.</p>
+                <div class="solution-media img-digital-team">
+                    <span class="security-lock" aria-hidden="true">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="29" stroke-dasharray="3 5" opacity=".6" /><circle cx="32" cy="32" r="22" opacity=".8" /><rect x="22" y="29" width="20" height="15" rx="2.5" fill="currentColor" fill-opacity=".18" /><path d="M26 29v-4a6 6 0 0 1 12 0v4" /><circle cx="32" cy="36" r="1.8" fill="currentColor" /></svg>
+                    </span>
+                </div>
+                <a class="solution-link" href="/hizmetler/siber-guvenlik" aria-label="Siber Güvenlik detayları"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </article>
+
+            <article class="solution-card">
+                <div class="solution-head">
+                    <span class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.5 9.2 4.7 4.7 0 0 0 7 18.5Z" /></svg>
+                    </span>
+                    <h3>Veri Merkezi<br />ve Bulut</h3>
+                </div>
+                <p>Modern veri merkezi, sanallaştırma, HCI, yedekleme ve felaket kurtarma çözümleri.</p>
+                <div class="solution-media img-datacenter"></div>
+                <a class="solution-link" href="/hizmetler/veri-merkezi-ve-bulut" aria-label="Veri Merkezi ve Bulut detayları"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </article>
+
+            <article class="solution-card">
+                <div class="solution-head">
+                    <span class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5" /><path d="M8 20h8M12 16v4" /></svg>
+                    </span>
+                    <h3>Yönetilen<br />Hizmetler</h3>
+                </div>
+                <p>Tasarım, kurulum, migrasyon, işletim ve 7/24 uzman desteği.</p>
+                <div class="solution-media img-network-globe"></div>
+                <a class="solution-link" href="/hizmetler/yonetilen-hizmetler" aria-label="Yönetilen Hizmetler detayları"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- HAKKIMIZDA + PROJELER -->
+<section class="showcase">
+    <div class="showcase-about img-mountain" id="hakkimizda">
+        <div class="showcase-about-text">
+            <h2>Teknoloji ile<br />sınırları birlikte<br />aşıyoruz.</h2>
+            <p>Güvenilir iş ortağınız olarak daha verimli, daha sürdürülebilir bir gelecek için çalışıyoruz.</p>
+        </div>
+    </div>
+
+    <div class="showcase-projects" id="projeler">
+        <div class="projects-head">
+            <h2>Öne Çıkan Projeler</h2>
+            <a class="link-arrow" href="/referanslar/projelerimiz">Tüm Projeler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        </div>
+
+        <div class="projects-track" id="projectsTrack">
+                <article class="project-card">
+                    <div class="project-media img-building-glass"></div>
+                    <div class="project-body">
+                        <h3>&#xC7;ok Lokasyonlu SD-WAN D&#xF6;n&#xFC;&#x15F;&#xFC;m&#xFC;</h3>
+                        <ul class="tags">
+                                <li>SD-WAN</li>
+                                <li>Fortinet</li>
+                                <li>High Availability</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-datacenter"></div>
+                    <div class="project-body">
+                        <h3>Yeni Nesil Veri Merkezi Altyap&#x131;s&#x131;</h3>
+                        <ul class="tags">
+                                <li>Nutanix</li>
+                                <li>Cohesity</li>
+                                <li>Cisco</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-campus"></div>
+                    <div class="project-body">
+                        <h3>Merkezi Y&#xF6;netilen Network D&#xF6;n&#xFC;&#x15F;&#xFC;m&#xFC;</h3>
+                        <ul class="tags">
+                                <li>Cisco</li>
+                                <li>Wireless</li>
+                                <li>Automation</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-datacenter"></div>
+                    <div class="project-body">
+                        <h3>Hibrit Bulut ve Felaket Kurtarma</h3>
+                        <ul class="tags">
+                                <li>VMware</li>
+                                <li>Microsoft</li>
+                                <li>DR</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-campus"></div>
+                    <div class="project-body">
+                        <h3>Kamp&#xFC;s Kablosuz A&#x11F; Modernizasyonu</h3>
+                        <ul class="tags">
+                                <li>Wireless</li>
+                                <li>NAC</li>
+                                <li>Cisco</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-media img-building-glass"></div>
+                    <div class="project-body">
+                        <h3>U&#xE7;tan Uca Siber G&#xFC;venlik Mimarisi</h3>
+                        <ul class="tags">
+                                <li>Fortinet</li>
+                                <li>SOC</li>
+                                <li>EDR</li>
+                        </ul>
+                    </div>
+                </article>
+        </div>
+
+        <div class="projects-controls">
+            <div class="projects-dots" id="projectsDots"></div>
+            <button type="button" class="next-img-btn" id="projectsNext" aria-label="Sonraki projeler"></button>
+        </div>
+    </div>
+</section>
+
+<!-- CTA / İLETİŞİM -->
+<section class="cta" id="iletisim">
+    <div class="wrap cta-inner">
+        <div class="cta-text">
+            <span class="cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none">
+                    <defs>
+                        <linearGradient id="ctaLayer" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#7fd3ff" />
+                            <stop offset="1" stop-color="#1e6bff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M40 52 8 38l32-14 32 14-32 14Z" fill="#0d3d8a" stroke="#4fb6ff" stroke-width="1.5" />
+                    <path d="M40 42 8 28l32-14 32 14-32 14Z" fill="#124fb0" stroke="#58c0ff" stroke-width="1.5" opacity=".95" />
+                    <path d="M40 32 8 18 40 4l32 14-32 14Z" fill="url(#ctaLayer)" stroke="#9fe0ff" stroke-width="1.5" />
+                    <path d="M40 64 8 50v-4l32 14 32-14v4L40 64Z" fill="#0a2f6b" />
+                </svg>
+            </span>
+            <div>
+                <span class="cta-eyebrow">Fikirden gerçeğe</span>
+                <h2>Bir sonraki teknoloji projenizi<br />birlikte tasarlayalım.</h2>
+            </div>
+        </div>
+        <a class="btn-ut btn-ut-gradient" href="mailto:info@uniturk.com.tr">Proje Fikri Konuşalım <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+        <ul class="cta-contact">
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 4.2 2 2 0 0 1 3.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" /></svg>
+                <a href="tel:+902162125383">+90 216 212 53 83</a>
+            </li>
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3.5 6.5 8.5 6.5 8.5-6.5" /></svg>
+                <a href="mailto:info@uniturk.com.tr">info@uniturk.com.tr</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer img-footer">
+        <div class="wrap footer-inner">
+            <a class="brand" href="/" aria-label="Unitürk Bilişim Teknolojileri - Ana Sayfa">
+                <img class="brand-logo" src="/img/logo.png" alt="Unitürk" width="331" height="48" />
+                <span class="brand-sub">Bilişim Teknolojileri</span>
+            </a>
+            <nav class="footer-nav" aria-label="Alt menü">
+                    <a href="/kurumsal/hakkimizda">Kurumsal</a>
+                    <a href="/hizmetler">Hizmetlerimiz</a>
+                    <a href="/is-ortaklarimiz">&#x130;&#x15F; Ortaklar&#x131;m&#x131;z</a>
+                    <a href="/referanslar/musteri-referanslari">Referanslar</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/iletisim">&#x130;leti&#x15F;im</a>
+            </nav>
+            <div class="footer-copy">&copy; 2026 Unitürk. Tüm hakları saklıdır.</div>
+        </div>
+        <div class="wrap footer-links">
+            <div class="footer-group">
+                <h3 class="footer-group-title">Kurumsal Bakış</h3>
+                <ul>
+                    <li><a href="/kurumsal/vizyonumuz">Vizyonumuz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                    <li><a href="/kurumsal/misyonumuz">Misyonumuz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                    <li><a href="/kurumsal/neden-uniturk">Neden Uniturk? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <h3 class="footer-group-title">Güven &amp; Standartlar</h3>
+                <ul>
+                    <li><a href="/kurumsal/belgelerimiz">Belgelerimiz <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                    <li><a href="/bilgi-guvenligi-politikasi">Bilgi Güvenliği Politikası <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <h3 class="footer-group-title">Yasal &amp; Gizlilik</h3>
+                <ul>
+                    <li><a href="/kvkk-aydinlatma-metni">KVKK Aydınlatma Metni <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                    <li><a href="/gizlilik-politikasi">Gizlilik Politikası <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4DNNy-49A_lb9xPH-rYyHqcV-S-DtEkhhp4YcjnX9Og"></script>
+    
+</body>
+</html>
